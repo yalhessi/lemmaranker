@@ -1,0 +1,196 @@
+Provable and Useful in Completing Stuck Goal
+
+Useful in Completing Stuck Goal
+Lemma conj20synthconj5 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (Succ (plus (plus lv1 lv0) lv2)) (plus (plus lv1 lv2) (Succ lv0)))
+
+Lemma conj24eqsynthconj5 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus (plus (mult lv1 lv0) lv0) lv1)) ((mult (Succ lv1) (Succ lv0))))
+
+Lemma conj24eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus (plus (mult lv1 lv0) lv0) lv1)) ((plus Zero (mult (Succ lv1) (Succ lv0)))))
+Valid Lemmas
+Lemma conj24eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv1 lv0) ((mult lv0 lv1)))
+
+Lemma conj23eqsynthconj3 : forall  (lv0 : natural), (@eq natural (Succ lv0) ((plus lv0 (Succ Zero))))
+
+Lemma conj23eqsynthconj2 : forall  (lv0 : natural), (@eq natural (Succ lv0) ((plus (Succ lv0) Zero)))
+
+Lemma conj20eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv1 lv0) ((plus lv0 lv1)))
+
+Lemma conj19eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv0 lv1) ((mult lv1 lv0)))
+
+Lemma conj15eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 lv1) ((plus lv1 lv0)))
+
+Lemma conj24eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv1 lv0) ((mult lv0 (plus Zero lv1))))
+
+Lemma conj24eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv1 lv0) ((mult lv0 (plus lv1 Zero))))
+
+Lemma conj24eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv1 lv0) ((plus Zero (mult lv0 lv1))))
+
+Lemma conj20eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv1 (Succ lv0)) ((mult (Succ lv0) lv1)))
+
+Lemma conj20eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv1 lv0) ((plus lv0 (plus Zero lv1))))
+
+Lemma conj20eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv1 lv0) ((plus lv0 (plus lv1 Zero))))
+
+Lemma conj20eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv1 lv0) ((plus Zero (plus lv0 lv1))))
+
+Lemma conj19eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv0 lv1) ((mult lv1 (plus Zero lv0))))
+
+Lemma conj19eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv0 lv1) ((mult lv1 (plus lv0 Zero))))
+
+Lemma conj19eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv0 lv1) ((plus Zero (mult lv1 lv0))))
+
+Lemma conj15synthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus lv0 lv1)) (plus lv1 (Succ lv0)))
+
+Lemma conj15synthconj5 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus lv0 lv1)) (plus (Succ lv1) lv0))
+
+Lemma conj15synthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus lv0 lv1)) (plus lv0 (Succ lv1)))
+
+Lemma conj15synthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus lv0 lv1)) (Succ (plus lv1 lv0)))
+
+Lemma conj15eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 lv1) ((plus lv1 (plus Zero lv0))))
+
+Lemma conj15eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 lv1) ((plus lv1 (plus lv0 Zero))))
+
+Lemma conj15eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 lv1) ((plus Zero (plus lv1 lv0))))
+
+Lemma conj11eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus lv1 lv0)) ((plus lv0 (Succ lv1))))
+
+Lemma conj11eqsynthconj5 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus lv1 lv0)) ((plus (Succ lv0) lv1)))
+
+Lemma conj11eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus lv1 lv0)) ((plus lv1 (Succ lv0))))
+
+Lemma conj11eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus lv1 lv0)) ((Succ (plus lv0 lv1))))
+
+Lemma conj24synthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv0 (Succ lv1)) (plus (mult lv1 lv0) lv0))
+
+Lemma conj24eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv1 lv0) lv0) ((mult lv0 (Succ lv1))))
+
+Lemma conj20eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv1 (Succ lv0)) ((plus lv1 (mult lv0 lv1))))
+
+Lemma conj20eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv1 (Succ lv0)) ((plus lv1 (mult lv1 lv0))))
+
+Lemma conj20eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv1 (Succ lv0)) ((plus (mult lv0 lv1) lv1)))
+
+Lemma conj19eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 lv1) lv1) ((mult lv1 (Succ lv0))))
+
+Lemma conj24synthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 (mult lv0 lv1)) (plus (mult lv1 lv0) lv0))
+
+Lemma conj24synthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 (mult lv1 lv0)) (plus (mult lv1 lv0) lv0))
+
+Lemma conj24synthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 lv1) lv0) (plus (mult lv1 lv0) lv0))
+
+Lemma conj24eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv1 lv0) lv0) ((plus lv0 (mult lv0 lv1))))
+
+Lemma conj24eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv1 lv0) lv0) ((plus lv0 (mult lv1 lv0))))
+
+Lemma conj24eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv1 lv0) lv0) ((plus (mult lv0 lv1) lv0)))
+
+Lemma conj20eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (plus lv1 lv0) lv2) ((plus lv0 (plus lv2 lv1))))
+
+Lemma conj20eqsynthconj5 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (plus lv1 lv0) lv2) ((plus lv0 (plus lv1 lv2))))
+
+Lemma conj20eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (plus lv1 lv0) lv2) ((plus lv2 (plus lv0 lv1))))
+
+Lemma conj20eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (plus lv1 lv0) lv2) ((plus lv2 (plus lv1 lv0))))
+
+Lemma conj20eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (plus lv1 lv0) lv2) ((plus (plus lv2 lv0) lv1)))
+
+Lemma conj20eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (plus lv1 lv0) lv2) ((plus (plus lv0 lv2) lv1)))
+
+Lemma conj19synthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv1 (mult lv1 lv0)) (plus (mult lv0 lv1) lv1))
+
+Lemma conj19synthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv1 (mult lv0 lv1)) (plus (mult lv0 lv1) lv1))
+
+Lemma conj19synthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv1 lv0) lv1) (plus (mult lv0 lv1) lv1))
+
+Lemma conj19eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 lv1) lv1) ((plus lv1 (mult lv1 lv0))))
+
+Lemma conj19eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 lv1) lv1) ((plus lv1 (mult lv0 lv1))))
+
+Lemma conj19eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 lv1) lv1) ((plus (mult lv1 lv0) lv1)))
+
+Lemma conj18eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (plus lv2 lv0) lv1) ((plus lv0 (plus lv1 lv2))))
+
+Lemma conj18eqsynthconj5 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (plus lv2 lv0) lv1) ((plus lv0 (plus lv2 lv1))))
+
+Lemma conj18eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (plus lv2 lv0) lv1) ((plus lv1 (plus lv0 lv2))))
+
+Lemma conj18eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (plus lv2 lv0) lv1) ((plus lv1 (plus lv2 lv0))))
+
+Lemma conj18eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (plus lv2 lv0) lv1) ((plus (plus lv1 lv0) lv2)))
+
+Lemma conj18eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (plus lv2 lv0) lv1) ((plus (plus lv0 lv1) lv2)))
+
+Lemma conj20eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv1 (Succ lv0)) (Succ lv0)) ((mult (Succ lv0) (Succ lv1))))
+
+Lemma conj20synthconj4 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (Succ (plus (plus lv1 lv0) lv2)) (plus lv0 (Succ (plus lv2 lv1))))
+
+Lemma conj20synthconj3 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (Succ (plus (plus lv1 lv0) lv2)) (plus lv0 (Succ (plus lv1 lv2))))
+
+Lemma conj20synthconj2 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (Succ (plus (plus lv1 lv0) lv2)) (plus lv0 (plus lv2 (Succ lv1))))
+
+Lemma conj20synthconj1 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (Succ (plus (plus lv1 lv0) lv2)) (plus lv0 (plus (Succ lv2) lv1)))
+
+Lemma conj20synthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult (Succ lv0) (Succ lv1)) (plus (mult lv1 (Succ lv0)) (Succ lv0)))
+
+Lemma conj20synthconj6 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (Succ (plus (plus lv1 lv0) lv2)) (plus (plus lv2 lv1) (Succ lv0)))
+
+Lemma conj18eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (Succ (plus (plus lv2 lv0) lv1)) ((plus lv0 (Succ (plus lv1 lv2)))))
+
+Lemma conj18eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (Succ (plus (plus lv2 lv0) lv1)) ((plus lv0 (Succ (plus lv2 lv1)))))
+
+Lemma conj18eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (Succ (plus (plus lv2 lv0) lv1)) ((plus lv0 (plus lv1 (Succ lv2)))))
+
+Lemma conj18eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (Succ (plus (plus lv2 lv0) lv1)) ((plus lv0 (plus (Succ lv1) lv2))))
+
+Lemma conj24eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus (plus (mult lv1 lv0) lv0) lv1)) ((mult (Succ lv0) (Succ lv1))))
+
+Lemma conj24eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (plus (mult lv1 lv0) lv0) lv1) ((plus lv0 (mult (Succ lv0) lv1))))
+
+Lemma conj24eqsynthconj5 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (plus (mult lv1 lv0) lv0) lv1) ((plus lv0 (mult lv1 (Succ lv0)))))
+
+Lemma conj24eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (plus (mult lv1 lv0) lv0) lv1) ((plus lv1 (mult lv0 (Succ lv1)))))
+
+Lemma conj24eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (plus (mult lv1 lv0) lv0) lv1) ((plus lv1 (mult (Succ lv1) lv0))))
+
+Lemma conj24eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (plus (mult lv1 lv0) lv0) lv1) ((plus (mult lv0 (Succ lv1)) lv1)))
+
+Lemma conj24eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (plus (mult lv1 lv0) lv0) lv1) ((plus (mult (Succ lv0) lv1) lv0)))
+
+Lemma conj20eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv1 (Succ lv0)) (Succ lv0)) ((plus lv0 (Succ (mult (Succ lv0) lv1)))))
+
+Lemma conj20eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv1 (Succ lv0)) (Succ lv0)) ((plus lv0 (Succ (mult lv1 (Succ lv0))))))
+
+Lemma conj20eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv1 (Succ lv0)) (Succ lv0)) ((plus Zero (mult (Succ lv0) (Succ lv1)))))
+
+Lemma conj20synthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 (Succ (mult (Succ lv0) lv1))) (plus (mult lv1 (Succ lv0)) (Succ lv0)))
+
+Lemma conj20synthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 (Succ (mult lv1 (Succ lv0)))) (plus (mult lv1 (Succ lv0)) (Succ lv0)))
+
+Lemma conj20synthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus Zero (mult (Succ lv0) (Succ lv1))) (plus (mult lv1 (Succ lv0)) (Succ lv0)))
+
+Lemma conj20synthconj5 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus lv0 (mult lv1 (Succ lv0)))) (plus (mult lv1 (Succ lv0)) (Succ lv0)))
+
+Lemma conj20synthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus lv1 (mult lv0 (Succ lv1)))) (plus (mult lv1 (Succ lv0)) (Succ lv0)))
+
+Lemma conj20synthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus lv1 (mult (Succ lv1) lv0))) (plus (mult lv1 (Succ lv0)) (Succ lv0)))
+
+Lemma conj20synthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus (mult lv0 (Succ lv1)) lv1)) (plus (mult lv1 (Succ lv0)) (Succ lv0)))
+
+Lemma conj20synthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus (mult (Succ lv0) lv1) lv0)) (plus (mult lv1 (Succ lv0)) (Succ lv0)))
+
+Lemma conj20synthconj2 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (Succ (plus (plus lv1 lv0) lv2)) (plus (plus lv2 (plus Zero lv1)) (Succ lv0)))
+
+Lemma conj20synthconj1 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (Succ (plus (plus lv1 lv0) lv2)) (plus (plus lv2 (plus lv1 Zero)) (Succ lv0)))
+
+Lemma conj24eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus (plus (mult lv1 lv0) lv0) lv1)) ((plus lv0 (Succ (mult (Succ lv0) lv1)))))
+
+Lemma conj24eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus (plus (mult lv1 lv0) lv0) lv1)) ((plus lv0 (Succ (mult lv1 (Succ lv0))))))
+
+Lemma conj24eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus (plus (mult lv1 lv0) lv0) lv1)) ((plus Zero (mult (Succ lv0) (Succ lv1)))))
+
+Lemma conj20synthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus (plus lv0 (mult lv0 lv1)) lv1)) (plus (mult lv1 (Succ lv0)) (Succ lv0)))
+
+Lemma conj20synthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus (plus lv0 (mult lv1 lv0)) lv1)) (plus (mult lv1 (Succ lv0)) (Succ lv0)))
+
+Lemma conj20synthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus (plus (mult lv0 lv1) lv0) lv1)) (plus (mult lv1 (Succ lv0)) (Succ lv0)))
