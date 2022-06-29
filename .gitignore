@@ -1,5 +1,6 @@
 **/*.Identifier
 **/*.aux
+**/*.vo
 **/*.vos
 **/*.vok
 **/*.glob
