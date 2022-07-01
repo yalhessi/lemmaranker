@@ -1,0 +1,9 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj45: forall  (x:lst) (y:lst) (n:natural) , (@eq lst (rotate (len x) (append (append x y) (Cons n Nil))) (append y (Cons n x)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

@@ -1,0 +1,27 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj35: forall  (x:natural) (y:natural) , (@eq natural (plus (plus (mult x y) y) (Succ x)) (plus (mult x (Succ y)) (Succ y)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj25_hyp: forall (lf1:natural) (y:natural) (x:natural), (@eq natural (plus lf1 x) (mult x (Succ y))) ->  (@eq natural (plus (plus lf1 y) (Succ x)) (plus (mult x (Succ y)) (Succ y)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj33_hyp: forall  (x:natural) (y:natural)(lf1:natural), (@eq natural (plus (mult x y) x) lf1) ->  (@eq natural (plus (plus (mult x y) y) (Succ x)) (plus lf1 (Succ y)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

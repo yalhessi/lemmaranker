@@ -1,0 +1,150 @@
+Provable and Useful in Completing Stuck Goal
+
+Useful in Completing Stuck Goal
+Lemma conj23synthconj2 : forall  (lv0 : natural) (lv1 : lst), (@eq natural (len (qreva lv1 (Cons lv0 Nil))) (Succ (plus (len lv1) Zero)))
+Valid Lemmas
+Lemma conj23eqsynthconj6 : forall  (lv0 : natural), (@eq natural (plus lv0 Zero) ((lv0)))
+
+Lemma conj18synthconj4 : forall  (lv0 : natural), (@eq natural lv0 (plus lv0 Zero))
+
+Lemma conj1synthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural lv0 (plus lv0 Zero))
+
+Lemma conj1synthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv1 Zero) lv1)
+
+Lemma conj18synthconj2 : forall  (lv0 : natural), (@eq natural lv0 (plus lv0 (len Nil)))
+
+Lemma conj23synthconj6 : forall  (lv0 : natural), (@eq natural (Succ lv0) (Succ (plus lv0 Zero)))
+
+Lemma conj23eqsynthconj6 : forall  (lv0 : natural), (@eq natural (Succ (plus lv0 Zero)) ((Succ lv0)))
+
+Lemma conj23eqsynthconj5 : forall  (lv0 : natural), (@eq natural (plus lv0 Zero) ((plus Zero lv0)))
+
+Lemma conj22eqsynthconj6 : forall  (lv0 : lst), (@eq natural (plus (len lv0) Zero) ((len lv0)))
+
+Lemma conj22eqsynthconj4 : forall  (lv0 : lst), (@eq natural (len lv0) ((len (qreva lv0 Nil))))
+
+Lemma conj22eqsynthconj2 : forall  (lv0 : lst), (@eq natural (len lv0) ((plus (len lv0) Zero)))
+
+Lemma conj17synthconj5 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ lv1) (Succ (plus lv1 Zero)))
+
+Lemma conj15eqsynthconj5 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 lv1) ((plus lv1 lv0)))
+
+Lemma conj14synthconj3 : forall  (lv0 : natural), (@eq natural (plus lv0 (Succ Zero)) (Succ lv0))
+
+Lemma conj14eqsynthconj3 : forall  (lv0 : natural), (@eq natural (Succ lv0) ((plus lv0 (Succ Zero))))
+
+Lemma conj11eqsynthconj5 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv1 lv0) ((plus lv0 lv1)))
+
+Lemma conj5synthconj1 : forall  (lv0 : natural) (lv1 : lst), (@eq natural (len lv1) (len (qreva lv1 Nil)))
+
+Lemma conj23eqsynthconj3 : forall  (lv0 : natural), (@eq natural (plus lv0 Zero) ((plus (len Nil) lv0)))
+
+Lemma conj23synthconj5 : forall  (lv0 : natural), (@eq natural (plus Zero (Succ lv0)) (Succ (plus lv0 Zero)))
+
+Lemma conj23synthconj4 : forall  (lv0 : natural), (@eq natural (plus (Succ Zero) lv0) (Succ (plus lv0 Zero)))
+
+Lemma conj23synthconj3 : forall  (lv0 : natural), (@eq natural (plus lv0 (Succ Zero)) (Succ (plus lv0 Zero)))
+
+Lemma conj23synthconj1 : forall  (lv0 : natural), (@eq natural (Succ (plus Zero lv0)) (Succ (plus lv0 Zero)))
+
+Lemma conj23eqsynthconj5 : forall  (lv0 : natural), (@eq natural (Succ (plus lv0 Zero)) ((plus Zero (Succ lv0))))
+
+Lemma conj23eqsynthconj4 : forall  (lv0 : natural), (@eq natural (Succ (plus lv0 Zero)) ((plus (Succ Zero) lv0)))
+
+Lemma conj23eqsynthconj3 : forall  (lv0 : natural), (@eq natural (Succ (plus lv0 Zero)) ((plus lv0 (Succ Zero))))
+
+Lemma conj23eqsynthconj1 : forall  (lv0 : natural), (@eq natural (Succ (plus lv0 Zero)) ((Succ (plus Zero lv0))))
+
+Lemma conj23eqsynthconj1 : forall  (lv0 : natural), (@eq natural (plus lv0 Zero) ((plus Zero (plus Zero lv0))))
+
+Lemma conj23eqsynthconj2 : forall  (lv0 : natural), (@eq lst (Cons lv0 Nil) ((Cons (plus lv0 Zero) Nil)))
+
+Lemma conj22eqsynthconj6 : forall  (lv0 : lst), (@eq natural (Succ (plus (len lv0) Zero)) ((Succ (len lv0))))
+
+Lemma conj22eqsynthconj5 : forall  (lv0 : lst), (@eq natural (plus (len lv0) Zero) ((len (qreva Nil lv0))))
+
+Lemma conj22eqsynthconj3 : forall  (lv0 : lst), (@eq natural (plus (len lv0) Zero) ((plus Zero (len lv0))))
+
+Lemma conj22synthconj6 : forall  (lv0 : lst), (@eq natural (Succ (len lv0)) (Succ (plus (len lv0) Zero)))
+
+Lemma conj22eqsynthconj2 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (qreva lv1 lv0) ((qreva (qreva lv0 lv1) Nil)))
+
+Lemma conj18synthconj5 : forall  (lv0 : natural) (lv1 : lst), (@eq natural (Succ (len lv1)) (Succ (plus (len lv1) Zero)))
+
+Lemma conj17synthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus Zero (Succ lv1)) (Succ (plus lv1 Zero)))
+
+Lemma conj17synthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (Succ Zero) lv1) (Succ (plus lv1 Zero)))
+
+Lemma conj16eqsynthconj3 : forall  (lv0 : natural) (lv1 : lst), (@eq natural (plus (len lv1) lv0) ((plus lv0 (len lv1))))
+
+Lemma conj15synthconj5 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv1 (Succ lv0)) (Succ (plus lv0 lv1)))
+
+Lemma conj15synthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (Succ lv1) lv0) (Succ (plus lv0 lv1)))
+
+Lemma conj15synthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 (Succ lv1)) (Succ (plus lv0 lv1)))
+
+Lemma conj15eqsynthconj5 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus lv0 lv1)) ((plus lv1 (Succ lv0))))
+
+Lemma conj15eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus lv0 lv1)) ((plus (Succ lv1) lv0)))
+
+Lemma conj15eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus lv0 lv1)) ((plus lv0 (Succ lv1))))
+
+Lemma conj12eqsynthconj3 : forall  (lv0 : lst) (lv1 : natural), (@eq natural (plus (len lv0) lv1) ((plus lv1 (len lv0))))
+
+Lemma conj11eqsynthconj5 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus lv1 lv0)) ((plus lv0 (Succ lv1))))
+
+Lemma conj11eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus lv1 lv0)) ((plus lv1 (Succ lv0))))
+
+Lemma conj11synthconj5 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 (Succ lv1)) (Succ (plus lv1 lv0)))
+
+Lemma conj11synthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv1 (Succ lv0)) (Succ (plus lv1 lv0)))
+
+Lemma conj10eqsynthconj2 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (qreva lv0 lv1) ((qreva (qreva lv1 lv0) Nil)))
+
+Lemma conj23eqsynthconj6 : forall  (lv0 : natural) (lv1 : lst), (@eq natural (len (qreva lv1 (Cons lv0 Nil))) ((Succ (len lv1))))
+
+Lemma conj22eqsynthconj5 : forall  (lv0 : lst), (@eq natural (Succ (plus (len lv0) Zero)) ((len (Cons Zero lv0))))
+
+Lemma conj22eqsynthconj1 : forall  (lv0 : lst), (@eq natural (plus (len lv0) Zero) ((plus (len Nil) (len lv0))))
+
+Lemma conj22synthconj5 : forall  (lv0 : lst), (@eq natural (len (Cons Zero lv0)) (Succ (plus (len lv0) Zero)))
+
+Lemma conj18synthconj4 : forall  (lv0 : natural) (lv1 : lst), (@eq natural (len (Cons lv0 lv1)) (Succ (plus (len lv1) Zero)))
+
+Lemma conj18synthconj1 : forall  (lv0 : natural) (lv1 : lst), (@eq natural (len (Cons Zero lv1)) (Succ (plus (len lv1) Zero)))
+
+Lemma conj13synthconj5 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq natural (len (qreva lv2 (Cons lv0 Nil))) (Succ (len lv2)))
+
+Lemma conj23eqsynthconj5 : forall  (lv0 : natural) (lv1 : lst), (@eq natural (len (qreva lv1 (Cons lv0 Nil))) ((len (Cons lv0 lv1))))
+
+Lemma conj23eqsynthconj4 : forall  (lv0 : natural) (lv1 : lst), (@eq natural (len (qreva lv1 (Cons lv0 Nil))) ((len (Cons Zero lv1))))
+
+Lemma conj22eqsynthconj4 : forall  (lv0 : lst), (@eq natural (Succ (plus (len lv0) Zero)) ((len (Cons (Succ Zero) lv0))))
+
+Lemma conj22eqsynthconj3 : forall  (lv0 : lst), (@eq natural (Succ (plus (len lv0) Zero)) ((len (Cons (len lv0) lv0))))
+
+Lemma conj22eqsynthconj2 : forall  (lv0 : lst), (@eq natural (Succ (plus (len lv0) Zero)) ((len (Cons (len Nil) lv0))))
+
+Lemma conj22synthconj4 : forall  (lv0 : lst), (@eq natural (len (Cons (Succ Zero) lv0)) (Succ (plus (len lv0) Zero)))
+
+Lemma conj22synthconj3 : forall  (lv0 : lst), (@eq natural (len (Cons (len lv0) lv0)) (Succ (plus (len lv0) Zero)))
+
+Lemma conj22synthconj2 : forall  (lv0 : lst), (@eq natural (len (Cons (len Nil) lv0)) (Succ (plus (len lv0) Zero)))
+
+Lemma conj13synthconj4 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq natural (len (qreva lv2 (Cons lv0 Nil))) (len (Cons lv0 lv2)))
+
+Lemma conj13synthconj3 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq natural (len (qreva lv2 (Cons lv0 Nil))) (len (Cons lv1 lv2)))
+
+Lemma conj13synthconj2 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq natural (len (qreva lv2 (Cons lv0 Nil))) (len (Cons Zero lv2)))
+
+Lemma conj23eqsynthconj3 : forall  (lv0 : natural) (lv1 : lst), (@eq natural (len (qreva lv1 (Cons lv0 Nil))) ((len (Cons (Succ lv0) lv1))))
+
+Lemma conj23eqsynthconj2 : forall  (lv0 : natural) (lv1 : lst), (@eq natural (len (qreva lv1 (Cons lv0 Nil))) ((len (Cons (Succ Zero) lv1))))
+
+Lemma conj23eqsynthconj1 : forall  (lv0 : natural) (lv1 : lst), (@eq natural (len (qreva lv1 (Cons lv0 Nil))) ((len (Cons (len lv1) lv1))))
+
+Lemma conj23synthconj4 : forall  (lv0 : natural) (lv1 : lst), (@eq natural (len (qreva lv1 (Cons lv0 Nil))) (Succ (len (qreva lv1 Nil))))
+
+Lemma conj22eqsynthconj1 : forall  (lv0 : lst), (@eq natural (Succ (plus (len lv0) Zero)) ((len (Cons (Succ (Succ Zero)) lv0))))
+
+Lemma conj22synthconj1 : forall  (lv0 : lst), (@eq natural (len (Cons (Succ (Succ Zero)) lv0)) (Succ (plus (len lv0) Zero)))
