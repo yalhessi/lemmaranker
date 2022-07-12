@@ -1,5 +1,6 @@
 import argparse
 import os
+import re
 from os import listdir
 
 def parse():
@@ -23,7 +24,9 @@ def read_synthesized_lemmas(dirname, filename):
       elif line.strip() == "Valid Lemmas":
         cat = 3
         continue
-      lemmas.append({"cat": cat, "lemma": line.strip()+'.'})
+      lemma = line.strip() + '.'
+      lemma_name = re.match('Lemma (?P<name>\w+) :', lemma).groups()[0]
+      lemmas.append({"cat": cat, "lemma": lemma, "lemma_name": lemma_name})
   return lemmas
 
 def read_stuck_state(dirname, subdirname):
@@ -41,12 +44,13 @@ def read_stuck_state(dirname, subdirname):
     
 def read_original_file(dirname, subdirname, filename, theorem_name, helper_lemma_name):
   with open(os.path.join(dirname, '_lfind_' + subdirname, filename+'.v')) as f:
+    prelude = ''
     helper_lemma = ''
     helper_lemma_proof = ''
     for l in f:
-      if l.strip().startswith('Lemma ' + helper_lemma_name) or l.strip().startswith('Theorem ' + helper_lemma_name):
+      if re.match(f'(Lemma|Theorem) {helper_lemma_name}[ ]?:', l.strip()):
         helper_lemma += l.strip()
-      elif l.strip().startswith('Proof.'):
+      elif helper_lemma and l.strip().startswith('Proof.'):
         helper_lemma_proof += l.strip()
       elif helper_lemma_proof:
         helper_lemma_proof += l.strip()
@@ -54,13 +58,15 @@ def read_original_file(dirname, subdirname, filename, theorem_name, helper_lemma
           break
       elif helper_lemma:
         helper_lemma += l.strip()
+      else:
+        prelude += l
 
     theorem = ''
     theorem_proof = ''
     for l in f:
-      if l.strip().startswith('Lemma ' + theorem_name) or l.strip().startswith('Theorem ' + theorem_name):
+      if re.match(f'(Lemma|Theorem) {theorem_name}[ ]?:', l.strip()):
         theorem += l.strip()
-      elif l.strip().startswith('Proof.'):
+      elif theorem and l.strip().startswith('Proof.'):
         theorem_proof += l.strip()
       elif theorem_proof:
         theorem_proof += l.strip()
@@ -68,7 +74,7 @@ def read_original_file(dirname, subdirname, filename, theorem_name, helper_lemma
           break
       elif theorem:
         theorem += l.strip()
-  return helper_lemma, helper_lemma_proof, theorem, theorem_proof
+  return prelude, helper_lemma, helper_lemma_proof, theorem, theorem_proof
 
 
 def parse_file_name(filename):
@@ -103,7 +109,7 @@ def read_data(dir):
     filedata = {"file": filename, "theorem_name": theorem_name, "helper_lemma_name": helper_lemma_name}
     filedata["lemmas"] = read_synthesized_lemmas(logs_dir, filename)
     filedata["stuck_state"] = read_stuck_state(dir, filename)
-    filedata["helper_lemma"], filedata["helper_lemma_proof"], filedata["theorem"], filedata["theorem_proof"] = read_original_file(dir, filename, original_filename, theorem_name, helper_lemma_name)
+    filedata["prelude"], filedata["helper_lemma"], filedata["helper_lemma_proof"], filedata["theorem"], filedata["theorem_proof"] = read_original_file(dir, filename, original_filename, theorem_name, helper_lemma_name)
     data.append(filedata)
   return data
 

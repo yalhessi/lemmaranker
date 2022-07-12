@@ -83,7 +83,7 @@ Proof.
    intros.
    induction x.
    - reflexivity.
-   - simpl. rewrite plus_succ.
+   - simpl. rewrite plus_succ. 
 lfind.  rewrite (plus_commut y x).  
 Admitted.
 
