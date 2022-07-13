@@ -1,4 +1,5 @@
 
+from numpy import isin
 import coq_serapy
 
 def is_trivial(lemma, prelude):
@@ -50,6 +51,18 @@ def is_proof_complete(prelude, proof_cmds, stmts=[]):
         except:
             return False
 
+def disable_notations(prelude, theorem):
+    if isinstance(prelude, str):
+        prelude = [s.strip() + '.' for s in prelude.strip().split(".")[:-1]]
+    with coq_serapy.SerapiContext(
+            ["sertop", "--implicit"],
+            None,
+            "/home/yousef/lemmaranker/benchmark/smallclam") as coq:
+        for stmt in prelude:
+            coq.run_stmt(stmt.strip('-'))
+        coq.run_stmt(theorem)
+        print(coq.goals)
+
 def is_weaker_than(theorem1_name, theorem1, theorem2_name, theorem2, prelude):
     '''
     If theorem1 is weaker than theorem 2, it means we can prove theorem1 assuming theorem 2 is true.
@@ -70,3 +83,16 @@ def is_version_of(theorem1_name, theorem1, theorem2_name, theorem2, prelude):
     isweaker = is_weaker_than(theorem1_name, theorem1, theorem2_name, theorem2, prelude)
     isstronger = is_stronger_than(theorem1_name, theorem1, theorem2_name, theorem2, prelude)
     return isweaker and isstronger
+
+def disable_notations(prelude, theorem):
+    if isinstance(prelude, str):
+        prelude = [s.strip() + '.' for s in prelude.strip().split(".")[:-1]]
+    with coq_serapy.SerapiContext(
+            ["sertop", "--implicit"],
+            None,
+            "/home/yousef/lemmaranker/benchmark/smallclam") as coq:
+        for stmt in prelude:
+            coq.run_stmt(stmt.strip('-'))
+        coq.run_stmt('Unset Printing Notations.')
+        coq.run_stmt(theorem)
+        return coq.goals

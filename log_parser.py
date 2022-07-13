@@ -60,7 +60,6 @@ def read_original_file(dirname, subdirname, filename, theorem_name, helper_lemma
         helper_lemma += l.strip()
       else:
         prelude += l
-
     theorem = ''
     theorem_proof = ''
     for l in f:
