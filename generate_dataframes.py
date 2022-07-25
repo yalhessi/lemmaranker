@@ -19,7 +19,7 @@ def add_alpha(frame, index):
 
 def add_lemma_len(frame, index):
   frame.at[index, "lemma_len"] = len(frame.at[index, "lemma"])
-  frame.at[index, "ugly_lemma_lemma"] = len(frame.at[index, "ugly_lemma"])
+  frame.at[index, "ugly_lemma_len"] = len(frame.at[index, "ugly_lemma"])
 
 def remove_notations(frame, index):
   frame.at[index, "ugly_lemma"] = utils.disable_notations(frame.at[index, "prelude"], frame.at[index, "lemma"])
