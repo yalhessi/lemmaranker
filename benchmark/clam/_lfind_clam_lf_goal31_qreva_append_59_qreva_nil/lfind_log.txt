@@ -1,0 +1,117 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj45: forall  (x:lst) (y:lst) (n:natural) , (@eq lst (qreva (append x y) (Cons n Nil)) (append (qreva y Nil) (qreva x (Cons n Nil))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj40: forall  (x:lst) (y:lst)(lf1:lst) , (@eq lst (qreva (append x y) lf1) (append (qreva y Nil) (qreva x lf1)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj10_hyp: forall (lf2:lst)(lf3:lst)(lf1:lst) (x:lst), (@eq lst (qreva lf2 Nil) (append lf1 (qreva x Nil))) ->  (@eq lst (qreva lf2 lf3) (append lf1 (qreva x lf3)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj12_hyp: forall (lf1:lst)(lf2:lst) (y:lst)(lf3:lst) (x:lst), (@eq lst (qreva lf1 lf3) (append (qreva y lf3) (qreva x lf3))) ->  (@eq lst (qreva lf1 lf2) (append (qreva y lf3) (qreva x lf2)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj17_hyp: forall (lf1:lst) (n:natural)(lf2:lst) (y:lst) (x:lst), (@eq lst (qreva lf1 lf2) (append (qreva y lf2) (qreva x lf2))) ->  (@eq lst (qreva lf1 (Cons n lf2)) (append (qreva y lf2) (qreva x (Cons n lf2))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj20_hyp: forall  (x:lst) (y:lst)(lf2:lst)(lf1:lst), (@eq lst (qreva (append x y) Nil) (append lf1 (qreva x Nil))) ->  (@eq lst (qreva (append x y) lf2) (append lf1 (qreva x lf2)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj22_hyp: forall  (x:lst) (y:lst)(lf1:lst)(lf2:lst), (@eq lst (qreva (append x y) lf2) (append (qreva y lf2) (qreva x lf2))) ->  (@eq lst (qreva (append x y) lf1) (append (qreva y lf2) (qreva x lf1)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj25_hyp: forall  (x:lst) (y:lst) (n:natural)(lf2:lst)(lf1:lst), (@eq lst (qreva (append x y) lf2) (append lf1 (qreva x lf2))) ->  (@eq lst (qreva (append x y) (Cons n lf2)) (append lf1 (qreva x (Cons n lf2))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj27_hyp: forall  (x:lst) (y:lst) (n:natural)(lf1:lst), (@eq lst (qreva (append x y) lf1) (append (qreva y lf1) (qreva x lf1))) ->  (@eq lst (qreva (append x y) (Cons n lf1)) (append (qreva y lf1) (qreva x (Cons n lf1))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj33_hyp: forall (lf1:lst)(lf2:lst) (y:lst) (x:lst), (@eq lst (qreva lf1 Nil) (append (qreva y Nil) (qreva x Nil))) ->  (@eq lst (qreva lf1 lf2) (append (qreva y Nil) (qreva x lf2)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj36_hyp: forall (lf2:lst) (n:natural)(lf1:lst) (x:lst), (@eq lst (qreva lf2 Nil) (append lf1 (qreva x Nil))) ->  (@eq lst (qreva lf2 (Cons n Nil)) (append lf1 (qreva x (Cons n Nil))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj38_hyp: forall (lf1:lst) (n:natural) (y:lst) (x:lst), (@eq lst (qreva lf1 Nil) (append (qreva y Nil) (qreva x Nil))) ->  (@eq lst (qreva lf1 (Cons n Nil)) (append (qreva y Nil) (qreva x (Cons n Nil))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj43_hyp: forall  (x:lst) (y:lst) (n:natural)(lf1:lst), (@eq lst (qreva (append x y) Nil) (append lf1 (qreva x Nil))) ->  (@eq lst (qreva (append x y) (Cons n Nil)) (append lf1 (qreva x (Cons n Nil))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

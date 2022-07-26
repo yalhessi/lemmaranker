@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal17.v
+Lemma lfind_state  (x:lst) (y:lst):@eq lst (append x y) (append (rev (rev x)) (rev (rev y))).
+Admitted.

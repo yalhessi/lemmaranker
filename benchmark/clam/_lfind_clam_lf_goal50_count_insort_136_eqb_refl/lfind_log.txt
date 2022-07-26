@@ -1,0 +1,18 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj7: forall  (x:natural) , (@eq natural (if eqb x x then Succ Zero else Zero) (Succ Zero))
+is_valid : true
+is_prover_provable (be proven by proverbot): true
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj4: forall  (x:natural)(lf1:natural) , (@eq natural (if eqb x x then Succ lf1 else lf1) (Succ lf1))
+is_valid : true
+is_prover_provable (be proven by proverbot): true
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

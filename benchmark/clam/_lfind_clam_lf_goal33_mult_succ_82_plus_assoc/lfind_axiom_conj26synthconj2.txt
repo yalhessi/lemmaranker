@@ -1,0 +1,1 @@
+Lemma conj26synthconj2 : forall  (lv0 : natural), (@eq natural (mult lv0 (Succ Zero)) lv0).

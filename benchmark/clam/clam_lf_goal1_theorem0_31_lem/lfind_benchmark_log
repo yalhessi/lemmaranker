@@ -1,0 +1,20 @@
+COQDEP VFILES
+COQC goal1.v
+Lemma lfind_state  (x:natural) (IHx:@eq natural (double x) (plus x x)):@eq natural (Succ (plus x x)) (plus x (Succ x)).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal1_theorem0_31_lem/goal1_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal1_theorem0_31_lem goal1_lfind_orig goal1
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0

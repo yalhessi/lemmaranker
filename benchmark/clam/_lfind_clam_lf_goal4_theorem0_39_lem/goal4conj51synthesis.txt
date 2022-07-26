@@ -1,0 +1,3 @@
+let synth (lf1:natural)  =
+  lf1
+;;

@@ -1,0 +1,17 @@
+COQDEP VFILES
+COQC goal70.v
+Lemma lfind_state  (x:natural):@eq natural (if eqb x x then Succ Zero else Zero) (Succ Zero).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal70_theorem0_84_Nat_beq_refl/goal70_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal70_theorem0_84_Nat_beq_refl goal70_lfind_orig goal70
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0

@@ -1,0 +1,18 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj4: forall  (y:lst) , (@eq bool (lst_subset y y) true)
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj2_hyp: forall  (y:lst)(lf1:bool), (@eq bool (lst_subset Nil y) lf1) ->  (@eq bool (lst_subset y y) lf1)
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

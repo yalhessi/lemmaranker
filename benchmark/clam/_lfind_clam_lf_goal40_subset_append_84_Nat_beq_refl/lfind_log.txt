@@ -1,0 +1,18 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj10: forall  (n:natural) (x:lst) , (@eq bool (orb (eqb n n) (lst_mem n x)) true)
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj9: forall  (n:natural)(lf1:bool) , (@eq bool (orb (eqb n n) lf1) true)
+is_valid : true
+is_prover_provable (be proven by proverbot): true
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

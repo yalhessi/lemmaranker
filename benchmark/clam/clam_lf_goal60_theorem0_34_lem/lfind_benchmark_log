@@ -1,0 +1,26 @@
+COQDEP VFILES
+COQC goal60.v
+Lemma lfind_state  (y:lst) (z:natural):@eq lst (rev (append y (Cons z Nil))) (Cons z (rev y)).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal60_theorem0_34_lem/goal60_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal60_theorem0_34_lem goal60_lfind_orig goal60
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

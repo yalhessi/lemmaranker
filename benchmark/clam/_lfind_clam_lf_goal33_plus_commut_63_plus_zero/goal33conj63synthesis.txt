@@ -1,0 +1,174 @@
+let synth (lf1:natural) (y:natural)  =
+  y
+;;
+let synth (lf1:natural) (y:natural)  =
+  lf1
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus Zero y
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus y Zero
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus Zero lf1
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus lf1 Zero
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus Zero (plus Zero y)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus Zero (plus y Zero)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus Zero Zero) y
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus y (plus Zero Zero)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus Zero y) Zero
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus y Zero) Zero
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus Zero (plus Zero lf1)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus Zero (plus lf1 Zero)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus Zero Zero) lf1
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus lf1 (plus Zero Zero)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus Zero lf1) Zero
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus lf1 Zero) Zero
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus Zero (plus Zero (plus Zero y))
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus Zero (plus Zero (plus y Zero))
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus Zero (plus (plus Zero Zero) y)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus Zero (plus y (plus Zero Zero))
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus Zero (plus (plus Zero y) Zero)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus Zero (plus (plus y Zero) Zero)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus Zero Zero) (plus Zero y)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus Zero Zero) (plus y Zero)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus Zero (plus Zero Zero)) y
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus (plus Zero Zero) Zero) y
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus y (plus Zero (plus Zero Zero))
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus y (plus (plus Zero Zero) Zero)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus Zero y) (plus Zero Zero)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus y Zero) (plus Zero Zero)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus Zero (plus Zero y)) Zero
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus Zero (plus y Zero)) Zero
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus (plus Zero Zero) y) Zero
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus y (plus Zero Zero)) Zero
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus (plus Zero y) Zero) Zero
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus (plus y Zero) Zero) Zero
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus Zero (plus Zero (plus Zero lf1))
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus Zero (plus Zero (plus lf1 Zero))
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus Zero (plus (plus Zero Zero) lf1)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus Zero (plus lf1 (plus Zero Zero))
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus Zero (plus (plus Zero lf1) Zero)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus Zero (plus (plus lf1 Zero) Zero)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus Zero Zero) (plus Zero lf1)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus Zero Zero) (plus lf1 Zero)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus Zero (plus Zero Zero)) lf1
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus (plus Zero Zero) Zero) lf1
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus lf1 (plus Zero (plus Zero Zero))
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus lf1 (plus (plus Zero Zero) Zero)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus Zero lf1) (plus Zero Zero)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus lf1 Zero) (plus Zero Zero)
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus Zero (plus Zero lf1)) Zero
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus Zero (plus lf1 Zero)) Zero
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus (plus Zero Zero) lf1) Zero
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus lf1 (plus Zero Zero)) Zero
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus (plus Zero lf1) Zero) Zero
+;;
+let synth (lf1:natural) (y:natural)  =
+  plus (plus (plus lf1 Zero) Zero) Zero
+;;

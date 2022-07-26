@@ -1,0 +1,54 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj16: forall  (n:natural) (l:lst) , (@eq natural (count (Cons n (insort l n)) n) (Succ (Succ (count l n))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj10_hyp: forall  (n:natural)(lf2:lst)(lf1:natural), (@eq natural (count lf2 n) lf1) ->  (@eq natural (count (Cons n lf2) n) (Succ lf1))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj11_hyp: forall  (n:natural)(lf1:lst)(lf2:natural), (@eq natural (count lf1 n) (Succ lf2)) ->  (@eq natural (count (Cons n lf1) n) (Succ (Succ lf2)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj12_hyp: forall  (n:natural)(lf1:lst) (l:lst), (@eq natural (count lf1 n) (Succ (count l n))) ->  (@eq natural (count (Cons n lf1) n) (Succ (Succ (count l n))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj14_hyp: forall  (n:natural) (l:lst)(lf1:natural), (@eq natural (count (insort l n) n) lf1) ->  (@eq natural (count (Cons n (insort l n)) n) (Succ lf1))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj15_hyp: forall  (n:natural) (l:lst)(lf1:natural), (@eq natural (count (insort l n) n) (Succ lf1)) ->  (@eq natural (count (Cons n (insort l n)) n) (Succ (Succ lf1)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

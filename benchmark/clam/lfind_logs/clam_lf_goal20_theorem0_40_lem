@@ -1,0 +1,60 @@
+Provable and Useful in Completing Stuck Goal
+
+Useful in Completing Stuck Goal
+Lemma conj11eqsynthconj6 : forall  (lv0 : lst) (lv1 : lst), (@eq natural (len (append lv1 lv0)) ((len (append lv0 lv1))))
+
+Lemma conj6synthconj4 : forall  (lv0 : natural) (lv1 : bool) (lv2 : lst), (@eq bool (negb (even (len (append lv2 (Cons lv0 lv2))))) (even Zero))
+
+Lemma conj6eqsynthconj4 : forall  (lv0 : natural) (lv1 : lst), (@eq bool (even (len (append lv1 (Cons lv0 lv1)))) ((even (Succ Zero))))
+
+Lemma conj6eqsynthconj3 : forall  (lv0 : natural) (lv1 : lst), (@eq bool (even (len (append lv1 (Cons lv0 lv1)))) ((negb (even Zero))))
+
+Lemma conj6eqsynthconj5 : forall  (lv0 : natural) (lv1 : lst), (@eq bool (negb (even (len (append lv1 (Cons lv0 lv1))))) ((even Zero)))
+
+Lemma conj6synthconj1 : forall  (lv0 : natural) (lv1 : bool) (lv2 : lst), (@eq bool (negb (even (len (append lv2 (Cons lv0 lv2))))) (even (len Nil)))
+
+Lemma conj6eqsynthconj6 : forall  (lv0 : natural) (lv1 : lst), (@eq natural (len (append lv1 (Cons lv0 lv1))) ((Succ (len (append lv1 lv1)))))
+
+Lemma conj6eqsynthconj1 : forall  (lv0 : natural) (lv1 : lst), (@eq bool (even (len (append lv1 (Cons lv0 lv1)))) ((even (Succ (len Nil)))))
+
+Lemma conj6eqsynthconj3 : forall  (lv0 : natural) (lv1 : lst), (@eq bool (negb (even (len (append lv1 (Cons lv0 lv1))))) ((even (len Nil))))
+
+Lemma conj6eqsynthconj5 : forall  (lv0 : natural) (lv1 : lst), (@eq natural (len (append lv1 (Cons lv0 lv1))) ((len (Cons lv0 (append lv1 lv1)))))
+
+Lemma conj6eqsynthconj4 : forall  (lv0 : natural) (lv1 : lst), (@eq natural (len (append lv1 (Cons lv0 lv1))) ((len (Cons Zero (append lv1 lv1)))))
+
+Lemma conj6eqsynthconj1 : forall  (lv0 : natural) (lv1 : lst), (@eq natural (len (append lv1 (Cons lv0 lv1))) ((len (append (Cons lv0 lv1) lv1))))
+
+Lemma conj6eqsynthconj2 : forall  (lv0 : natural) (lv1 : lst), (@eq bool (negb (even (len (append lv1 (Cons lv0 lv1))))) ((even (Succ (Succ Zero)))))
+Valid Lemmas
+Lemma conj7synthconj2 : forall  (lv0 : bool), (@eq bool lv0 (negb (negb lv0)))
+
+Lemma conj6synthconj2 : forall  (lv0 : bool), (@eq bool (negb (negb lv0)) lv0)
+
+Lemma conj1synthconj1 : forall  (lv0 : bool) (lv1 : bool), (@eq bool lv0 (negb (negb lv0)))
+
+Lemma conj10eqsynthconj4 : forall  (lv0 : lst), (@eq natural (len lv0) ((len (append lv0 Nil))))
+
+Lemma conj9eqsynthconj2 : forall  (lv0 : natural), (@eq bool (even lv0) ((even (Succ (Succ lv0)))))
+
+Lemma conj11synthconj4 : forall  (lv0 : lst) (lv1 : lst), (@eq bool (negb (even (Succ (len (append lv1 lv1))))) true)
+
+Lemma conj11eqsynthconj3 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv1 lv0) ((append lv1 (append lv0 Nil))))
+
+Lemma conj11eqsynthconj1 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv1 lv0) ((append (append lv1 lv0) Nil)))
+
+Lemma conj10eqsynthconj2 : forall  (lv0 : lst), (@eq natural (len lv0) ((len (append Nil (append lv0 Nil)))))
+
+Lemma conj6eqsynthconj4 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (Cons lv0 lv1) ((append (Cons lv0 lv1) Nil)))
+
+Lemma conj6eqsynthconj1 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (Cons lv0 lv1) ((Cons lv0 (append lv1 Nil))))
+
+Lemma conj11synthconj3 : forall  (lv0 : lst) (lv1 : lst), (@eq bool (negb (even (len (Cons Zero (append lv1 lv1))))) true)
+
+Lemma conj11synthconj2 : forall  (lv0 : lst) (lv1 : lst), (@eq bool (negb (even (len (append lv1 (Cons Zero lv1))))) true)
+
+Lemma conj11synthconj1 : forall  (lv0 : lst) (lv1 : lst), (@eq bool (negb (even (len (append (Cons Zero lv1) lv1)))) true)
+
+Lemma conj6eqsynthconj2 : forall  (lv0 : natural) (lv1 : lst), (@eq natural (len (append lv1 (Cons lv0 lv1))) ((len (append lv1 (Cons Zero lv1)))))
+
+Lemma conj6eqsynthconj3 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (append lv1 (Cons lv0 lv1)) ((append lv1 (Cons lv0 (append lv1 Nil)))))

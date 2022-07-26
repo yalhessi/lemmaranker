@@ -1,0 +1,438 @@
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 lf4
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 (plus Zero lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 (plus lf1 Zero)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus Zero (plus lf4 lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus Zero (plus lf1 lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus Zero lf4) lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf4 Zero) lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 (plus Zero lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 (plus lf4 Zero)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf4 lf1) Zero
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus Zero lf1) lf4
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf1 lf4) Zero
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf1 Zero) lf4
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 (mult (Succ (Zero)) lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 (mult lf1 (Succ (Zero)))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  mult (Succ (Zero)) (plus lf4 lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  mult (Succ (Zero)) (plus lf1 lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (mult (Succ (Zero)) lf4) lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (mult lf4 (Succ (Zero))) lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 (mult (Succ (Zero)) lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 (mult lf4 (Succ (Zero)))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  mult (plus lf4 lf1) (Succ (Zero))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  mult (plus lf1 lf4) (Succ (Zero))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (mult (Succ (Zero)) lf1) lf4
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (mult lf1 (Succ (Zero))) lf4
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 (plus Zero (plus Zero lf1))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 (plus Zero (plus lf1 Zero))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 (plus (mult Zero lf4) lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 (plus (mult lf4 Zero) lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 (plus (mult Zero Zero) lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 (plus (plus Zero Zero) lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 (plus lf1 (mult Zero lf1))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 (plus lf1 (mult lf1 Zero))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 (plus lf1 (mult Zero lf4))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 (plus lf1 (mult lf4 Zero))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 (plus lf1 (mult Zero Zero))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 (plus lf1 (plus Zero Zero))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 (plus (mult Zero lf1) lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 (plus (plus Zero lf1) Zero)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 (plus (mult lf1 Zero) lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf4 (plus (plus lf1 Zero) Zero)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus Zero (plus lf4 (plus Zero lf1))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus Zero (plus lf4 (plus lf1 Zero))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus Zero (plus Zero (plus lf4 lf1))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus Zero (plus Zero (plus lf1 lf4))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus Zero (plus (plus Zero lf4) lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus Zero (plus (plus lf4 Zero) lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus Zero (plus lf1 (plus Zero lf4))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus Zero (plus lf1 (plus lf4 Zero))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus Zero (plus (plus lf4 lf1) Zero)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus Zero (plus (plus Zero lf1) lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus Zero (plus (plus lf1 lf4) Zero)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus Zero (plus (plus lf1 Zero) lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (mult Zero lf4) (plus lf4 lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (mult Zero lf4) (plus lf1 lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus Zero lf4) (plus Zero lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus Zero lf4) (plus lf1 Zero)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (mult lf4 Zero) (plus lf4 lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (mult lf4 Zero) (plus lf1 lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf4 Zero) (plus Zero lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf4 Zero) (plus lf1 Zero)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (mult Zero Zero) (plus lf4 lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (mult Zero Zero) (plus lf1 lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus Zero Zero) (plus lf4 lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus Zero Zero) (plus lf1 lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus Zero (plus Zero lf4)) lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus Zero (plus lf4 Zero)) lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (mult Zero Zero) lf4) lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (plus Zero Zero) lf4) lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf4 (mult Zero lf4)) lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf4 (mult lf4 Zero)) lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf4 (mult Zero Zero)) lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf4 (plus Zero Zero)) lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (mult Zero lf4) lf4) lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (plus Zero lf4) Zero) lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (mult lf4 Zero) lf4) lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (plus lf4 Zero) Zero) lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 (plus lf4 (mult Zero lf1))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 (plus lf4 (mult lf1 Zero))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 (plus (mult Zero lf1) lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 (plus (mult lf1 Zero) lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 (plus Zero (plus Zero lf4))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 (plus Zero (plus lf4 Zero))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 (plus (mult Zero Zero) lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 (plus (plus Zero Zero) lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 (plus lf4 (mult Zero lf4))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 (plus lf4 (mult lf4 Zero))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 (plus lf4 (mult Zero Zero))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 (plus lf4 (plus Zero Zero))
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 (plus (mult Zero lf4) lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 (plus (plus Zero lf4) Zero)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 (plus (mult lf4 Zero) lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus lf1 (plus (plus lf4 Zero) Zero)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf4 lf1) (mult Zero lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf4 lf1) (mult lf1 Zero)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf4 lf1) (mult Zero lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf4 lf1) (mult lf4 Zero)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf4 lf1) (mult Zero Zero)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf4 lf1) (plus Zero Zero)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (mult Zero lf1) (plus lf4 lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (mult Zero lf1) (plus lf1 lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus Zero lf1) (plus Zero lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus Zero lf1) (plus lf4 Zero)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (mult lf1 Zero) (plus lf4 lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (mult lf1 Zero) (plus lf1 lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf1 lf4) (mult Zero lf1)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf1 lf4) (mult lf1 Zero)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf1 lf4) (mult Zero lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf1 lf4) (mult lf4 Zero)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf1 lf4) (mult Zero Zero)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf1 lf4) (plus Zero Zero)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf1 Zero) (plus Zero lf4)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf1 Zero) (plus lf4 Zero)
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf4 (mult Zero lf1)) lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf4 (plus Zero lf1)) Zero
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf4 (mult lf1 Zero)) lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf4 (plus lf1 Zero)) Zero
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus Zero (plus lf4 lf1)) Zero
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus Zero (plus Zero lf1)) lf4
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus Zero (plus lf1 lf4)) Zero
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus Zero (plus lf1 Zero)) lf4
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (mult Zero lf4) lf1) lf4
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (plus Zero lf4) lf1) Zero
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (mult lf4 Zero) lf1) lf4
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (plus lf4 Zero) lf1) Zero
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (mult Zero Zero) lf1) lf4
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (plus Zero Zero) lf1) lf4
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf1 (mult Zero lf1)) lf4
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf1 (mult lf1 Zero)) lf4
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf1 (mult Zero lf4)) lf4
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf1 (plus Zero lf4)) Zero
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf1 (mult lf4 Zero)) lf4
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf1 (plus lf4 Zero)) Zero
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf1 (mult Zero Zero)) lf4
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus lf1 (plus Zero Zero)) lf4
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (plus lf4 lf1) Zero) Zero
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (mult Zero lf1) lf1) lf4
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (mult Zero lf1) lf4) lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (plus Zero lf1) lf4) Zero
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (plus Zero lf1) Zero) lf4
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (mult lf1 Zero) lf1) lf4
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (mult lf1 Zero) lf4) lf1
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (plus lf1 lf4) Zero) Zero
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (plus lf1 Zero) lf4) Zero
+;;
+let synth (lf4:natural) (lf1:natural)  =
+  plus (plus (plus lf1 Zero) Zero) lf4
+;;

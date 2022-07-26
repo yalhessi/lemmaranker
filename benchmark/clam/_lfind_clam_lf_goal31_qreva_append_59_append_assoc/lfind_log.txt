@@ -1,0 +1,99 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj73: forall  (y:lst) (x:lst) (n:natural) , (@eq lst (append (append (qreva y Nil) (qreva x Nil)) (Cons n Nil)) (append (qreva y Nil) (qreva x (Cons n Nil))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj70: forall  (y:lst) (x:lst)(lf1:lst) , (@eq lst (append (append (qreva y Nil) (qreva x Nil)) lf1) (append (qreva y Nil) (qreva x lf1)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj61: forall (lf1:lst) (x:lst) (n:natural) , (@eq lst (append (append lf1 (qreva x Nil)) (Cons n Nil)) (append lf1 (qreva x (Cons n Nil))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj58: forall (lf1:lst) (x:lst)(lf2:lst) , (@eq lst (append (append lf1 (qreva x Nil)) lf2) (append lf1 (qreva x lf2)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj15_hyp: forall (lf1:lst)(lf2:lst) (y:lst)(lf3:lst) (x:lst), (@eq lst (qreva (append x y) lf3) lf1) ->  (@eq lst (append lf1 lf2) (append (qreva y lf3) (qreva x lf2)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj38_hyp: forall  (y:lst)(lf2:lst) (x:lst)(lf1:lst), (@eq lst (qreva (append x y) lf2) (append (qreva y lf2) (qreva x lf2))) ->  (@eq lst (append (append (qreva y lf2) (qreva x lf2)) lf1) (append (qreva y lf2) (qreva x lf1)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj41_hyp: forall  (y:lst)(lf1:lst) (x:lst) (n:natural), (@eq lst (qreva (append x y) lf1) (append (qreva y lf1) (qreva x lf1))) ->  (@eq lst (append (append (qreva y lf1) (qreva x lf1)) (Cons n lf1)) (append (qreva y lf1) (qreva x (Cons n lf1))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj50_hyp: forall (lf1:lst)(lf2:lst) (y:lst) (x:lst), (@eq lst (qreva (append x y) Nil) lf1) ->  (@eq lst (append lf1 lf2) (append (qreva y Nil) (qreva x lf2)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj52_hyp: forall (lf1:lst) (n:natural) (y:lst) (x:lst), (@eq lst (qreva (append x y) Nil) lf1) ->  (@eq lst (append lf1 (Cons n Nil)) (append (qreva y Nil) (qreva x (Cons n Nil))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj64_hyp: forall  (y:lst)(lf1:lst)(lf2:lst) (x:lst), (@eq lst (qreva (append x y) Nil) (append (qreva y Nil) lf1)) ->  (@eq lst (append (append (qreva y Nil) lf1) lf2) (append (qreva y Nil) (qreva x lf2)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj67_hyp: forall  (y:lst)(lf1:lst) (n:natural) (x:lst), (@eq lst (qreva (append x y) Nil) (append (qreva y Nil) lf1)) ->  (@eq lst (append (append (qreva y Nil) lf1) (Cons n Nil)) (append (qreva y Nil) (qreva x (Cons n Nil))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

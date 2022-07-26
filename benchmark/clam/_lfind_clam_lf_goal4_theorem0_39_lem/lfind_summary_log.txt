@@ -1,0 +1,35 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 452 
+Total Lemmas: 235 
+Filter Quickchick: 32 
+Filter duplicate: 78 
+Filter trivial: 110 
+Filter is_version: 3 
+Stuck Proof State: Lemma lfind_state  (n:natural) (x:lst) (IHx:@eq natural (len (append x x)) (double (len x))):@eq natural (len (append x (Cons n x))) (Succ (len (append x x))).
+Admitted.
+Yes Cat 1: false
+# Generalizations : 16
+#Synthesized Lemmas not disprovable : 12
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj12synthconj5 : forall  (lv0 : lst) (lv1 : lst), (@eq natural (len (append lv0 lv1)) (len (append lv1 lv0)))
+conj15eqsynthconj6 : forall  (lv0 : lst) (lv1 : natural), (@eq natural (len (append lv0 (Cons lv1 lv0))) (Succ (double (len lv0))))
+conj16: forall  (x:lst) (n:natural) , (@eq natural (len (append x (Cons n x))) (Succ (len (append x x))))
+conj15eqsynthconj3 : forall  (lv0 : lst) (lv1 : natural), (@eq natural (len (append lv0 (Cons lv1 lv0))) (len (Cons Zero (append lv0 lv0))))
+conj14_hyp: forall  (x:lst) (n:natural)(lf1:natural), (@eq natural lf1 (double (len x))) ->  (@eq natural (len (append x (Cons n x))) (Succ lf1))
+Valid Lemmas (Category 3)
+
+conj15eqsynthconj4 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (Cons lv0 lv1) (append (Cons lv0 lv1) Nil))
+conj15eqsynthconj2 : forall  (lv0 : lst), (@eq natural (len lv0) (len (append Nil (append lv0 Nil))))
+conj12eqsynthconj3 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv0 lv1) (append lv0 (append lv1 Nil)))
+conj12eqsynthconj3 : forall  (lv0 : lst), (@eq lst (append lv0 lv0) (append lv0 (append lv0 Nil)))
+conj12eqsynthconj1 : forall  (lv0 : lst), (@eq lst (append lv0 lv0) (append (append lv0 lv0) Nil))
+conj12eqsynthconj3 : forall  (lv0 : lst), (@eq natural (len (append lv0 lv0)) (double (len (append lv0 Nil))))
+conj12eqsynthconj3 : forall  (lv0 : lst), (@eq natural (Succ (len (append lv0 lv0))) (len (append lv0 (Cons Zero lv0))))
+conj15eqsynthconj3 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (append lv0 (Cons lv1 lv0)) (append lv0 (Cons lv1 (append lv0 Nil))))
+conj15synthconj3 : forall  (lv0 : lst) (lv1 : natural), (@eq natural (len (append lv0 (Cons lv1 lv0))) (Succ (double (len (append lv0 Nil)))))
+

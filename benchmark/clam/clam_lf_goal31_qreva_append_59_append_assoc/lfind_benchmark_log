@@ -1,0 +1,82 @@
+COQDEP VFILES
+COQC goal31.v
+Lemma lfind_state  (n:natural) (x:lst) (y:lst) (IHx:@eq lst (qreva (append x y) Nil) (append (qreva y Nil) (qreva x Nil))):@eq lst (append (append (qreva y Nil) (qreva x Nil)) (Cons n Nil))
+  (append (qreva y Nil) (qreva x (Cons n Nil))).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal31_qreva_append_59_append_assoc/goal31_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal31_qreva_append_59_append_assoc goal31_lfind_orig goal31
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

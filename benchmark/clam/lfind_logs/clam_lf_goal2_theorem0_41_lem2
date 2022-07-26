@@ -1,0 +1,38 @@
+Provable and Useful in Completing Stuck Goal
+Lemma conj3eqsynthconj6 : forall  (lv0 : lst), (@eq lst (append lv0 Nil) ((lv0)))
+
+Lemma conj3eqsynthconj5 : forall  (lv0 : lst), (@eq lst (append lv0 Nil) ((append Nil lv0)))
+
+Lemma conj5eqsynthconj2 : forall  (lv0 : lst), (@eq natural (len lv0) ((len (append Nil (append lv0 Nil)))))
+
+Lemma conj5synthconj2 : forall  (lv0 : lst), (@eq natural (len lv0) (len (append Nil (append lv0 Nil))))
+
+Lemma conj5synthconj2 : forall  (lv0 : lst), (@eq natural (len (append Nil (append lv0 Nil))) (len lv0))
+
+Lemma conj4synthconj1 : forall  (lv0 : lst) (lv1 : natural), (@eq natural (len lv0) (len (append Nil (append lv0 Nil))))
+
+Lemma conj3eqsynthconj3 : forall  (lv0 : lst), (@eq lst (append lv0 Nil) ((append Nil (append Nil lv0))))
+
+Lemma conj3eqsynthconj1 : forall  (lv0 : lst), (@eq lst (append lv0 Nil) ((append (append Nil Nil) lv0)))
+
+Lemma conj2synthconj1 : forall  (lv0 : lst) (lv1 : natural), (@eq natural (len (append Nil (append lv0 Nil))) (len lv0))
+
+Useful in Completing Stuck Goal
+Lemma conj3eqsynthconj6 : forall  (lv0 : lst), (@eq lst (append lv0 Nil) ((lv0)))
+
+Lemma conj3eqsynthconj5 : forall  (lv0 : lst), (@eq lst (append lv0 Nil) ((append Nil lv0)))
+
+Lemma conj5eqsynthconj2 : forall  (lv0 : lst), (@eq natural (len lv0) ((len (append Nil (append lv0 Nil)))))
+
+Lemma conj5synthconj2 : forall  (lv0 : lst), (@eq natural (len lv0) (len (append Nil (append lv0 Nil))))
+
+Lemma conj5synthconj2 : forall  (lv0 : lst), (@eq natural (len (append Nil (append lv0 Nil))) (len lv0))
+
+Lemma conj4synthconj1 : forall  (lv0 : lst) (lv1 : natural), (@eq natural (len lv0) (len (append Nil (append lv0 Nil))))
+
+Lemma conj3eqsynthconj3 : forall  (lv0 : lst), (@eq lst (append lv0 Nil) ((append Nil (append Nil lv0))))
+
+Lemma conj3eqsynthconj1 : forall  (lv0 : lst), (@eq lst (append lv0 Nil) ((append (append Nil Nil) lv0)))
+
+Lemma conj2synthconj1 : forall  (lv0 : lst) (lv1 : natural), (@eq natural (len (append Nil (append lv0 Nil))) (len lv0))
+Valid Lemmas

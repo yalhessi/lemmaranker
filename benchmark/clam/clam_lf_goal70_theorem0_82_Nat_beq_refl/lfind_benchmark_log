@@ -1,0 +1,16 @@
+COQDEP VFILES
+COQC goal70.v
+Lemma lfind_state  (x:natural) (n:natural) (y:lst) (IHy:@eq natural (count (insort y x) x) (Succ (count y x))) (Heqb:@eq bool (eqb x n) false) (Heqb0:@eq bool (less x n) true):@eq natural
+  (if eqb x x
+   then Succ (if eqb x n then Succ (count y x) else count y x)
+   else if eqb x n then Succ (count y x) else count y x) 
+  (Succ (count y x)).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal70_theorem0_82_Nat_beq_refl/goal70_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal70_theorem0_82_Nat_beq_refl goal70_lfind_orig goal70
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success

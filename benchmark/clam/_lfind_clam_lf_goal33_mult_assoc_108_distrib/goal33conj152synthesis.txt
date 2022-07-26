@@ -1,0 +1,84 @@
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult y (mult z (Succ (x)))
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult y (mult (Succ (x)) z)
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult z (mult y (Succ (x)))
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult z (mult (Succ (x)) y)
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult (mult z y) (Succ (x))
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult (mult y z) (Succ (x))
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult (Succ (x)) (mult z y)
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult (Succ (x)) (mult y z)
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult (mult y (Succ (x))) z
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult (mult z (Succ (x))) y
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult (mult (Succ (x)) y) z
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult (mult (Succ (x)) z) y
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult y (plus z (mult z x))
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult y (plus z (mult x z))
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult y (plus (mult z x) z)
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult y (plus (mult x z) z)
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult z (plus y (mult y x))
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult z (plus y (mult x y))
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult z (plus (mult y x) y)
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult z (plus (mult x y) y)
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult (plus y (mult y x)) z
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult (plus y (mult x y)) z
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult (plus z (mult z x)) y
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult (plus z (mult x z)) y
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult (plus (mult y x) y) z
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult (plus (mult z x) z) y
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult (plus (mult x y) y) z
+;;
+let synth (z:natural) (y:natural) (x:natural)  =
+  mult (plus (mult x z) z) y
+;;

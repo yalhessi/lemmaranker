@@ -1,0 +1,9 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj6: forall  (l2:lst) , (@eq natural (len l2) (len (append l2 Nil)))
+is_valid : true
+is_prover_provable (be proven by proverbot): true
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

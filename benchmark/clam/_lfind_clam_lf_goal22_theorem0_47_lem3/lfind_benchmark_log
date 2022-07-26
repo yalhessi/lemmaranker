@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal22.v
+Lemma lfind_state  (y:lst):@eq bool (even (len y)) (even (len (append y Nil))).
+Admitted.

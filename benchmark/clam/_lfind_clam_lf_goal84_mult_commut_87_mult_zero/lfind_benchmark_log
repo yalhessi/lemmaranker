@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal84.v
+Lemma lfind_state  (y:natural):@eq natural (mult Zero y) (mult y Zero).
+Admitted.

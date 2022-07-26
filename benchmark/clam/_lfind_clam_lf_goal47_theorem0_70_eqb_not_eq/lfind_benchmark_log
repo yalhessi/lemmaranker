@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal47.v
+Lemma lfind_state  (x:natural) (y:natural) (H:not (@eq natural x y)):@eq bool (orb (eqb x y) false) false.
+Admitted.

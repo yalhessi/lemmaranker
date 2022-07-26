@@ -1,0 +1,9 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj9: forall  (x:natural) (y:natural) , (@eq natural (Succ (plus x y)) (plus y (Succ x)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

@@ -1,0 +1,6 @@
+Provable and Useful in Completing Stuck Goal
+Lemma conj12: forall  (n:natural)(lf1:bool) , (@eq bool (orb (eqb n n) lf1) true)
+
+Useful in Completing Stuck Goal
+Lemma conj13: forall  (n:natural)(lf1:lst) , (@eq bool (orb (eqb n n) (lst_mem n lf1)) true)
+Valid Lemmas

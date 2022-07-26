@@ -1,0 +1,5 @@
+COQDEP VFILES
+COQC goal31.v
+Lemma lfind_state  (n:natural) (x:lst) (y:lst) (IHx:@eq lst (qreva (append x y) Nil) (append (qreva y Nil) (qreva x Nil))):@eq lst (qreva (append x y) (Cons n Nil))
+  (append (qreva y Nil) (qreva x (Cons n Nil))).
+Admitted.

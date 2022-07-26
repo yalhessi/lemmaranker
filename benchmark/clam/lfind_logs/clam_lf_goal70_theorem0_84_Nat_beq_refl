@@ -1,0 +1,12 @@
+Provable and Useful in Completing Stuck Goal
+Lemma conj6synthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (if eqb lv1 lv1 then Succ Zero else Zero) (Succ Zero))
+
+Lemma conj3synthconj2 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (if eqb lv1 lv1 then Succ lv2 else lv2) (Succ lv2))
+
+Lemma conj4: forall  (x:natural)(lf1:natural) , (@eq natural (if eqb x x then Succ lf1 else lf1) (Succ lf1))
+
+Useful in Completing Stuck Goal
+Lemma conj6synthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (if eqb lv1 lv1 then Succ Zero else Zero) (Succ Zero))
+
+Lemma conj3synthconj2 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (if eqb lv1 lv1 then Succ lv2 else lv2) (Succ lv2))
+Valid Lemmas

@@ -1,0 +1,36 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj30: forall  (l:lst) (n:natural) , (@eq natural (plus (len (rev l)) (len (Cons n Nil))) (Succ (len l)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj11_hyp: forall (lf1:natural) (n:natural)(lf2:natural), (@eq natural lf1 lf2) ->  (@eq natural (plus lf1 (len (Cons n Nil))) (Succ lf2))
+is_valid : true
+is_prover_provable (be proven by proverbot): true
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj12_hyp: forall (lf1:natural) (n:natural) (l:lst), (@eq natural lf1 (len l)) ->  (@eq natural (plus lf1 (len (Cons n Nil))) (Succ (len l)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj29_hyp: forall  (l:lst) (n:natural)(lf1:natural), (@eq natural (len (rev l)) lf1) ->  (@eq natural (plus (len (rev l)) (len (Cons n Nil))) (Succ lf1))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

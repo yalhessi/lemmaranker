@@ -1,0 +1,111 @@
+let synth (lf2:lst) (x:lst)  =
+  append x lf2
+;;
+let synth (lf2:lst) (x:lst)  =
+  append Nil (append x lf2)
+;;
+let synth (lf2:lst) (x:lst)  =
+  append x (append Nil lf2)
+;;
+let synth (lf2:lst) (x:lst)  =
+  append x (append lf2 Nil)
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append Nil x) lf2
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append x lf2) Nil
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append x Nil) lf2
+;;
+let synth (lf2:lst) (x:lst)  =
+  append Nil (append Nil (append x lf2))
+;;
+let synth (lf2:lst) (x:lst)  =
+  append Nil (append x (append Nil lf2))
+;;
+let synth (lf2:lst) (x:lst)  =
+  append Nil (append x (append lf2 Nil))
+;;
+let synth (lf2:lst) (x:lst)  =
+  append Nil (append (append Nil x) lf2)
+;;
+let synth (lf2:lst) (x:lst)  =
+  append Nil (append (append x lf2) Nil)
+;;
+let synth (lf2:lst) (x:lst)  =
+  append Nil (append (append x Nil) lf2)
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append Nil Nil) (append x lf2)
+;;
+let synth (lf2:lst) (x:lst)  =
+  append x (append Nil (append Nil lf2))
+;;
+let synth (lf2:lst) (x:lst)  =
+  append x (append Nil (append lf2 Nil))
+;;
+let synth (lf2:lst) (x:lst)  =
+  append x (append (append Nil Nil) lf2)
+;;
+let synth (lf2:lst) (x:lst)  =
+  append x (append lf2 (append Nil Nil))
+;;
+let synth (lf2:lst) (x:lst)  =
+  append x (append (append Nil lf2) Nil)
+;;
+let synth (lf2:lst) (x:lst)  =
+  append x (append (append lf2 Nil) Nil)
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append Nil x) (append Nil lf2)
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append Nil x) (append lf2 Nil)
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append x lf2) (append Nil Nil)
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append x Nil) (append Nil lf2)
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append x Nil) (append lf2 Nil)
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append Nil (append Nil x)) lf2
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append Nil (append x lf2)) Nil
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append Nil (append x Nil)) lf2
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append (append Nil Nil) x) lf2
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append x (append Nil lf2)) Nil
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append x (append lf2 Nil)) Nil
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append x (append Nil Nil)) lf2
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append (append Nil x) lf2) Nil
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append (append Nil x) Nil) lf2
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append (append x lf2) Nil) Nil
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append (append x Nil) lf2) Nil
+;;
+let synth (lf2:lst) (x:lst)  =
+  append (append (append x Nil) Nil) lf2
+;;

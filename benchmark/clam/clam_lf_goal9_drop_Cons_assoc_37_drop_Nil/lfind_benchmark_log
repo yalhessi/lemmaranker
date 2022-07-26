@@ -1,0 +1,21 @@
+COQDEP VFILES
+COQC goal9.v
+Hypotheses contains forall, Quickchick might not work!
+There is a hypothesis that is neither Set or Prop
+Hypotheses contains forall, Quickchick might not work!
+There is a hypothesis that is neither Set or Prop
+Lemma lfind_state  (x1:natural) (x2:natural) (x3:natural):@eq lst match drop x2 Nil with
+        | Cons _ z => drop x1 z
+        | Nil => Nil
+        end match drop x1 Nil with
+            | Cons _ z => drop x2 z
+            | Nil => Nil
+            end.
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal9_drop_Cons_assoc_37_drop_Nil/goal9_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal9_drop_Cons_assoc_37_drop_Nil goal9_lfind_orig goal9
+lemmafinder_ml_generation_success
+Example file not found, generating
+0

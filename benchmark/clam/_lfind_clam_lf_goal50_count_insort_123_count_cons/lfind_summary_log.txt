@@ -1,0 +1,26 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 189 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (x:natural) (n:natural) (l:lst) (IHl:@eq natural (count (insort l n) n) (Succ (count l n))) (E:@eq natural x n):@eq natural (count (Cons n (insort l n)) n) (Succ (Succ (count l n))).
+Admitted.
+Yes Cat 1: false
+# Generalizations : 5
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj16: forall  (n:natural) (l:lst) , (@eq natural (count (Cons n (insort l n)) n) (Succ (Succ (count l n))))
+conj10_hyp: forall  (n:natural)(lf2:lst)(lf1:natural), (@eq natural (count lf2 n) lf1) ->  (@eq natural (count (Cons n lf2) n) (Succ lf1))
+conj11_hyp: forall  (n:natural)(lf1:lst)(lf2:natural), (@eq natural (count lf1 n) (Succ lf2)) ->  (@eq natural (count (Cons n lf1) n) (Succ (Succ lf2)))
+conj12_hyp: forall  (n:natural)(lf1:lst) (l:lst), (@eq natural (count lf1 n) (Succ (count l n))) ->  (@eq natural (count (Cons n lf1) n) (Succ (Succ (count l n))))
+conj15_hyp: forall  (n:natural) (l:lst)(lf1:natural), (@eq natural (count (insort l n) n) (Succ lf1)) ->  (@eq natural (count (Cons n (insort l n)) n) (Succ (Succ lf1)))
+Valid Lemmas (Category 3)
+
+

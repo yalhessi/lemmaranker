@@ -1,0 +1,252 @@
+Provable and Useful in Completing Stuck Goal
+
+Useful in Completing Stuck Goal
+Lemma conj31synthconj4 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree) (lv3 : lst), (@eq lst (append (append (revflat lv2) (Cons lv0 (revflat lv1))) lv3) (qrevaflat lv2 (Cons lv0 (qrevaflat lv1 lv3))))
+
+Lemma conj60synthconj4 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree), (@eq lst (append (append (revflat lv2) (Cons lv0 (revflat lv1))) Nil) (qrevaflat lv2 (Cons lv0 (qrevaflat lv1 Nil))))
+
+Lemma conj32: forall  (x2:tree) (n:natural) (x1:tree)(lf1:lst) , (@eq lst (append (append (revflat x1) (Cons n (revflat x2))) lf1) (qrevaflat x1 (Cons n (qrevaflat x2 lf1))))
+
+Lemma conj31synthconj2 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree) (lv3 : lst), (@eq lst (append (append (revflat lv2) (Cons lv0 (revflat lv1))) lv3) (qrevaflat lv2 (qrevaflat (Node lv0 Leaf lv1) lv3)))
+
+Lemma conj60synthconj3 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree), (@eq lst (append (append (revflat lv2) (Cons lv0 (revflat lv1))) Nil) (qrevaflat lv2 (qrevaflat (Node lv0 Leaf lv1) Nil)))
+Valid Lemmas
+Lemma conj58synthconj3 : forall  (lv0 : lst), (@eq lst (append lv0 Nil) lv0)
+
+Lemma conj58eqsynthconj3 : forall  (lv0 : lst), (@eq lst (lv0) ((append lv0 Nil)))
+
+Lemma conj34synthconj6 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv0 Nil) (lv0))
+
+Lemma conj60eqsynthconj5 : forall  (lv0 : tree), (@eq lst (revflat lv0) ((qrevaflat lv0 Nil)))
+
+Lemma conj58synthconj1 : forall  (lv0 : lst), (@eq lst (append lv0 (revflat Leaf)) lv0)
+
+Lemma conj58eqsynthconj1 : forall  (lv0 : lst), (@eq lst (lv0) ((append lv0 (revflat Leaf))))
+
+Lemma conj57eqsynthconj6 : forall  (lv0 : tree), (@eq lst (qrevaflat lv0 Nil) ((revflat lv0)))
+
+Lemma conj60eqsynthconj2 : forall  (lv0 : tree), (@eq lst (revflat lv0) ((qrevaflat lv0 (revflat Leaf))))
+
+Lemma conj60eqsynthconj1 : forall  (lv0 : tree), (@eq lst (revflat lv0) ((append (revflat lv0) Nil)))
+
+Lemma conj58synthconj3 : forall  (lv0 : lst), (@eq lst (append (append lv0 Nil) Nil) lv0)
+
+Lemma conj34synthconj4 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv0 Nil) (qrevaflat Leaf lv0))
+
+Lemma conj34synthconj3 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv0 Nil) (append Nil lv0))
+
+Lemma conj58synthconj1 : forall  (lv0 : lst), (@eq lst (append (append lv0 (revflat Leaf)) Nil) lv0)
+
+Lemma conj57eqsynthconj4 : forall  (lv0 : tree), (@eq lst (qrevaflat lv0 Nil) ((qrevaflat Leaf (revflat lv0))))
+
+Lemma conj57eqsynthconj3 : forall  (lv0 : tree), (@eq lst (qrevaflat lv0 Nil) ((append Nil (revflat lv0))))
+
+Lemma conj60eqsynthconj3 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (Cons lv0 lv1) ((append (Cons lv0 lv1) Nil)))
+
+Lemma conj59synthconj6 : forall  (lv0 : tree) (lv1 : lst), (@eq lst (append (qrevaflat lv0 lv1) Nil) (qrevaflat lv0 lv1))
+
+Lemma conj44eqsynthconj3 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (Cons lv1 lv0) ((append (Cons lv1 lv0) Nil)))
+
+Lemma conj41synthconj6 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (append lv1 lv0) Nil) (append lv1 lv0))
+
+Lemma conj41eqsynthconj1 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv1 lv0) ((append lv1 (append lv0 Nil))))
+
+Lemma conj40eqsynthconj6 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (append lv0 lv1) Nil) ((append lv0 lv1)))
+
+Lemma conj40eqsynthconj1 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv0 lv1) ((append lv0 (append lv1 Nil))))
+
+Lemma conj38synthconj5 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv0 lv2) Nil) (append lv0 lv2))
+
+Lemma conj60eqsynthconj4 : forall  (lv0 : natural) (lv1 : tree), (@eq lst (Cons lv0 (revflat lv1)) ((Cons lv0 (qrevaflat lv1 Nil))))
+
+Lemma conj59synthconj5 : forall  (lv0 : tree) (lv1 : lst), (@eq lst (append (append (revflat lv0) lv1) Nil) (qrevaflat lv0 lv1))
+
+Lemma conj57eqsynthconj6 : forall  (lv0 : natural) (lv1 : tree), (@eq lst (Cons lv0 (qrevaflat lv1 Nil)) ((Cons lv0 (revflat lv1))))
+
+Lemma conj50synthconj5 : forall  (lv0 : tree) (lv1 : lst) (lv2 : lst), (@eq lst (append (append (revflat lv0) lv2) Nil) (qrevaflat lv0 lv2))
+
+Lemma conj60eqsynthconj3 : forall  (lv0 : natural) (lv1 : tree), (@eq lst (Cons lv0 (revflat lv1)) ((qrevaflat (Node lv0 Leaf lv1) Nil)))
+
+Lemma conj59synthconj4 : forall  (lv0 : tree) (lv1 : lst), (@eq lst (append (qrevaflat Leaf (qrevaflat lv0 lv1)) Nil) (qrevaflat lv0 lv1))
+
+Lemma conj59synthconj3 : forall  (lv0 : tree) (lv1 : lst), (@eq lst (append (append Nil (qrevaflat lv0 lv1)) Nil) (qrevaflat lv0 lv1))
+
+Lemma conj59synthconj2 : forall  (lv0 : tree) (lv1 : lst), (@eq lst (append (qrevaflat lv0 (qrevaflat Leaf lv1)) Nil) (qrevaflat lv0 lv1))
+
+Lemma conj59synthconj1 : forall  (lv0 : tree) (lv1 : lst), (@eq lst (append (qrevaflat lv0 (append Nil lv1)) Nil) (qrevaflat lv0 lv1))
+
+Lemma conj57eqsynthconj5 : forall  (lv0 : natural) (lv1 : tree), (@eq lst (Cons lv0 (qrevaflat lv1 Nil)) ((revflat (Node lv0 Leaf lv1))))
+
+Lemma conj53synthconj5 : forall  (lv0 : tree) (lv1 : lst), (@eq lst (append (append (revflat lv0) lv1) Nil) (append (revflat lv0) lv1))
+
+Lemma conj50synthconj1 : forall  (lv0 : tree) (lv1 : lst) (lv2 : lst), (@eq lst (append (append (revflat lv0) lv2) Nil) (append (revflat lv0) lv2))
+
+Lemma conj41synthconj5 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (append lv1 lv0) Nil) (qrevaflat Leaf (append lv1 lv0)))
+
+Lemma conj41synthconj4 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (append lv1 lv0) Nil) (append Nil (append lv1 lv0)))
+
+Lemma conj41synthconj3 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (append lv1 lv0) Nil) (append lv1 (qrevaflat Leaf lv0)))
+
+Lemma conj41synthconj2 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (append lv1 lv0) Nil) (append lv1 (append Nil lv0)))
+
+Lemma conj41synthconj1 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (append lv1 lv0) Nil) (append lv1 (append lv0 Nil)))
+
+Lemma conj40eqsynthconj5 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (append lv0 lv1) Nil) ((qrevaflat Leaf (append lv0 lv1))))
+
+Lemma conj40eqsynthconj4 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (append lv0 lv1) Nil) ((append Nil (append lv0 lv1))))
+
+Lemma conj40eqsynthconj3 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (append lv0 lv1) Nil) ((append lv0 (qrevaflat Leaf lv1))))
+
+Lemma conj40eqsynthconj2 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (append lv0 lv1) Nil) ((append lv0 (append Nil lv1))))
+
+Lemma conj40eqsynthconj1 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (append lv0 lv1) Nil) ((append lv0 (append lv1 Nil))))
+
+Lemma conj59synthconj3 : forall  (lv0 : tree) (lv1 : lst), (@eq lst (append (append (revflat lv0) (append lv1 Nil)) Nil) (qrevaflat lv0 lv1))
+
+Lemma conj57eqsynthconj2 : forall  (lv0 : natural) (lv1 : tree), (@eq lst (Cons lv0 (qrevaflat lv1 Nil)) ((qrevaflat Leaf (Cons lv0 (revflat lv1)))))
+
+Lemma conj57eqsynthconj1 : forall  (lv0 : natural) (lv1 : tree), (@eq lst (Cons lv0 (qrevaflat lv1 Nil)) ((append Nil (Cons lv0 (revflat lv1)))))
+
+Lemma conj53synthconj3 : forall  (lv0 : tree) (lv1 : lst), (@eq lst (append (append (revflat lv0) lv1) Nil) (qrevaflat lv0 (append lv1 Nil)))
+
+Lemma conj24synthconj2 : forall  (lv0 : tree) (lv1 : lst) (lv2 : lst), (@eq lst (append (append (revflat lv0) lv1) lv2) (qrevaflat lv0 (append lv1 lv2)))
+
+Lemma conj23synthconj2 : forall  (lv0 : lst) (lv1 : tree) (lv2 : lst), (@eq lst (append (append (revflat lv1) lv2) lv0) (qrevaflat lv1 (append lv2 lv0)))
+
+Lemma conj60synthconj6 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst), (@eq lst (append (qrevaflat lv1 (Cons lv0 lv2)) Nil) (qrevaflat lv1 (Cons lv0 lv2)))
+
+Lemma conj59synthconj1 : forall  (lv0 : tree) (lv1 : lst), (@eq lst (append (append (revflat lv0) (append lv1 (revflat Leaf))) Nil) (qrevaflat lv0 lv1))
+
+Lemma conj57eqsynthconj6 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree), (@eq lst (qrevaflat lv2 (Cons lv0 (qrevaflat lv1 Nil))) ((revflat (Node lv0 lv2 lv1))))
+
+Lemma conj53synthconj1 : forall  (lv0 : tree) (lv1 : lst), (@eq lst (append (append (revflat lv0) lv1) Nil) (qrevaflat lv0 (append lv1 (revflat Leaf))))
+
+Lemma conj45synthconj6 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv1 (Cons lv0 lv2)) Nil) (append lv1 (Cons lv0 lv2)))
+
+Lemma conj45eqsynthconj1 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst), (@eq lst (append lv1 (Cons lv0 lv2)) ((append lv1 (Cons lv0 (append lv2 Nil)))))
+
+Lemma conj44eqsynthconj6 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst), (@eq lst (append (append lv2 (Cons lv1 lv0)) Nil) ((append lv2 (Cons lv1 lv0))))
+
+Lemma conj44eqsynthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst), (@eq lst (append lv2 (Cons lv1 lv0)) ((append lv2 (Cons lv1 (append lv0 Nil)))))
+
+Lemma conj42synthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : lst), (@eq lst (append (append lv3 (Cons lv1 lv0)) Nil) (append lv3 (Cons lv1 lv0)))
+
+Lemma conj33synthconj2 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst) (lv3 : tree), (@eq lst (revflat (Node lv0 lv3 lv1)) (qrevaflat lv3 (Cons lv0 (qrevaflat lv1 Nil))))
+
+Lemma conj60eqsynthconj5 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree), (@eq lst (append (revflat lv2) (Cons lv0 (revflat lv1))) ((qrevaflat (Node lv0 lv2 lv1) Nil)))
+
+Lemma conj60synthconj5 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst), (@eq lst (append (qrevaflat (Node lv0 lv1 Leaf) lv2) Nil) (qrevaflat lv1 (Cons lv0 lv2)))
+
+Lemma conj60synthconj4 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst), (@eq lst (append (append (revflat lv1) (Cons lv0 lv2)) Nil) (qrevaflat lv1 (Cons lv0 lv2)))
+
+Lemma conj57synthconj4 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree), (@eq lst (qrevaflat lv2 (Cons lv0 (revflat lv1))) (qrevaflat lv2 (Cons lv0 (qrevaflat lv1 Nil))))
+
+Lemma conj57eqsynthconj4 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree), (@eq lst (qrevaflat lv2 (Cons lv0 (qrevaflat lv1 Nil))) ((qrevaflat lv2 (Cons lv0 (revflat lv1)))))
+
+Lemma conj57eqsynthconj3 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst), (@eq lst (append (revflat lv1) (Cons lv0 lv2)) ((append (revflat (Node lv0 lv1 Leaf)) lv2)))
+
+Lemma conj54synthconj2 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst) (lv3 : lst), (@eq lst (append (append (revflat lv1) (Cons lv0 lv3)) Nil) (qrevaflat lv1 (Cons lv0 lv3)))
+
+Lemma conj49eqsynthconj4 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst), (@eq lst (append lv2 (Cons lv0 (revflat lv1))) ((append lv2 (Cons lv0 (qrevaflat lv1 Nil)))))
+
+Lemma conj60eqsynthconj6 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree), (@eq lst (append (append (revflat lv2) (Cons lv0 (revflat lv1))) Nil) ((revflat (Node lv0 lv2 lv1))))
+
+Lemma conj60synthconj3 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst), (@eq lst (append (append (revflat (Node lv0 lv1 Leaf)) lv2) Nil) (qrevaflat lv1 (Cons lv0 lv2)))
+
+Lemma conj60synthconj2 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst), (@eq lst (append (qrevaflat Leaf (qrevaflat lv1 (Cons lv0 lv2))) Nil) (qrevaflat lv1 (Cons lv0 lv2)))
+
+Lemma conj60synthconj1 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst), (@eq lst (append (append Nil (qrevaflat lv1 (Cons lv0 lv2))) Nil) (qrevaflat lv1 (Cons lv0 lv2)))
+
+Lemma conj58synthconj2 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree) (lv3 : lst), (@eq lst (append (append (revflat lv2) (Cons lv0 (revflat lv1))) Nil) (revflat (Node lv0 lv2 lv1)))
+
+Lemma conj57eqsynthconj4 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst), (@eq lst (append (append (revflat lv1) (Cons lv0 lv2)) Nil) ((append (revflat lv1) (Cons lv0 lv2))))
+
+Lemma conj57synthconj1 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree), (@eq lst (qrevaflat lv2 (revflat (Node lv0 Leaf lv1))) (qrevaflat lv2 (Cons lv0 (qrevaflat lv1 Nil))))
+
+Lemma conj57eqsynthconj3 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree), (@eq lst (qrevaflat lv2 (Cons lv0 (qrevaflat lv1 Nil))) ((qrevaflat Leaf (revflat (Node lv0 lv2 lv1)))))
+
+Lemma conj57eqsynthconj2 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree), (@eq lst (qrevaflat lv2 (Cons lv0 (qrevaflat lv1 Nil))) ((append Nil (revflat (Node lv0 lv2 lv1)))))
+
+Lemma conj57eqsynthconj1 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree), (@eq lst (qrevaflat lv2 (Cons lv0 (qrevaflat lv1 Nil))) ((qrevaflat lv2 (revflat (Node lv0 Leaf lv1)))))
+
+Lemma conj49eqsynthconj6 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst), (@eq lst (append (append lv2 (Cons lv0 (revflat lv1))) Nil) ((append lv2 (Cons lv0 (revflat lv1)))))
+
+Lemma conj49eqsynthconj3 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst), (@eq lst (append lv2 (Cons lv0 (revflat lv1))) ((append lv2 (qrevaflat (Node lv0 Leaf lv1) Nil))))
+
+Lemma conj45synthconj5 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv1 (Cons lv0 lv2)) Nil) (qrevaflat Leaf (append lv1 (Cons lv0 lv2))))
+
+Lemma conj45synthconj4 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv1 (Cons lv0 lv2)) Nil) (append Nil (append lv1 (Cons lv0 lv2))))
+
+Lemma conj45synthconj3 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv1 (Cons lv0 lv2)) Nil) (append lv1 (Cons lv0 (qrevaflat Leaf lv2))))
+
+Lemma conj45synthconj2 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv1 (Cons lv0 lv2)) Nil) (append lv1 (Cons lv0 (append Nil lv2))))
+
+Lemma conj45synthconj1 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv1 (Cons lv0 lv2)) Nil) (append lv1 (Cons lv0 (append lv2 Nil))))
+
+Lemma conj44eqsynthconj5 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst), (@eq lst (append (append lv2 (Cons lv1 lv0)) Nil) ((qrevaflat Leaf (append lv2 (Cons lv1 lv0)))))
+
+Lemma conj44eqsynthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst), (@eq lst (append (append lv2 (Cons lv1 lv0)) Nil) ((append Nil (append lv2 (Cons lv1 lv0)))))
+
+Lemma conj44eqsynthconj3 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst), (@eq lst (append (append lv2 (Cons lv1 lv0)) Nil) ((append lv2 (Cons lv1 (qrevaflat Leaf lv0)))))
+
+Lemma conj44eqsynthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst), (@eq lst (append (append lv2 (Cons lv1 lv0)) Nil) ((append lv2 (Cons lv1 (append Nil lv0)))))
+
+Lemma conj44eqsynthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst), (@eq lst (append (append lv2 (Cons lv1 lv0)) Nil) ((append lv2 (Cons lv1 (append lv0 Nil)))))
+
+Lemma conj60eqsynthconj4 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree), (@eq lst (append (append (revflat lv2) (Cons lv0 (revflat lv1))) Nil) ((qrevaflat lv2 (Cons lv0 (revflat lv1)))))
+
+Lemma conj60synthconj3 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst), (@eq lst (append (append (revflat lv1) (append (Cons lv0 lv2) Nil)) Nil) (qrevaflat lv1 (Cons lv0 lv2)))
+
+Lemma conj57eqsynthconj3 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst), (@eq lst (append (append (revflat lv1) (Cons lv0 lv2)) Nil) ((append (revflat (Node lv0 lv1 Leaf)) lv2)))
+
+Lemma conj57synthconj5 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree), (@eq lst (append (qrevaflat (Node lv0 lv2 lv1) Nil) Nil) (qrevaflat lv2 (Cons lv0 (qrevaflat lv1 Nil))))
+
+Lemma conj57synthconj4 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree), (@eq lst (append (qrevaflat lv2 (Cons lv0 (revflat lv1))) Nil) (qrevaflat lv2 (Cons lv0 (qrevaflat lv1 Nil))))
+
+Lemma conj57synthconj3 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst), (@eq lst (append (append (revflat lv1) (Cons lv0 lv2)) Nil) (qrevaflat lv1 (append (Cons lv0 lv2) Nil)))
+
+Lemma conj49eqsynthconj5 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst), (@eq lst (append (append lv2 (Cons lv0 (revflat lv1))) Nil) ((append lv2 (revflat (Node lv0 Leaf lv1)))))
+
+Lemma conj49eqsynthconj4 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst), (@eq lst (append (append lv2 (Cons lv0 (revflat lv1))) Nil) ((append lv2 (Cons lv0 (qrevaflat lv1 Nil)))))
+
+Lemma conj28synthconj4 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree) (lv3 : lst), (@eq lst (append (qrevaflat (Node lv0 lv2 lv1) Nil) lv3) (qrevaflat lv2 (Cons lv0 (qrevaflat lv1 lv3))))
+
+Lemma conj28synthconj3 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree) (lv3 : lst), (@eq lst (append (qrevaflat lv2 (Cons lv0 (revflat lv1))) lv3) (qrevaflat lv2 (Cons lv0 (qrevaflat lv1 lv3))))
+
+Lemma conj28synthconj2 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst) (lv3 : lst), (@eq lst (append (append (revflat lv1) (Cons lv0 lv2)) lv3) (qrevaflat lv1 (append (Cons lv0 lv2) lv3)))
+
+Lemma conj27synthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : tree) (lv3 : lst), (@eq lst (append (append (revflat lv2) (Cons lv1 lv3)) lv0) (qrevaflat lv2 (append (Cons lv1 lv3) lv0)))
+
+Lemma conj20eqsynthconj4 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst) (lv3 : lst), (@eq lst (append (append lv2 (Cons lv0 (revflat lv1))) lv3) ((append lv2 (Cons lv0 (qrevaflat lv1 lv3)))))
+
+Lemma conj19eqsynthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : tree) (lv3 : lst), (@eq lst (append (append lv3 (Cons lv1 (revflat lv2))) lv0) ((append lv3 (Cons lv1 (qrevaflat lv2 lv0)))))
+
+Lemma conj16synthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : tree) (lv3 : tree), (@eq lst (append (qrevaflat (Node lv1 lv3 lv2) Nil) lv0) (qrevaflat lv3 (Cons lv1 (qrevaflat lv2 lv0))))
+
+Lemma conj16synthconj3 : forall  (lv0 : lst) (lv1 : natural) (lv2 : tree) (lv3 : tree), (@eq lst (append (qrevaflat lv3 (Cons lv1 (revflat lv2))) lv0) (qrevaflat lv3 (Cons lv1 (qrevaflat lv2 lv0))))
+
+Lemma conj60eqsynthconj3 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree), (@eq lst (append (append (revflat lv2) (Cons lv0 (revflat lv1))) Nil) ((qrevaflat Leaf (revflat (Node lv0 lv2 lv1)))))
+
+Lemma conj60eqsynthconj2 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree), (@eq lst (append (append (revflat lv2) (Cons lv0 (revflat lv1))) Nil) ((append Nil (revflat (Node lv0 lv2 lv1)))))
+
+Lemma conj60eqsynthconj1 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree), (@eq lst (append (append (revflat lv2) (Cons lv0 (revflat lv1))) Nil) ((qrevaflat lv2 (revflat (Node lv0 Leaf lv1)))))
+
+Lemma conj57synthconj1 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree), (@eq lst (append (qrevaflat lv2 (revflat (Node lv0 Leaf lv1))) Nil) (qrevaflat lv2 (Cons lv0 (qrevaflat lv1 Nil))))
+
+Lemma conj49eqsynthconj3 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst), (@eq lst (append (append lv2 (Cons lv0 (revflat lv1))) Nil) ((append lv2 (qrevaflat (Node lv0 Leaf lv1) Nil))))
+
+Lemma conj49eqsynthconj2 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst), (@eq lst (append (append lv2 (Cons lv0 (revflat lv1))) Nil) ((qrevaflat Leaf (append lv2 (Cons lv0 (revflat lv1))))))
+
+Lemma conj49eqsynthconj1 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst), (@eq lst (append (append lv2 (Cons lv0 (revflat lv1))) Nil) ((append Nil (append lv2 (Cons lv0 (revflat lv1))))))
+
+Lemma conj20eqsynthconj2 : forall  (lv0 : natural) (lv1 : tree) (lv2 : lst) (lv3 : lst), (@eq lst (append (append lv2 (Cons lv0 (revflat lv1))) lv3) ((append lv2 (qrevaflat (Node lv0 Leaf lv1) lv3))))
+
+Lemma conj19eqsynthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : tree) (lv3 : lst), (@eq lst (append (append lv3 (Cons lv1 (revflat lv2))) lv0) ((append lv3 (qrevaflat (Node lv1 Leaf lv2) lv0))))
+
+Lemma conj57synthconj4 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree), (@eq lst (append (append (revflat lv2) (Cons lv0 (qrevaflat lv1 Nil))) Nil) (qrevaflat lv2 (Cons lv0 (qrevaflat lv1 Nil))))
+
+Lemma conj28synthconj3 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree) (lv3 : lst), (@eq lst (append (append (revflat lv2) (Cons lv0 (qrevaflat lv1 Nil))) lv3) (qrevaflat lv2 (Cons lv0 (qrevaflat lv1 lv3))))
+
+Lemma conj57synthconj3 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree), (@eq lst (append (append (revflat lv2) (qrevaflat (Node lv0 Leaf lv1) Nil)) Nil) (qrevaflat lv2 (Cons lv0 (qrevaflat lv1 Nil))))
+
+Lemma conj28synthconj1 : forall  (lv0 : natural) (lv1 : tree) (lv2 : tree) (lv3 : lst), (@eq lst (append (append (revflat lv2) (qrevaflat (Node lv0 Leaf lv1) Nil)) lv3) (qrevaflat lv2 (Cons lv0 (qrevaflat lv1 lv3))))

@@ -1,0 +1,48 @@
+COQDEP VFILES
+COQC goal56.v
+Lemma lfind_state  (v:natural) (w:natural) (x:natural) (y:natural) (z:lst):@eq lst (drop (Succ v) (drop w (drop x (Cons y z))))
+  (drop v (drop w (drop x z))).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal56_theorem0_35_lem/goal56_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal56_theorem0_35_lem goal56_lfind_orig goal56
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

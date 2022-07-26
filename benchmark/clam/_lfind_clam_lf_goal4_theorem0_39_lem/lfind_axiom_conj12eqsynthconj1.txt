@@ -1,0 +1,1 @@
+Lemma conj12eqsynthconj1 : forall  (lv0 : lst), (@eq lst (append lv0 lv0) (append (append lv0 lv0) Nil)).

@@ -1,0 +1,9 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj6_hyp: forall  (y:lst) (z:lst) (x:natural), (@eq bool (mem z x) true) ->  (@eq bool (mem (append y z) x) true)
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

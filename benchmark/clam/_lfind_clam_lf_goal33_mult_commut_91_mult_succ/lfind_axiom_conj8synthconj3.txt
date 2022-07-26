@@ -1,0 +1,1 @@
+Lemma conj8synthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv0 (plus lv1 Zero)) (mult lv1 lv0)).

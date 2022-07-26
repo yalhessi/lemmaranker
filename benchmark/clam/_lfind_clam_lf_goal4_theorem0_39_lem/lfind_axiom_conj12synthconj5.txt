@@ -1,0 +1,1 @@
+Lemma conj12synthconj5 : forall  (lv0 : lst) (lv1 : lst), (@eq natural (len (append lv0 lv1)) (len (append lv1 lv0))).

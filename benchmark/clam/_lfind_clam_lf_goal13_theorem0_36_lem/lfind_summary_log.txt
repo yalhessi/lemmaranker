@@ -1,0 +1,22 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 33 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (x:natural) (IHx:@eq natural (half (plus (Succ x) (Succ x))) (Succ x)):@eq natural (Succ (half (plus x (Succ (Succ x))))) (Succ (Succ x)).
+Admitted.
+Yes Cat 1: false
+# Generalizations : 0
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj12: forall  (x:natural) , (@eq natural (Succ (half (plus x (Succ (Succ x))))) (Succ (Succ x)))
+Valid Lemmas (Category 3)
+
+

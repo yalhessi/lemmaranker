@@ -1,0 +1,132 @@
+Provable and Useful in Completing Stuck Goal
+
+Useful in Completing Stuck Goal
+Lemma conj1synthconj1 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (rev (rev lv1)) lv1)
+
+Lemma conj15eqsynthconj6 : forall  (lv0 : lst), (@eq lst (rev (rev lv0)) ((lv0)))
+
+Lemma conj15eqsynthconj4 : forall  (lv0 : lst), (@eq lst (rev (rev lv0)) ((append Nil lv0)))
+
+Lemma conj15eqsynthconj2 : forall  (lv0 : lst), (@eq lst (rev (rev lv0)) ((append (rev Nil) lv0)))
+Valid Lemmas
+Lemma conj15synthconj6 : forall  (lv0 : lst), (@eq lst (lv0) (rev (rev lv0)))
+
+Lemma conj13synthconj3 : forall  (lv0 : lst), (@eq lst (append lv0 Nil) lv0)
+
+Lemma conj13eqsynthconj3 : forall  (lv0 : lst), (@eq lst (lv0) ((append lv0 Nil)))
+
+Lemma conj3synthconj5 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (lv1) (rev (rev lv1)))
+
+Lemma conj1synthconj4 : forall  (lv0 : lst) (lv1 : lst), (@eq lst lv0 (rev (rev lv0)))
+
+Lemma conj1synthconj2 : forall  (lv0 : lst) (lv1 : lst), (@eq lst lv0 (append lv0 Nil))
+
+Lemma conj13synthconj1 : forall  (lv0 : lst), (@eq lst (append lv0 (rev Nil)) lv0)
+
+Lemma conj13eqsynthconj1 : forall  (lv0 : lst), (@eq lst (lv0) ((append lv0 (rev Nil))))
+
+Lemma conj15synthconj4 : forall  (lv0 : lst), (@eq lst (append Nil lv0) (rev (rev lv0)))
+
+Lemma conj15synthconj3 : forall  (lv0 : lst), (@eq lst (append lv0 Nil) (rev (rev lv0)))
+
+Lemma conj15eqsynthconj3 : forall  (lv0 : lst), (@eq lst (rev (rev lv0)) ((append lv0 Nil)))
+
+Lemma conj15eqsynthconj5 : forall  (lv0 : lst), (@eq lst (rev lv0) ((rev (rev (rev lv0)))))
+
+Lemma conj15eqsynthconj3 : forall  (lv0 : lst), (@eq lst (rev lv0) ((rev (append lv0 Nil))))
+
+Lemma conj15eqsynthconj1 : forall  (lv0 : lst), (@eq lst (rev lv0) ((append (rev lv0) Nil)))
+
+Lemma conj14synthconj5 : forall  (lv0 : lst), (@eq lst (rev (rev (rev lv0))) (rev lv0))
+
+Lemma conj14synthconj3 : forall  (lv0 : lst), (@eq lst (rev (append lv0 Nil)) (rev lv0))
+
+Lemma conj14synthconj1 : forall  (lv0 : lst), (@eq lst (append (rev lv0) Nil) (rev lv0))
+
+Lemma conj4synthconj5 : forall  (lv0 : lst), (@eq lst lv0 (rev (rev (rev (rev lv0)))))
+
+Lemma conj4synthconj3 : forall  (lv0 : lst), (@eq lst lv0 (rev (rev (append lv0 Nil))))
+
+Lemma conj4synthconj1 : forall  (lv0 : lst), (@eq lst lv0 (rev (append (rev lv0) Nil)))
+
+Lemma conj15synthconj2 : forall  (lv0 : lst), (@eq lst (append (rev Nil) lv0) (rev (rev lv0)))
+
+Lemma conj15synthconj1 : forall  (lv0 : lst), (@eq lst (append lv0 (rev Nil)) (rev (rev lv0)))
+
+Lemma conj15eqsynthconj1 : forall  (lv0 : lst), (@eq lst (rev (rev lv0)) ((append lv0 (rev Nil))))
+
+Lemma conj15eqsynthconj6 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (rev (rev lv1)) lv0) ((append lv1 lv0)))
+
+Lemma conj13synthconj5 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (append (rev (rev lv2)) lv0) (append lv2 lv0))
+
+Lemma conj12eqsynthconj6 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (rev (rev (append lv1 lv0))) ((append lv1 lv0)))
+
+Lemma conj12synthconj6 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv1 lv0) (rev (rev (append lv1 lv0))))
+
+Lemma conj12eqsynthconj3 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv1 lv0) ((append lv1 (rev (rev lv0)))))
+
+Lemma conj12eqsynthconj1 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv1 lv0) ((append lv1 (append lv0 Nil))))
+
+Lemma conj4synthconj2 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (append lv2 lv0) (rev (rev (append lv2 lv0))))
+
+Lemma conj12synthconj5 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (rev lv1) lv0) (rev (append (rev lv0) lv1)))
+
+Lemma conj12eqsynthconj5 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (rev (append lv1 lv0)) ((append (rev lv0) (rev lv1))))
+
+Lemma conj8synthconj5 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv1 lv0) (rev (append (rev lv0) (rev lv1))))
+
+Lemma conj15eqsynthconj4 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (rev (rev lv1)) lv0) ((append Nil (append lv1 lv0))))
+
+Lemma conj15eqsynthconj3 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (rev (rev lv1)) lv0) ((append lv1 (rev (rev lv0)))))
+
+Lemma conj15eqsynthconj2 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (rev (rev lv1)) lv0) ((append lv1 (append Nil lv0))))
+
+Lemma conj15eqsynthconj1 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (rev (rev lv1)) lv0) ((append lv1 (append lv0 Nil))))
+
+Lemma conj12eqsynthconj4 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (rev (rev (append lv1 lv0))) ((append Nil (append lv1 lv0))))
+
+Lemma conj12eqsynthconj3 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (rev (rev (append lv1 lv0))) ((append lv1 (rev (rev lv0)))))
+
+Lemma conj12eqsynthconj2 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (rev (rev (append lv1 lv0))) ((append lv1 (append Nil lv0))))
+
+Lemma conj12eqsynthconj1 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (rev (rev (append lv1 lv0))) ((append lv1 (append lv0 Nil))))
+
+Lemma conj12synthconj4 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (rev lv1) lv0) (rev (rev (append (rev lv1) lv0))))
+
+Lemma conj12synthconj2 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (rev lv1) lv0) (append (rev lv1) (rev (rev lv0))))
+
+Lemma conj12synthconj4 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append Nil (append lv1 lv0)) (rev (rev (append lv1 lv0))))
+
+Lemma conj12synthconj3 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv1 (rev (rev lv0))) (rev (rev (append lv1 lv0))))
+
+Lemma conj12synthconj2 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv1 (append Nil lv0)) (rev (rev (append lv1 lv0))))
+
+Lemma conj12synthconj1 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv1 (append lv0 Nil)) (rev (rev (append lv1 lv0))))
+
+Lemma conj12eqsynthconj4 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (rev (append lv1 lv0)) ((rev (rev (rev (append lv1 lv0))))))
+
+Lemma conj12eqsynthconj2 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (rev (append lv1 lv0)) ((rev (append lv1 (rev (rev lv0))))))
+
+Lemma conj12synthconj3 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (append lv1 Nil) lv0) (rev (rev (append lv1 lv0))))
+
+Lemma conj8synthconj4 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv1 lv0) (rev (rev (rev (rev (append lv1 lv0))))))
+
+Lemma conj8synthconj2 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv1 lv0) (rev (rev (append lv1 (rev (rev lv0))))))
+
+Lemma conj8synthconj1 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv1 lv0) (rev (rev (append lv1 (append lv0 Nil)))))
+
+Lemma conj15synthconj5 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (rev (rev lv1)) lv0) (rev (append (rev lv0) (rev lv1))))
+
+Lemma conj12synthconj4 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (rev lv1) lv0) (rev (rev (rev (append (rev lv0) lv1)))))
+
+Lemma conj12synthconj2 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (rev lv1) lv0) (rev (append (rev lv0) (rev (rev lv1)))))
+
+Lemma conj12synthconj1 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (append lv1 (rev Nil)) lv0) (rev (rev (append lv1 lv0))))
+
+Lemma conj15synthconj4 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (rev (rev lv1)) lv0) (rev (rev (rev (rev (append lv1 lv0))))))
+
+Lemma conj15synthconj2 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (rev (rev lv1)) lv0) (rev (rev (append lv1 (rev (rev lv0))))))
+
+Lemma conj12synthconj4 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (rev lv1) lv0) (rev (rev (rev (rev (append (rev lv1) lv0))))))
+
+Lemma conj12synthconj2 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (rev lv1) lv0) (rev (rev (append (rev lv1) (rev (rev lv0))))))

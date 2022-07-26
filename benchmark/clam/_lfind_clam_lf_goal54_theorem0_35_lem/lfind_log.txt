@@ -1,0 +1,9 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj21: forall  (w:natural) (x:natural) (y:natural) (z:lst) , (@eq lst (drop (Succ w) (drop x (Cons y z))) (drop w (drop x z)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

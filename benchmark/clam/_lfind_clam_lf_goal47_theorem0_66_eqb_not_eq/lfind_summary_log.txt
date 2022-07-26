@@ -1,0 +1,26 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 176 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (x:natural) (y:natural) (n:natural) (z:lst) (H:not (@eq natural x y)) (IHz:@eq bool (mem (insort z y) x) (mem z x)):@eq bool (orb (eqb x y) (orb (eqb x n) (mem z x))) (orb (eqb x n) (mem z x)).
+Admitted.
+Yes Cat 1: false
+# Generalizations : 4
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj11_hyp: forall  (x:natural) (y:natural)(lf1:bool), (not (@eq natural x y)) ->  (@eq bool (orb (eqb x y) lf1) lf1)
+conj12_hyp: forall  (x:natural) (y:natural)(lf1:bool)(lf2:bool), (not (@eq natural x y)) ->  (@eq bool (orb (eqb x y) (orb lf1 lf2)) (orb lf1 lf2))
+conj14_hyp: forall  (x:natural) (y:natural) (n:natural)(lf1:bool), (not (@eq natural x y)) ->  (@eq bool (orb (eqb x y) (orb (eqb x n) lf1)) (orb (eqb x n) lf1))
+conj13_hyp: forall  (x:natural) (y:natural)(lf1:bool) (z:lst), (not (@eq natural x y)) -> (@eq bool (mem (insort z y) x) (mem z x)) ->  (@eq bool (orb (eqb x y) (orb lf1 (mem z x))) (orb lf1 (mem z x)))
+conj15_hyp: forall  (x:natural) (y:natural) (n:natural) (z:lst), (not (@eq natural x y)) -> (@eq bool (mem (insort z y) x) (mem z x)) ->  (@eq bool (orb (eqb x y) (orb (eqb x n) (mem z x))) (orb (eqb x n) (mem z x)))
+Valid Lemmas (Category 3)
+
+

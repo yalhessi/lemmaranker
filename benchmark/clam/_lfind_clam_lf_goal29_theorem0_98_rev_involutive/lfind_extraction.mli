@@ -1,0 +1,24 @@
+
+type natural =
+| Succ of natural
+| Zero
+
+type lst =
+| Cons of natural * lst
+| Nil
+
+val lfind_example_1 : lst
+
+val lfind_example_2 : lst
+
+val lfind_example_3 : lst
+
+val lfind_example_4 : lst
+
+val lfind_example_5 : lst
+
+val lfind_example_6 : lst
+
+val lfind_example_7 : lst
+
+val lfind_example_8 : lst

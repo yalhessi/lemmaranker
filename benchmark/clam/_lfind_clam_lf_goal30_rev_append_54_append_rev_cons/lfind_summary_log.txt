@@ -1,0 +1,25 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 346 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (n:natural) (l1:lst) (n0:natural) (l2:lst) (IHl2:@eq lst (rev (append (Cons n l1) l2)) (append (rev l2) (rev (Cons n l1)))):@eq lst (append (rev (append l1 (Cons n0 l2))) (Cons n Nil))
+  (append (append (rev l2) (Cons n0 Nil)) (append (rev l1) (Cons n Nil))).
+Admitted.
+Yes Cat 1: false
+# Generalizations : 2
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj242: forall  (l1:lst) (n0:natural) (l2:lst)(lf1:lst) , (@eq lst (append (rev (append l1 (Cons n0 l2))) lf1) (append (append (rev l2) (Cons n0 Nil)) (append (rev l1) lf1)))
+conj258: forall  (l1:lst) (n0:natural) (l2:lst) (n:natural) , (@eq lst (append (rev (append l1 (Cons n0 l2))) (Cons n Nil)) (append (append (rev l2) (Cons n0 Nil)) (append (rev l1) (Cons n Nil))))
+conj252_hyp: forall  (l1:lst) (n0:natural) (l2:lst) (n:natural)(lf1:lst), (@eq lst (rev (append (Cons n l1) l2)) (append lf1 (rev (Cons n l1)))) ->  (@eq lst (append (rev (append l1 (Cons n0 l2))) (Cons n Nil)) (append (append lf1 (Cons n0 Nil)) (append (rev l1) (Cons n Nil))))
+Valid Lemmas (Category 3)
+
+

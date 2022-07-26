@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal9.v
+Lemma lfind_state  (x:natural) (y:natural) (w:natural) (z:lst):@eq lst (drop x (drop y (drop w z))) (drop y (drop x (drop w z))).
+Admitted.

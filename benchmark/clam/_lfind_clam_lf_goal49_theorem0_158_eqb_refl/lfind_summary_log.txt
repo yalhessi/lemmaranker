@@ -1,0 +1,23 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 43 
+Total Time: 62 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (n:natural) (y:lst) (IHy:forall _ : @eq bool (mem n (sort y)) true, @eq bool (mem n y) true):@eq bool (orb (eqb n n) (mem n y)) true.
+Admitted.
+Yes Cat 1: true
+# Generalizations : 1
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+conj9: forall  (n:natural)(lf1:bool) , (@eq bool (orb (eqb n n) lf1) true)
+Useful in Completing Stuck Goal (Category 2)
+
+conj10: forall  (n:natural) (y:lst) , (@eq bool (orb (eqb n n) (mem n y)) true)
+Valid Lemmas (Category 3)
+
+

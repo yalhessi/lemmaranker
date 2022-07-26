@@ -1,0 +1,30 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 292 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (n:natural) (x:lst) (y:lst) (IHx:@eq lst (qreva (append x y) Nil) (append (qreva y Nil) (qreva x Nil))):@eq lst (append (append (qreva y Nil) (qreva x Nil)) (Cons n Nil))
+  (append (qreva y Nil) (qreva x (Cons n Nil))).
+Admitted.
+Yes Cat 1: false
+# Generalizations : 10
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj58: forall (lf1:lst) (x:lst)(lf2:lst) , (@eq lst (append (append lf1 (qreva x Nil)) lf2) (append lf1 (qreva x lf2)))
+conj70: forall  (y:lst) (x:lst)(lf1:lst) , (@eq lst (append (append (qreva y Nil) (qreva x Nil)) lf1) (append (qreva y Nil) (qreva x lf1)))
+conj61: forall (lf1:lst) (x:lst) (n:natural) , (@eq lst (append (append lf1 (qreva x Nil)) (Cons n Nil)) (append lf1 (qreva x (Cons n Nil))))
+conj73: forall  (y:lst) (x:lst) (n:natural) , (@eq lst (append (append (qreva y Nil) (qreva x Nil)) (Cons n Nil)) (append (qreva y Nil) (qreva x (Cons n Nil))))
+conj52_hyp: forall (lf1:lst) (n:natural) (y:lst) (x:lst), (@eq lst (qreva (append x y) Nil) lf1) ->  (@eq lst (append lf1 (Cons n Nil)) (append (qreva y Nil) (qreva x (Cons n Nil))))
+conj38_hyp: forall  (y:lst)(lf2:lst) (x:lst)(lf1:lst), (@eq lst (qreva (append x y) lf2) (append (qreva y lf2) (qreva x lf2))) ->  (@eq lst (append (append (qreva y lf2) (qreva x lf2)) lf1) (append (qreva y lf2) (qreva x lf1)))
+conj67_hyp: forall  (y:lst)(lf1:lst) (n:natural) (x:lst), (@eq lst (qreva (append x y) Nil) (append (qreva y Nil) lf1)) ->  (@eq lst (append (append (qreva y Nil) lf1) (Cons n Nil)) (append (qreva y Nil) (qreva x (Cons n Nil))))
+conj41_hyp: forall  (y:lst)(lf1:lst) (x:lst) (n:natural), (@eq lst (qreva (append x y) lf1) (append (qreva y lf1) (qreva x lf1))) ->  (@eq lst (append (append (qreva y lf1) (qreva x lf1)) (Cons n lf1)) (append (qreva y lf1) (qreva x (Cons n lf1))))
+Valid Lemmas (Category 3)
+
+

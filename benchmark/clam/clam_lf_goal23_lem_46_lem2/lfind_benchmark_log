@@ -1,0 +1,29 @@
+COQDEP VFILES
+COQC goal23.v
+Hypotheses contains forall, Quickchick might not work!
+There is a hypothesis that is neither Set or Prop
+Lemma lfind_state  (n:natural) (l1:lst) (l2:lst):@eq natural (Succ (len (append l2 l1))) (len (append l2 (Cons n l1))).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal23_lem_46_lem2/goal23_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal23_lem_46_lem2 goal23_lfind_orig goal23
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

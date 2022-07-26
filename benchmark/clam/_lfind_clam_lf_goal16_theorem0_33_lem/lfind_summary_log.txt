@@ -1,0 +1,22 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 39 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (x:natural) (IHx:@eq bool (even (plus x x)) true):@eq bool (negb (even (plus x (Succ x)))) true.
+Admitted.
+Yes Cat 1: false
+# Generalizations : 0
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj5_hyp: forall  (x:natural)(lf1:bool), (@eq bool (even (plus x x)) lf1) ->  (@eq bool (negb (even (plus x (Succ x)))) lf1)
+Valid Lemmas (Category 3)
+
+

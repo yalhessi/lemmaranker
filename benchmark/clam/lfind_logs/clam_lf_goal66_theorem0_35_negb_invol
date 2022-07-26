@@ -1,0 +1,6 @@
+Provable and Useful in Completing Stuck Goal
+Lemma conj3: forall (lf1:bool) , (@eq bool lf1 (negb (negb lf1)))
+
+Useful in Completing Stuck Goal
+
+Valid Lemmas

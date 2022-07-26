@@ -1,0 +1,36 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj43: forall  (x:lst) (y:lst) , (@eq natural (plus (len x) (Succ (Succ (len y)))) (Succ (Succ (plus (len y) (len x)))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj39: forall  (x:lst)(lf1:natural) , (@eq natural (plus (len x) (Succ (Succ lf1))) (Succ (Succ (plus lf1 (len x)))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj25: forall (lf1:natural) (y:lst) , (@eq natural (plus lf1 (Succ (Succ (len y)))) (Succ (Succ (plus (len y) lf1))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj21: forall (lf1:natural)(lf2:natural) , (@eq natural (plus lf1 (Succ (Succ lf2))) (Succ (Succ (plus lf2 lf1))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

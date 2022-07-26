@@ -1,0 +1,18 @@
+COQDEP VFILES
+COQC goal64.v
+Lemma lfind_state  (z:lst) (x:natural) (y:natural):@eq bool (even (len z)) (negb (negb (even (len z)))).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal64_theorem0_41_negb_invol/goal64_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal64_theorem0_41_negb_invol goal64_lfind_orig goal64
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0

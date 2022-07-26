@@ -1,0 +1,36 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj20: forall  (x:natural) (y:natural) (z:natural) , (@eq natural (mult (plus (mult x y) y) z) (plus (mult x (mult y z)) (mult y z)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj13_hyp: forall (lf2:natural) (y:natural) (z:natural)(lf1:natural), (@eq natural (mult lf2 z) lf1) ->  (@eq natural (mult (plus lf2 y) z) (plus lf1 (mult y z)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj15_hyp: forall (lf1:natural) (y:natural) (z:natural) (x:natural), (@eq natural (mult lf1 z) (mult x (mult y z))) ->  (@eq natural (mult (plus lf1 y) z) (plus (mult x (mult y z)) (mult y z)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj18_hyp: forall  (x:natural) (y:natural) (z:natural)(lf1:natural), (@eq natural (mult (mult x y) z) lf1) ->  (@eq natural (mult (plus (mult x y) y) z) (plus lf1 (mult y z)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

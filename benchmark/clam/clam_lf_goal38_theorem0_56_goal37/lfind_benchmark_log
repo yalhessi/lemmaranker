@@ -1,0 +1,18 @@
+COQDEP VFILES
+COQC goal38.v
+Lemma lfind_state  (x:natural) (y:lst) (z:lst) (H:@eq bool (mem z x) true):@eq bool (mem (append y z) x) true.
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal38_theorem0_56_goal37/goal38_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal38_theorem0_56_goal37 goal38_lfind_orig goal38
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0

@@ -1,0 +1,14 @@
+COQDEP VFILES
+COQC goal29.v
+Lemma lfind_state  (x:lst):@eq lst (rev (rev x)) x.
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal29_theorem0_98_rev_involutive/goal29_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal29_theorem0_98_rev_involutive goal29_lfind_orig goal29
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0

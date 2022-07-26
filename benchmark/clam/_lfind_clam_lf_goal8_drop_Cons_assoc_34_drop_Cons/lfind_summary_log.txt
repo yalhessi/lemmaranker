@@ -1,0 +1,25 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 84 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (x1:natural) (x2:natural) (x3:natural) (n:natural) (l:lst) (IHl:@eq lst (drop (Succ x1) (drop (Succ x2) (Cons x3 l)))
+  (drop (Succ x2) (drop (Succ x1) (Cons x3 l)))):@eq lst (drop x2 (drop (Succ x1) (Cons n l)))
+  (drop x1 (drop (Succ x2) (Cons n l))).
+Admitted.
+Yes Cat 1: false
+# Generalizations : 1
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj24: forall  (x2:natural) (x1:natural)(lf1:lst) , (@eq lst (drop x2 (drop (Succ x1) lf1)) (drop x1 (drop (Succ x2) lf1)))
+conj28: forall  (x2:natural) (x1:natural) (n:natural) (l:lst) , (@eq lst (drop x2 (drop (Succ x1) (Cons n l))) (drop x1 (drop (Succ x2) (Cons n l))))
+Valid Lemmas (Category 3)
+
+

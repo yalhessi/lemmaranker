@@ -1,0 +1,23 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 63 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (x:natural):@eq bool (orb (eqb x x) false) true.
+Admitted.
+Yes Cat 1: false
+# Generalizations : 1
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj10: forall  (x:natural) , (@eq bool (orb (eqb x x) false) true)
+conj6: forall  (x:natural)(lf1:bool) , (@eq bool (orb (eqb x x) lf1) true)
+Valid Lemmas (Category 3)
+
+

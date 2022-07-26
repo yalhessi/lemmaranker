@@ -1,0 +1,1 @@
+Lemma conj22eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (mult lv0 lv1) lv2) (plus lv2 (mult lv1 (plus lv0 Zero)))).

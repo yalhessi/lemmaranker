@@ -1,0 +1,23 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 62 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (y:lst):@eq lst (qreva y Nil) (append (rev y) Nil).
+Admitted.
+Yes Cat 1: false
+# Generalizations : 1
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj11: forall  (y:lst) , (@eq lst (qreva y Nil) (append (rev y) Nil))
+conj6: forall  (y:lst)(lf1:lst) , (@eq lst (qreva y lf1) (append (rev y) lf1))
+Valid Lemmas (Category 3)
+
+

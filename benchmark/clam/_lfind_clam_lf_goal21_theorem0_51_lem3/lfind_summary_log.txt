@@ -1,0 +1,23 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 29 
+Total Time: 122 
+Total Lemmas: 42 
+Filter Quickchick: 17 
+Filter duplicate: 2 
+Filter trivial: 17 
+Filter is_version: 5 
+Stuck Proof State: Lemma lfind_state  (y:lst):@eq lst y (append y Nil).
+Admitted.
+Yes Cat 1: true
+# Generalizations : 2
+#Synthesized Lemmas not disprovable : 1
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+conj3: forall  (y:lst) , (@eq lst y (append y Nil))
+conj2synthconj2 : forall  (lv0 : lst), (@eq lst lv0 (append Nil (append lv0 Nil)))
+Useful in Completing Stuck Goal (Category 2)
+
+Valid Lemmas (Category 3)
+
+

@@ -1,0 +1,18 @@
+COQDEP VFILES
+COQC goal40.v
+Lemma lfind_state  (n:natural) (x:lst) (IHx:@eq bool (lst_subset x x) true):@eq bool (lst_subset x (append (Cons n Nil) x)) true.
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal40_subset_refl_97_subset_append/goal40_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal40_subset_refl_97_subset_append goal40_lfind_orig goal40
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0

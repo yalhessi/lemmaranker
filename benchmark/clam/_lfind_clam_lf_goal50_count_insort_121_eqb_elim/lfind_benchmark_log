@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal50.v
+Lemma lfind_state  (x:natural) (n:natural) (l:lst) (IHl:@eq natural (count (insort l x) x) (Succ (count l x))) (E:Bool.Is_true (eqb x n)):@eq natural (count (Cons n (insort l x)) x) (Succ (Succ (count l x))).
+Admitted.

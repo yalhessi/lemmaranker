@@ -1,0 +1,5 @@
+Provable and Useful in Completing Stuck Goal
+
+Useful in Completing Stuck Goal
+Lemma conj5: forall  (l:lst) (x:natural)(lf1:natural) , (@eq natural (if eqb x x then Succ lf1 else count l x) (Succ lf1))
+Valid Lemmas

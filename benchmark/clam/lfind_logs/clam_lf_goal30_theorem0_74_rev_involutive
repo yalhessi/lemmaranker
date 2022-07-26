@@ -1,0 +1,28 @@
+Provable and Useful in Completing Stuck Goal
+
+Useful in Completing Stuck Goal
+Lemma conj1synthconj4 : forall  (lv0 : lst) (lv1 : lst), (@eq lst lv0 (rev (rev lv0)))
+
+Lemma conj1synthconj1 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (rev (rev lv1)) lv1)
+
+Lemma conj2eqsynthconj5 : forall  (lv0 : lst), (@eq lst (lv0) ((rev (rev lv0))))
+
+Lemma conj2synthconj5 : forall  (lv0 : lst), (@eq lst (rev (rev lv0)) lv0)
+Valid Lemmas
+Lemma conj2synthconj3 : forall  (lv0 : lst), (@eq lst (append lv0 Nil) lv0)
+
+Lemma conj2eqsynthconj3 : forall  (lv0 : lst), (@eq lst (lv0) ((append lv0 Nil)))
+
+Lemma conj1synthconj2 : forall  (lv0 : lst) (lv1 : lst), (@eq lst lv0 (append lv0 Nil))
+
+Lemma conj2synthconj1 : forall  (lv0 : lst), (@eq lst (append lv0 (rev Nil)) lv0)
+
+Lemma conj2eqsynthconj1 : forall  (lv0 : lst), (@eq lst (lv0) ((append lv0 (rev Nil))))
+
+Lemma conj2eqsynthconj5 : forall  (lv0 : lst), (@eq lst (rev lv0) ((rev (rev (rev lv0)))))
+
+Lemma conj2eqsynthconj3 : forall  (lv0 : lst), (@eq lst (rev lv0) ((rev (append lv0 Nil))))
+
+Lemma conj2eqsynthconj1 : forall  (lv0 : lst), (@eq lst (rev lv0) ((append (rev lv0) Nil)))
+
+Lemma conj2synthconj1 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (rev lv0) (rev (rev (rev lv0))))

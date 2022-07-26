@@ -1,0 +1,48 @@
+COQDEP VFILES
+COQC goal31.v
+Hypotheses contains forall, Quickchick might not work!
+There is a hypothesis that is neither Set or Prop
+Lemma lfind_state  (n:natural) (x:lst) (y:lst):@eq lst (append (qreva x Nil) (Cons n y))
+  (append (append (qreva x Nil) (Cons n Nil)) y).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal31_qreva_nil_50_append_assoc/goal31_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal31_qreva_nil_50_append_assoc goal31_lfind_orig goal31
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

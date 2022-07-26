@@ -1,0 +1,23 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 57 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (x:natural) (IHx:@eq natural (double x) (plus x x)):@eq natural (Succ (plus x x)) (plus x (Succ x)).
+Admitted.
+Yes Cat 1: false
+# Generalizations : 1
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj9: forall  (x:natural) , (@eq natural (Succ (plus x x)) (plus x (Succ x)))
+conj6_hyp: forall (lf1:natural) (x:natural), (@eq natural (double x) lf1) ->  (@eq natural (Succ lf1) (plus x (Succ x)))
+Valid Lemmas (Category 3)
+
+

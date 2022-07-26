@@ -1,0 +1,552 @@
+let synth (n:natural) (x:lst)  =
+  Succ (double (len x))
+;;
+let synth (n:natural) (x:lst)  =
+  Succ (len (append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (n, append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Zero, append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (n, x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Zero, x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (n, x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Zero, x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Succ (n), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Succ (Zero), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Succ (n), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Succ (Zero), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Succ (n), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Succ (Zero), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  Succ (double (len (append Nil x)))
+;;
+let synth (n:natural) (x:lst)  =
+  Succ (double (len (append x Nil)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (len x, append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Succ (Succ (n)), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (double n, append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (len Nil, append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (double Zero, append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Succ (Succ (Zero)), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (len x, x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Succ (Succ (n)), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (double n, x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (len Nil, x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (double Zero, x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Succ (Succ (Zero)), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (len x, x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Succ (Succ (n)), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (double n, x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (len Nil, x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (double Zero, x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Succ (Succ (Zero)), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Succ (len x), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Succ (Succ (Succ (n))), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Succ (double n), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (double (Succ (n)), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Succ (len Nil), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Succ (double Zero), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (double (Succ (Zero)), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Succ (Succ (Succ (Zero))), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Succ (len x), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Succ (Succ (Succ (n))), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Succ (double n), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (double (Succ (n)), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Succ (len Nil), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Succ (double Zero), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (double (Succ (Zero)), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Succ (Succ (Succ (Zero))), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Succ (len x), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Succ (Succ (Succ (n))), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Succ (double n), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (double (Succ (n)), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Succ (len Nil), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Succ (double Zero), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (double (Succ (Zero)), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Succ (Succ (Succ (Zero))), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  Succ (len (append Nil (append x x)))
+;;
+let synth (n:natural) (x:lst)  =
+  Succ (len (append x (append Nil x)))
+;;
+let synth (n:natural) (x:lst)  =
+  Succ (len (append x (append x Nil)))
+;;
+let synth (n:natural) (x:lst)  =
+  Succ (len (append (append Nil x) x))
+;;
+let synth (n:natural) (x:lst)  =
+  Succ (len (append (append x x) Nil))
+;;
+let synth (n:natural) (x:lst)  =
+  Succ (len (append (append x Nil) x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (n, append Nil (append x x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (n, append x (append Nil x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (n, append x (append x Nil)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (n, append (append Nil x) x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (n, append (append x x) Nil))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (n, append (append x Nil) x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Zero, append Nil (append x x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Zero, append x (append Nil x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Zero, append x (append x Nil)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Zero, append (append Nil x) x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Zero, append (append x x) Nil))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Zero, append (append x Nil) x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Succ (Succ (len x)), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (len (Cons (n, x)), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (len (Cons (Zero, x)), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (double (len x), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (n)))), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Succ (Succ (double n)), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Succ (double (Succ (n))), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (len (Cons (n, Nil)), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (double (Succ (Succ (n))), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (double (double n), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Succ (Succ (len Nil)), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (double (len Nil), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (len (Cons (Zero, Nil)), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Succ (Succ (double Zero)), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Succ (double (Succ (Zero))), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (double (double Zero), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (double (Succ (Succ (Zero))), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (Zero)))), append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append Nil (Cons (n, append x x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append Nil (Cons (Zero, append x x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append Nil (append x (Cons (n, x))))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append Nil (append x (Cons (Zero, x))))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append Nil (append (Cons (n, x)) x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append Nil (append (Cons (Zero, x)) x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (n, Nil)) (append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Zero, Nil)) (append x x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (n, append Nil x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (n, append x Nil)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Zero, append Nil x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Zero, append x Nil)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Succ (Succ (len x)), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (len (Cons (n, x)), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (len (Cons (Zero, x)), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (double (len x), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Succ (Succ (Succ (Succ (n)))), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Succ (Succ (double n)), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Succ (double (Succ (n))), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (len (Cons (n, Nil)), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (double (Succ (Succ (n))), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (double (double n), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Succ (Succ (len Nil)), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (double (len Nil), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (len (Cons (Zero, Nil)), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Succ (Succ (double Zero)), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Succ (double (Succ (Zero))), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (double (double Zero), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (double (Succ (Succ (Zero))), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (Cons (Succ (Succ (Succ (Succ (Zero)))), x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (append Nil (Cons (n, x))))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (append Nil (Cons (Zero, x))))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (append (Cons (n, Nil)) x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (append (Cons (Zero, Nil)) x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (append x (Cons (n, Nil))))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (append x (Cons (Zero, Nil))))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (append (Cons (n, x)) Nil))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append x (append (Cons (Zero, x)) Nil))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (n, x)) (append Nil x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (n, x)) (append x Nil))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Zero, x)) (append Nil x))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Zero, x)) (append x Nil))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (append Nil x) (Cons (n, x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (append Nil x) (Cons (Zero, x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (append x x) (Cons (n, Nil)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (append x x) (Cons (Zero, Nil)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (append x Nil) (Cons (n, x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (append x Nil) (Cons (Zero, x)))
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (n, append Nil x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (n, append x x)) Nil)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (n, append x Nil)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Zero, append Nil x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Zero, append x x)) Nil)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Zero, append x Nil)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Succ (Succ (len x)), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (len (Cons (n, x)), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (len (Cons (Zero, x)), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (double (len x), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Succ (Succ (Succ (Succ (n)))), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Succ (Succ (double n)), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Succ (double (Succ (n))), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (len (Cons (n, Nil)), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (double (Succ (Succ (n))), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (double (double n), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Succ (Succ (len Nil)), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (double (len Nil), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (len (Cons (Zero, Nil)), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Succ (Succ (double Zero)), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Succ (double (Succ (Zero))), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (double (double Zero), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (double (Succ (Succ (Zero))), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (Cons (Succ (Succ (Succ (Succ (Zero)))), x)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (append Nil (Cons (n, x))) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (append Nil (Cons (Zero, x))) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (append (Cons (n, Nil)) x) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (append (Cons (Zero, Nil)) x) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (append x (Cons (n, x))) Nil)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (append x (Cons (Zero, x))) Nil)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (append x (Cons (n, Nil))) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (append x (Cons (Zero, Nil))) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (append (Cons (n, x)) x) Nil)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (append (Cons (n, x)) Nil) x)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (append (Cons (Zero, x)) x) Nil)
+;;
+let synth (n:natural) (x:lst)  =
+  len (append (append (Cons (Zero, x)) Nil) x)
+;;
+let synth (n:natural) (x:lst)  =
+  Succ (double (len (append Nil (append Nil x))))
+;;
+let synth (n:natural) (x:lst)  =
+  Succ (double (len (append Nil (append x Nil))))
+;;
+let synth (n:natural) (x:lst)  =
+  Succ (double (len (append (append Nil Nil) x)))
+;;
+let synth (n:natural) (x:lst)  =
+  Succ (double (len (append x (append Nil Nil))))
+;;
+let synth (n:natural) (x:lst)  =
+  Succ (double (len (append (append Nil x) Nil)))
+;;
+let synth (n:natural) (x:lst)  =
+  Succ (double (len (append (append x Nil) Nil)))
+;;

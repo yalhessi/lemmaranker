@@ -1,0 +1,11 @@
+COQDEP VFILES
+COQC goal50.v
+Lemma lfind_state  (x:natural) (n:natural) (l:lst) (IHl:@eq natural (count (insort l x) x) (Succ (count l x))) (E:Bool.Is_true (eqb x n)):@eq natural (count (Cons n (insort l x)) x) (Succ (Succ (count l x))).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal50_count_insort_121_eqb_elim/goal50_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal50_count_insort_121_eqb_elim goal50_lfind_orig goal50
+lemmafinder_ml_generation_success
+Example file not found, generating
+1

@@ -1,0 +1,21 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 24 
+Total Lemmas: 22 
+Filter Quickchick: 14 
+Filter duplicate: 5 
+Filter trivial: 3 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (x:natural) (y:natural) (H:not (@eq natural x y)) (Heqb:@eq bool (eqb x y) true):@eq natural (Succ Zero) Zero.
+Admitted.
+Yes Cat 1: false
+# Generalizations : 3
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+Valid Lemmas (Category 3)
+
+

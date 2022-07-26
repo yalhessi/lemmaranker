@@ -1,0 +1,147 @@
+let synth (x:lst) (n:natural)  =
+  Cons (n, x)
+;;
+let synth (x:lst) (n:natural)  =
+  append Nil (Cons (n, x))
+;;
+let synth (x:lst) (n:natural)  =
+  append (Cons (n, x)) Nil
+;;
+let synth (x:lst) (n:natural)  =
+  append (Cons (n, Nil)) x
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append Nil x)
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append x Nil)
+;;
+let synth (x:lst) (n:natural)  =
+  append Nil (Cons (n, append Nil x))
+;;
+let synth (x:lst) (n:natural)  =
+  append Nil (Cons (n, append x Nil))
+;;
+let synth (x:lst) (n:natural)  =
+  append Nil (append Nil (Cons (n, x)))
+;;
+let synth (x:lst) (n:natural)  =
+  append Nil (append (Cons (n, x)) Nil)
+;;
+let synth (x:lst) (n:natural)  =
+  append Nil (append (Cons (n, Nil)) x)
+;;
+let synth (x:lst) (n:natural)  =
+  append (append Nil Nil) (Cons (n, x))
+;;
+let synth (x:lst) (n:natural)  =
+  append (Cons (n, x)) (append Nil Nil)
+;;
+let synth (x:lst) (n:natural)  =
+  append (Cons (n, Nil)) (append Nil x)
+;;
+let synth (x:lst) (n:natural)  =
+  append (Cons (n, Nil)) (append x Nil)
+;;
+let synth (x:lst) (n:natural)  =
+  append (Cons (n, append Nil x)) Nil
+;;
+let synth (x:lst) (n:natural)  =
+  append (Cons (n, append x Nil)) Nil
+;;
+let synth (x:lst) (n:natural)  =
+  append (Cons (n, append Nil Nil)) x
+;;
+let synth (x:lst) (n:natural)  =
+  append (append Nil (Cons (n, x))) Nil
+;;
+let synth (x:lst) (n:natural)  =
+  append (append Nil (Cons (n, Nil))) x
+;;
+let synth (x:lst) (n:natural)  =
+  append (append (Cons (n, x)) Nil) Nil
+;;
+let synth (x:lst) (n:natural)  =
+  append (append (Cons (n, Nil)) x) Nil
+;;
+let synth (x:lst) (n:natural)  =
+  append (append (Cons (n, Nil)) Nil) x
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append Nil (append Nil x))
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append Nil (append x Nil))
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append (append Nil Nil) x)
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append x (append Nil Nil))
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append (append Nil x) Nil)
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append (append x Nil) Nil)
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append Nil (append Nil (append Nil x)))
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append Nil (append Nil (append x Nil)))
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append Nil (append (append Nil Nil) x))
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append Nil (append x (append Nil Nil)))
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append Nil (append (append Nil x) Nil))
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append Nil (append (append x Nil) Nil))
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append (append Nil Nil) (append Nil x))
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append (append Nil Nil) (append x Nil))
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append (append Nil (append Nil Nil)) x)
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append (append (append Nil Nil) Nil) x)
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append x (append Nil (append Nil Nil)))
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append x (append (append Nil Nil) Nil))
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append (append Nil x) (append Nil Nil))
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append (append x Nil) (append Nil Nil))
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append (append Nil (append Nil x)) Nil)
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append (append Nil (append x Nil)) Nil)
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append (append (append Nil Nil) x) Nil)
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append (append x (append Nil Nil)) Nil)
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append (append (append Nil x) Nil) Nil)
+;;
+let synth (x:lst) (n:natural)  =
+  Cons (n, append (append (append x Nil) Nil) Nil)
+;;

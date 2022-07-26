@@ -1,0 +1,5 @@
+COQDEP VFILES
+COQC goal49.v
+Lemma lfind_state  (x:natural) (n:natural) (n0:natural) (l:lst) (H:Bool.Is_true (eqb x n)) (IHl:forall _ : @eq bool (orb (eqb x n) (mem x l)) true,
+or (@eq natural x n) (@eq bool (mem x l) true)):or (@eq natural x n) (@eq bool (orb (eqb x n0) (mem x l)) true).
+Admitted.

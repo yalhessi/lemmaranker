@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal64.v
+Lemma lfind_state  (z:lst) (x:natural) (y:natural):@eq bool (even (len z)) (negb (negb (even (len z)))).
+Admitted.

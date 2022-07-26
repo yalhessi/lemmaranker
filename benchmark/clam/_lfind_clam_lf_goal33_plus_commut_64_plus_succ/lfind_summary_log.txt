@@ -1,0 +1,31 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 100 
+Total Time: 268 
+Total Lemmas: 156 
+Filter Quickchick: 29 
+Filter duplicate: 25 
+Filter trivial: 57 
+Filter is_version: 37 
+Stuck Proof State: Lemma lfind_state  (x:natural) (y:natural) (IHx:@eq natural (plus x y) (plus y x)):@eq natural (Succ (plus x y)) (plus y (Succ x)).
+Admitted.
+Yes Cat 1: true
+# Generalizations : 9
+#Synthesized Lemmas not disprovable : 8
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+conj8eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus lv0 lv1)) (plus lv0 (Succ lv1)))
+conj6eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 (Succ lv1)) (Succ (plus lv0 lv1)))
+Useful in Completing Stuck Goal (Category 2)
+
+conj8eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus lv0 lv1)) (plus lv1 (Succ lv0)))
+conj9: forall  (x:natural) (y:natural) , (@eq natural (Succ (plus x y)) (plus y (Succ x)))
+conj6_hyp: forall (lf1:natural) (y:natural) (x:natural), (@eq natural lf1 (plus y x)) ->  (@eq natural (Succ lf1) (plus y (Succ x)))
+Valid Lemmas (Category 3)
+
+conj7synthconj2 : forall  (lv0 : natural), (@eq natural (plus Zero (plus lv0 Zero)) lv0)
+conj8synthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 (plus lv1 Zero)) (plus lv1 lv0))
+conj8synthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus Zero (plus lv0 lv1)) (plus lv1 lv0))
+conj8eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 lv1) (plus lv1 (plus lv0 Zero)))
+conj6eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 (Succ lv1)) (plus lv1 (Succ lv0)))
+

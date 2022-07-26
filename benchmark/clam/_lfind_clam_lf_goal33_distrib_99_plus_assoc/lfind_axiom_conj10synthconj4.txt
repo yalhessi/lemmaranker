@@ -1,0 +1,1 @@
+Lemma conj10synthconj4 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus lv0 (plus lv1 lv2)) (plus (plus lv2 lv1) lv0)).

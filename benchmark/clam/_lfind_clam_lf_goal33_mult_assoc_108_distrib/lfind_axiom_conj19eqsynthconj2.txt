@@ -1,0 +1,1 @@
+Lemma conj19eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv0 lv1) (plus Zero (mult lv1 lv0))).

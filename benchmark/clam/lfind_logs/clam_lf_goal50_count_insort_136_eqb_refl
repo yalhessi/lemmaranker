@@ -1,0 +1,6 @@
+Provable and Useful in Completing Stuck Goal
+Lemma conj4: forall  (x:natural)(lf1:natural) , (@eq natural (if eqb x x then Succ lf1 else lf1) (Succ lf1))
+
+Useful in Completing Stuck Goal
+
+Valid Lemmas

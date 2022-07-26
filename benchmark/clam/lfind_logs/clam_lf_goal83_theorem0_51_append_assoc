@@ -1,0 +1,67 @@
+Provable and Useful in Completing Stuck Goal
+Lemma conj9eqsynthconj6 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv0 lv1) lv2) ((append lv0 (append lv1 lv2))))
+
+Lemma conj7eqsynthconj6 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv0 lv2) lv1) ((append lv0 (append lv2 lv1))))
+
+Lemma conj14eqsynthconj6 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv1 (Cons lv0 Nil)) lv2) ((append lv1 (Cons lv0 lv2))))
+
+Lemma conj13synthconj2 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst) (lv3 : lst), (@eq lst (append (append lv1 (Cons lv0 Nil)) lv3) (append lv1 (Cons lv0 lv3)))
+
+Lemma conj9eqsynthconj2 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv0 lv1) lv2) ((append Nil (append lv0 (append lv1 lv2)))))
+
+Lemma conj7eqsynthconj2 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv0 lv2) lv1) ((append Nil (append lv0 (append lv2 lv1)))))
+
+Lemma conj11eqsynthconj1 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst) (lv3 : lst), (@eq lst (append (append lv1 (Cons lv0 lv3)) lv2) ((append lv1 (Cons lv0 (append lv3 lv2)))))
+
+Useful in Completing Stuck Goal
+Lemma conj9eqsynthconj6 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv0 lv1) lv2) ((append lv0 (append lv1 lv2))))
+
+Lemma conj7eqsynthconj6 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv0 lv2) lv1) ((append lv0 (append lv2 lv1))))
+
+Lemma conj14eqsynthconj6 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv1 (Cons lv0 Nil)) lv2) ((append lv1 (Cons lv0 lv2))))
+
+Lemma conj13synthconj2 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst) (lv3 : lst), (@eq lst (append (append lv1 (Cons lv0 Nil)) lv3) (append lv1 (Cons lv0 lv3)))
+
+Lemma conj9eqsynthconj4 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv0 lv1) lv2) ((rotate Zero (append lv0 (append lv1 lv2)))))
+
+Lemma conj9eqsynthconj2 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv0 lv1) lv2) ((append Nil (append lv0 (append lv1 lv2)))))
+
+Lemma conj7eqsynthconj4 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv0 lv2) lv1) ((rotate Zero (append lv0 (append lv2 lv1)))))
+
+Lemma conj7eqsynthconj2 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv0 lv2) lv1) ((append Nil (append lv0 (append lv2 lv1)))))
+
+Lemma conj12eqsynthconj1 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst) (lv3 : lst), (@eq lst (append (append lv1 (Cons lv0 lv2)) lv3) ((append lv1 (Cons lv0 (append lv2 lv3)))))
+
+Lemma conj14eqsynthconj5 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv1 (Cons lv0 Nil)) lv2) ((rotate Zero (append lv1 (Cons lv0 lv2)))))
+
+Lemma conj14eqsynthconj4 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv1 (Cons lv0 Nil)) lv2) ((append Nil (append lv1 (Cons lv0 lv2)))))
+
+Lemma conj14eqsynthconj3 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv1 (Cons lv0 Nil)) lv2) ((append lv1 (Cons lv0 (rotate Zero lv2)))))
+
+Lemma conj14eqsynthconj2 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv1 (Cons lv0 Nil)) lv2) ((append lv1 (Cons lv0 (append Nil lv2)))))
+
+Lemma conj11eqsynthconj1 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst) (lv3 : lst), (@eq lst (append (append lv1 (Cons lv0 lv3)) lv2) ((append lv1 (Cons lv0 (append lv3 lv2)))))
+Valid Lemmas
+Lemma conj13synthconj1 : forall  (lv0 : lst), (@eq lst (rotate (len lv0) lv0) lv0)
+
+Lemma conj13eqsynthconj1 : forall  (lv0 : lst), (@eq lst (lv0) ((rotate (len lv0) lv0)))
+
+Lemma conj14synthconj1 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv0 (append lv1 Nil)) (append lv0 lv1))
+
+Lemma conj14eqsynthconj1 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv0 lv1) ((append lv0 (append lv1 Nil))))
+
+Lemma conj14eqsynthconj3 : forall  (lv0 : natural), (@eq lst (Cons lv0 Nil) ((rotate lv0 (Cons lv0 Nil))))
+
+Lemma conj14eqsynthconj1 : forall  (lv0 : natural), (@eq lst (Cons lv0 Nil) ((Cons lv0 (rotate lv0 Nil))))
+
+Lemma conj12synthconj1 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst), (@eq lst (append lv1 (Cons lv0 (append lv2 Nil))) (append lv1 (Cons lv0 lv2)))
+
+Lemma conj12eqsynthconj1 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst), (@eq lst (append lv1 (Cons lv0 lv2)) ((append lv1 (Cons lv0 (append lv2 Nil)))))
+
+Lemma conj9synthconj1 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv0 lv1) lv2) (append lv0 (append lv1 (append lv2 Nil))))
+
+Lemma conj14eqsynthconj1 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv1 (Cons lv0 Nil)) lv2) ((append lv1 (Cons lv0 (append lv2 Nil)))))
+
+Lemma conj12synthconj3 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv1 (rotate lv0 (Cons lv0 Nil))) lv2) (append lv1 (Cons lv0 lv2)))
+
+Lemma conj12synthconj1 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst), (@eq lst (append (append lv1 (Cons lv0 (rotate lv0 Nil))) lv2) (append lv1 (Cons lv0 lv2)))

@@ -1,0 +1,8 @@
+Provable and Useful in Completing Stuck Goal
+
+Useful in Completing Stuck Goal
+
+Valid Lemmas
+Lemma conj28eqsynthconj3 : forall  (lv0 : natural), (@eq natural (Succ lv0) ((plus lv0 (Succ Zero))))
+
+Lemma conj28eqsynthconj2 : forall  (lv0 : natural), (@eq natural (Succ lv0) ((plus (Succ lv0) Zero)))

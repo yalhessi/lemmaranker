@@ -1,0 +1,1 @@
+Lemma conj15eqsynthconj2 : forall  (lv0 : lst), (@eq natural (len lv0) (len (append Nil (append lv0 Nil)))).

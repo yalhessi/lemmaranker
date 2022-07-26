@@ -1,0 +1,30 @@
+let synth (lf1:natural) (lf2:lst)  =
+  lf1
+;;
+let synth (lf1:natural) (lf2:lst)  =
+  len lf2
+;;
+let synth (lf1:natural) (lf2:lst)  =
+  len (append Nil lf2)
+;;
+let synth (lf1:natural) (lf2:lst)  =
+  len (append lf2 Nil)
+;;
+let synth (lf1:natural) (lf2:lst)  =
+  len (append Nil (append Nil lf2))
+;;
+let synth (lf1:natural) (lf2:lst)  =
+  len (append Nil (append lf2 Nil))
+;;
+let synth (lf1:natural) (lf2:lst)  =
+  len (append (append Nil Nil) lf2)
+;;
+let synth (lf1:natural) (lf2:lst)  =
+  len (append lf2 (append Nil Nil))
+;;
+let synth (lf1:natural) (lf2:lst)  =
+  len (append (append Nil lf2) Nil)
+;;
+let synth (lf1:natural) (lf2:lst)  =
+  len (append (append lf2 Nil) Nil)
+;;

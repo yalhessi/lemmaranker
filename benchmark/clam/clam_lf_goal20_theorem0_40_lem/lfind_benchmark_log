@@ -1,0 +1,23 @@
+COQDEP VFILES
+COQC goal20.v
+Lemma lfind_state  (n:natural) (x:lst) (IHx:@eq bool (even (len (append x x))) true):@eq bool (negb (even (len (append x (Cons n x))))) true.
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal20_theorem0_40_lem/goal20_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal20_theorem0_40_lem goal20_lfind_orig goal20
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

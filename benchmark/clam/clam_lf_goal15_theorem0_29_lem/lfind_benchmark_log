@@ -1,0 +1,24 @@
+COQDEP VFILES
+COQC goal15.v
+Lemma lfind_state  (x:natural) (IHx:@eq natural (plus x (Succ x)) (Succ (plus x x))):@eq natural (plus x (Succ (Succ x))) (Succ (plus x (Succ x))).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal15_theorem0_29_lem/goal15_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal15_theorem0_29_lem goal15_lfind_orig goal15
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

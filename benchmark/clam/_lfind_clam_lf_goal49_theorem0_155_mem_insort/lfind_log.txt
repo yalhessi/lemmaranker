@@ -1,0 +1,9 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj5_hyp: forall  (x:natural) (n:natural) (y:lst)(lf1:bool), (@eq bool (mem x (insort n (sort y))) lf1) -> (forall _ : @eq bool (mem x (sort y)) true, @eq bool (mem x y) lf1) ->  (@eq bool (orb (eqb x n) (mem x y)) lf1)
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+  
+

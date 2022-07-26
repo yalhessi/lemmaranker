@@ -1,0 +1,18 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj11: forall  (y:lst) , (@eq lst (qreva (rev y) Nil) (append y Nil))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj6: forall  (y:lst)(lf1:lst) , (@eq lst (qreva (rev y) lf1) (append y lf1))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

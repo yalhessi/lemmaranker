@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal2.v
+Lemma lfind_state  (y:lst):@eq natural (len y) (len (append y Nil)).
+Admitted.

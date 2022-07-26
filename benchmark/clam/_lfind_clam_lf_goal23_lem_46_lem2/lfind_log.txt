@@ -1,0 +1,9 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj16: forall  (l2:lst) (l1:lst) (n:natural) , (@eq natural (Succ (len (append l2 l1))) (len (append l2 (Cons n l1))))
+is_valid : true
+is_prover_provable (be proven by proverbot): true
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

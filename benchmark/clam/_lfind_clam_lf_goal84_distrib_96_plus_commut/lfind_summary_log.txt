@@ -1,0 +1,26 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 106 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (x:natural) (y:natural) (z:natural) (IHx:@eq natural (mult (plus x y) z) (plus (mult x z) (mult y z))):@eq natural (plus (mult x z) (plus (mult y z) z))
+  (plus (plus (mult x z) z) (mult y z)).
+Admitted.
+Yes Cat 1: false
+# Generalizations : 3
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj15: forall (lf1:natural)(lf2:natural) (z:natural) , (@eq natural (plus lf1 (plus lf2 z)) (plus (plus lf1 z) lf2))
+conj26: forall  (x:natural) (z:natural)(lf1:natural) , (@eq natural (plus (mult x z) (plus lf1 z)) (plus (plus (mult x z) z) lf1))
+conj18: forall (lf1:natural) (y:natural) (z:natural) , (@eq natural (plus lf1 (plus (mult y z) z)) (plus (plus lf1 z) (mult y z)))
+conj29: forall  (x:natural) (z:natural) (y:natural) , (@eq natural (plus (mult x z) (plus (mult y z) z)) (plus (plus (mult x z) z) (mult y z)))
+Valid Lemmas (Category 3)
+
+

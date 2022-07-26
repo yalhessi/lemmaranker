@@ -1,0 +1,228 @@
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus lf2 (mult y x)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus lf2 (mult x y)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult y x) lf2
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult x y) lf2
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus y (mult (Succ (y)) x)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus y (mult x (Succ (y)))
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus x (mult y (Succ (x)))
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus x (mult (Succ (x)) y)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult y (Succ (x))) x
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult (Succ (y)) x) y
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult x (Succ (y))) y
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult (Succ (x)) y) x
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus y (plus x (mult y x))
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus y (plus x (mult x y))
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus y (plus (mult y x) x)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus y (plus (mult x y) x)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus lf2 (mult y (plus Zero x))
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus lf2 (mult y (plus x Zero))
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus lf2 (plus Zero (mult y x))
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus lf2 (plus Zero (mult x y))
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus lf2 (mult (plus Zero y) x)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus lf2 (mult (plus y Zero) x)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus lf2 (mult x (plus Zero y))
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus lf2 (mult x (plus y Zero))
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus lf2 (mult (plus Zero x) y)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus lf2 (mult (plus x Zero) y)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus lf2 (plus (mult y x) Zero)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus lf2 (plus (mult x y) Zero)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus Zero (plus lf2 (mult y x))
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus Zero (plus lf2 (mult x y))
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus Zero (plus (mult y x) lf2)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus Zero (plus (mult x y) lf2)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus Zero lf2) (mult y x)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus Zero lf2) (mult x y)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus lf2 Zero) (mult y x)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus lf2 Zero) (mult x y)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus x (plus y (mult y x))
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus x (plus y (mult x y))
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus x (plus (mult y x) y)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus x (plus (mult x y) y)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult y x) (plus y x)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult y x) (plus x y)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult y x) (plus Zero lf2)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult y x) (plus lf2 Zero)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus y x) (mult y x)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus y x) (mult x y)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult x y) (plus y x)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult x y) (plus x y)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult x y) (plus Zero lf2)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult x y) (plus lf2 Zero)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus x y) (mult y x)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus x y) (mult x y)
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult y (plus Zero x)) lf2
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult y (plus x Zero)) lf2
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus y (mult y x)) x
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus y (mult x y)) x
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus lf2 (mult y x)) Zero
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus lf2 (mult x y)) Zero
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus Zero (mult y x)) lf2
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus Zero (mult x y)) lf2
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult (plus Zero y) x) lf2
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult (plus y Zero) x) lf2
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult x (plus Zero y)) lf2
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult x (plus y Zero)) lf2
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus x (mult y x)) y
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus x (mult x y)) y
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult (plus Zero x) y) lf2
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (mult (plus x Zero) y) lf2
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus (mult y x) x) y
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus (mult y x) y) x
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus (mult y x) lf2) Zero
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus (mult y x) Zero) lf2
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus (mult x y) x) y
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus (mult x y) y) x
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus (mult x y) lf2) Zero
+;;
+let synth (lf2:natural) (y:natural) (x:natural)  =
+  plus (plus (mult x y) Zero) lf2
+;;

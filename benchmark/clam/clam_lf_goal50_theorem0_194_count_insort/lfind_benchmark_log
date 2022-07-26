@@ -1,0 +1,23 @@
+COQDEP VFILES
+COQC goal50.v
+Lemma lfind_state  (n:natural) (y:lst) (IHy:@eq natural (count (sort y) n) (count y n)):@eq natural (count (insort (sort y) n) n) (Succ (count y n)).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal50_theorem0_194_count_insort/goal50_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal50_theorem0_194_count_insort goal50_lfind_orig goal50
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

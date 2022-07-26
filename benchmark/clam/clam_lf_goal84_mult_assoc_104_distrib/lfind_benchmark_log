@@ -1,0 +1,32 @@
+COQDEP VFILES
+COQC goal84.v
+Lemma lfind_state  (x:natural) (y:natural) (z:natural) (IHx:@eq natural (mult (mult x y) z) (mult x (mult y z))):@eq natural (mult (plus (mult x y) y) z)
+  (plus (mult x (mult y z)) (mult y z)).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal84_mult_assoc_104_distrib/goal84_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal84_mult_assoc_104_distrib goal84_lfind_orig goal84
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

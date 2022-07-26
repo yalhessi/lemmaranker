@@ -1,0 +1,24 @@
+COQDEP VFILES
+COQC goal9.v
+Lemma lfind_state  (x:natural) (y:natural) (n:natural) (z:lst) (IHz:@eq lst (drop x (drop y z)) (drop y (drop x z))):@eq lst (drop x (drop y (Cons n z))) (drop y (drop x (Cons n z))).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal9_drop_assoc_45_drop_Cons_assoc/goal9_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal9_drop_assoc_45_drop_Cons_assoc goal9_lfind_orig goal9
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

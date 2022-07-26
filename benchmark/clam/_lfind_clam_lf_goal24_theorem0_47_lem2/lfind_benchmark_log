@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal24.v
+Lemma lfind_state  (y:natural):@eq bool (even y) (even (plus y Zero)).
+Admitted.

@@ -1,0 +1,22 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 45 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (x:lst) (y:lst):@eq lst (append x y) (append x (rev (rev y))).
+Admitted.
+Yes Cat 1: false
+# Generalizations : 0
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj8: forall  (x:lst) (y:lst) , (@eq lst (append x y) (append x (rev (rev y))))
+Valid Lemmas (Category 3)
+
+

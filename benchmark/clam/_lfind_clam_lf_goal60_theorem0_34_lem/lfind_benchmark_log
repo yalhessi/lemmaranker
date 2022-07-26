@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal60.v
+Lemma lfind_state  (y:lst) (z:natural):@eq lst (rev (append y (Cons z Nil))) (Cons z (rev y)).
+Admitted.

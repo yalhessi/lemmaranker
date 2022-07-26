@@ -1,0 +1,6 @@
+let synth (lf1:natural)  =
+  lf1
+;;
+let synth (lf1:natural)  =
+  Zero
+;;

@@ -1,0 +1,58 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 1671 
+Total Lemmas: 54 
+Filter Quickchick: 4 
+Filter duplicate: 12 
+Filter trivial: 4 
+Filter is_version: 1 
+Stuck Proof State: Lemma lfind_state  (x:natural) (y:natural) (z:natural) (IHx:@eq natural (mult (mult x y) z) (mult x (mult y z))):@eq natural (mult (plus (mult x y) y) z)
+  (plus (mult x (mult y z)) (mult y z)).
+Admitted.
+Yes Cat 1: false
+# Generalizations : 21
+#Synthesized Lemmas not disprovable : 33
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj15synthconj1 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult (plus (mult lv0 lv1) lv1) lv2) (plus (mult lv0 (mult lv1 lv2)) (mult lv1 lv2)))
+conj20: forall  (x:natural) (y:natural) (z:natural) , (@eq natural (mult (plus (mult x y) y) z) (plus (mult x (mult y z)) (mult y z)))
+conj13_hyp: forall (lf2:natural) (y:natural) (z:natural)(lf1:natural), (@eq natural (mult lf2 z) lf1) ->  (@eq natural (mult (plus lf2 y) z) (plus lf1 (mult y z)))
+conj18_hyp: forall  (x:natural) (y:natural) (z:natural)(lf1:natural), (@eq natural (mult (mult x y) z) lf1) ->  (@eq natural (mult (plus (mult x y) y) z) (plus lf1 (mult y z)))
+Valid Lemmas (Category 3)
+
+conj19eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv0 lv1) (mult lv1 (plus lv0 Zero)))
+conj19eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv0 lv1) (plus Zero (mult lv1 lv0)))
+conj19eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 lv1) lv1) (mult lv1 (Succ lv0)))
+conj19eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 lv1) lv1) (plus lv1 (mult lv1 lv0)))
+conj19eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 lv1) lv1) (plus lv1 (mult lv0 lv1)))
+conj19eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 lv1) lv1) (plus (mult lv1 lv0) lv1))
+conj15eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult lv0 (mult lv1 lv2)) (mult lv1 (mult lv2 lv0)))
+conj15eqsynthconj5 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult lv0 (mult lv1 lv2)) (mult lv1 (mult lv0 lv2)))
+conj15eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult lv0 (mult lv1 lv2)) (mult lv2 (mult lv1 lv0)))
+conj15eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult lv0 (mult lv1 lv2)) (mult lv2 (mult lv0 lv1)))
+conj15eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult lv0 (mult lv1 lv2)) (mult (mult lv2 lv1) lv0))
+conj15eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult lv0 (mult lv1 lv2)) (mult (mult lv1 lv2) lv0))
+conj19synthconj6 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult (plus (mult lv0 lv1) lv1) lv2) (mult lv1 (mult lv2 (Succ lv0))))
+conj19synthconj5 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult (plus (mult lv0 lv1) lv1) lv2) (mult lv1 (mult (Succ lv0) lv2)))
+conj19synthconj4 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult (plus (mult lv0 lv1) lv1) lv2) (mult lv2 (mult lv1 (Succ lv0))))
+conj19synthconj3 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult (plus (mult lv0 lv1) lv1) lv2) (mult lv2 (mult (Succ lv0) lv1)))
+conj19synthconj2 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult (plus (mult lv0 lv1) lv1) lv2) (mult (mult lv2 lv1) (Succ lv0)))
+conj19synthconj1 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult (plus (mult lv0 lv1) lv1) lv2) (mult (mult lv1 lv2) (Succ lv0)))
+conj15eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (mult lv0 (mult lv1 lv2)) (mult lv1 lv2)) (mult lv1 (mult lv2 (Succ lv0))))
+conj15eqsynthconj5 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (mult lv0 (mult lv1 lv2)) (mult lv1 lv2)) (mult lv1 (mult (Succ lv0) lv2)))
+conj15eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (mult lv0 (mult lv1 lv2)) (mult lv1 lv2)) (mult lv2 (mult lv1 (Succ lv0))))
+conj15eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (mult lv0 (mult lv1 lv2)) (mult lv1 lv2)) (mult lv2 (mult (Succ lv0) lv1)))
+conj15eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (mult lv0 (mult lv1 lv2)) (mult lv1 lv2)) (mult (mult lv2 lv1) (Succ lv0)))
+conj15eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (mult lv0 (mult lv1 lv2)) (mult lv1 lv2)) (mult (mult lv1 lv2) (Succ lv0)))
+conj15synthconj6 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult lv0 (mult lv1 (Succ lv2))) (plus (mult lv2 (mult lv0 lv1)) (mult lv0 lv1)))
+conj15synthconj5 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult lv0 (mult (Succ lv1) lv2)) (plus (mult lv1 (mult lv0 lv2)) (mult lv0 lv2)))
+conj15synthconj2 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult (mult lv0 lv1) (Succ lv2)) (plus (mult lv2 (mult lv1 lv0)) (mult lv1 lv0)))
+conj15synthconj1 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult (mult lv0 lv1) (Succ lv2)) (plus (mult lv2 (mult lv0 lv1)) (mult lv0 lv1)))
+conj15synthconj6 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult (mult lv0 (Succ lv1)) lv2) (plus (mult lv1 (mult lv0 lv2)) (mult lv0 lv2)))
+conj15synthconj4 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult (plus lv0 (mult lv0 lv1)) lv2) (plus (mult lv1 (mult lv0 lv2)) (mult lv0 lv2)))
+conj15synthconj3 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult (plus lv0 (mult lv1 lv0)) lv2) (plus (mult lv1 (mult lv0 lv2)) (mult lv0 lv2)))
+conj15synthconj2 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult (plus (mult lv0 lv1) lv0) lv2) (plus (mult lv1 (mult lv0 lv2)) (mult lv0 lv2)))
+

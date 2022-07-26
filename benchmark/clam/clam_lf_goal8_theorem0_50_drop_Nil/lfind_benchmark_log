@@ -1,0 +1,25 @@
+COQDEP VFILES
+COQC goal8.v
+Lemma lfind_state  (x:natural) (y:natural):@eq lst (drop x (drop y Nil)) (drop y (drop x Nil)).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal8_theorem0_50_drop_Nil/goal8_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal8_theorem0_50_drop_Nil goal8_lfind_orig goal8
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

@@ -1,0 +1,18 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj14: forall  (x:lst) (n:natural) , (@eq lst (qreva (qreva x (Cons n Nil)) Nil) (Cons n x))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj8_hyp: forall  (x:lst) (n:natural)(lf1:lst), (@eq lst (qreva (qreva x lf1) lf1) x) ->  (@eq lst (qreva (qreva x (Cons n lf1)) lf1) (Cons n x))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

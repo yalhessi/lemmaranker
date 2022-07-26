@@ -1,0 +1,27 @@
+COQDEP VFILES
+COQC goal49.v
+Lemma lfind_state  (x:natural) (n:natural) (n0:natural) (l:lst) (H:@eq bool (mem x (Cons n0 (insort n l))) true) (IHl:forall _ : @eq bool (mem x (insort n l)) true,
+or (@eq natural x n) (@eq bool (mem x l) true)):or (@eq natural x n) (@eq bool (mem x (Cons n0 l)) true).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal49_mem_insort_117_mem_cons/goal49_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal49_mem_insort_117_mem_cons goal49_lfind_orig goal49
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

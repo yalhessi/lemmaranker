@@ -1,0 +1,103 @@
+Provable and Useful in Completing Stuck Goal
+Lemma conj13eqsynthconj6 : forall  (lv0 : natural), (@eq lst (drop lv0 Nil) ((Nil)))
+
+Lemma conj12synthconj4 : forall  (lv0 : lst), (@eq lst (drop Zero lv0) lv0)
+
+Lemma conj12eqsynthconj4 : forall  (lv0 : lst), (@eq lst (lv0) ((drop Zero lv0)))
+
+Lemma conj1synthconj3 : forall  (lv0 : lst) (lv1 : lst), (@eq lst lv0 (drop Zero lv0))
+
+Lemma conj1synthconj2 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (drop Zero lv1) lv1)
+
+Lemma conj13eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv0 (drop lv1 Nil)) ((Nil)))
+
+Lemma conj13eqsynthconj4 : forall  (lv0 : natural), (@eq lst (drop lv0 Nil) ((drop Zero Nil)))
+
+Lemma conj11eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv1 (drop lv0 Nil)) ((Nil)))
+
+Lemma conj10synthconj5 : forall  (lv0 : natural) (lv1 : lst) (lv2 : natural), (@eq lst (Nil) (drop lv2 (drop lv0 Nil)))
+
+Lemma conj13eqsynthconj3 : forall  (lv0 : natural), (@eq lst (drop lv0 Nil) ((drop (Succ lv0) Nil)))
+
+Lemma conj13eqsynthconj2 : forall  (lv0 : natural), (@eq lst (drop lv0 Nil) ((drop (Succ Zero) Nil)))
+
+Lemma conj13eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv0 (drop lv1 Nil)) ((drop Zero Nil)))
+
+Lemma conj13eqsynthconj1 : forall  (lv0 : natural), (@eq lst (drop lv0 Nil) ((drop (Succ (Succ lv0)) Nil)))
+
+Lemma conj11eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv1 (drop lv0 Nil)) ((drop Zero Nil)))
+
+Lemma conj13eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv0 (drop lv1 Nil)) ((drop (Succ lv0) Nil)))
+
+Lemma conj13eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv0 (drop lv1 Nil)) ((drop (Succ lv1) Nil)))
+
+Lemma conj11eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv1 (drop lv0 Nil)) ((drop (Succ lv1) Nil)))
+
+Lemma conj11eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv1 (drop lv0 Nil)) ((drop (Succ lv0) Nil)))
+
+Useful in Completing Stuck Goal
+Lemma conj13eqsynthconj6 : forall  (lv0 : natural), (@eq lst (drop lv0 Nil) ((Nil)))
+
+Lemma conj12synthconj4 : forall  (lv0 : lst), (@eq lst (drop Zero lv0) lv0)
+
+Lemma conj12eqsynthconj4 : forall  (lv0 : lst), (@eq lst (lv0) ((drop Zero lv0)))
+
+Lemma conj1synthconj3 : forall  (lv0 : lst) (lv1 : lst), (@eq lst lv0 (drop Zero lv0))
+
+Lemma conj1synthconj2 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (drop Zero lv1) lv1)
+
+Lemma conj13eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv0 (drop lv1 Nil)) ((Nil)))
+
+Lemma conj13eqsynthconj4 : forall  (lv0 : natural), (@eq lst (drop lv0 Nil) ((drop Zero Nil)))
+
+Lemma conj11eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv1 (drop lv0 Nil)) ((Nil)))
+
+Lemma conj10synthconj5 : forall  (lv0 : natural) (lv1 : lst) (lv2 : natural), (@eq lst (Nil) (drop lv2 (drop lv0 Nil)))
+
+Lemma conj13eqsynthconj3 : forall  (lv0 : natural), (@eq lst (drop lv0 Nil) ((drop (Succ lv0) Nil)))
+
+Lemma conj13eqsynthconj2 : forall  (lv0 : natural), (@eq lst (drop lv0 Nil) ((drop (Succ Zero) Nil)))
+
+Lemma conj13eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv0 (drop lv1 Nil)) ((drop Zero Nil)))
+
+Lemma conj13eqsynthconj1 : forall  (lv0 : natural), (@eq lst (drop lv0 Nil) ((drop (Succ (Succ lv0)) Nil)))
+
+Lemma conj11eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv1 (drop lv0 Nil)) ((drop Zero Nil)))
+
+Lemma conj13eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv0 (drop lv1 Nil)) ((drop (Succ lv0) Nil)))
+
+Lemma conj13eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv0 (drop lv1 Nil)) ((drop (Succ lv1) Nil)))
+
+Lemma conj11eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv1 (drop lv0 Nil)) ((drop (Succ lv1) Nil)))
+
+Lemma conj11eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv1 (drop lv0 Nil)) ((drop (Succ lv0) Nil)))
+
+Lemma conj9: forall  (x1:natural) (x2:natural)(lf1:lst) , (@eq lst (drop x2 (drop x1 lf1)) (drop x1 (drop x2 lf1)))
+Valid Lemmas
+Lemma conj12synthconj5 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq lst (drop lv0 (drop lv1 Nil)) (Nil))
+
+Lemma conj11synthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (Nil) (drop lv1 (drop lv0 Nil)))
+
+Lemma conj13eqsynthconj5 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv0 (drop lv1 Nil)) ((drop lv0 Nil)))
+
+Lemma conj13eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv0 (drop lv1 Nil)) ((drop lv1 Nil)))
+
+Lemma conj12synthconj3 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq lst (drop lv0 (drop lv1 Nil)) (drop lv0 Nil))
+
+Lemma conj12synthconj1 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq lst (drop lv0 (drop lv1 Nil)) (drop lv1 Nil))
+
+Lemma conj11eqsynthconj5 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv1 (drop lv0 Nil)) ((drop lv1 Nil)))
+
+Lemma conj11eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv1 (drop lv0 Nil)) ((drop lv0 Nil)))
+
+Lemma conj11synthconj5 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv1 Nil) (drop lv1 (drop lv0 Nil)))
+
+Lemma conj11synthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop lv0 Nil) (drop lv1 (drop lv0 Nil)))
+
+Lemma conj11synthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop Zero Nil) (drop lv1 (drop lv0 Nil)))
+
+Lemma conj10synthconj1 : forall  (lv0 : natural) (lv1 : lst) (lv2 : natural), (@eq lst (drop lv2 Nil) (drop lv2 (drop lv0 Nil)))
+
+Lemma conj11synthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop (Succ lv1) Nil) (drop lv1 (drop lv0 Nil)))
+
+Lemma conj11synthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq lst (drop (Succ lv0) Nil) (drop lv1 (drop lv0 Nil)))

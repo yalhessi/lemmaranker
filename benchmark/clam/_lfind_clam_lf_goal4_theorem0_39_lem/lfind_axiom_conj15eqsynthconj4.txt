@@ -1,0 +1,1 @@
+Lemma conj15eqsynthconj4 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (Cons lv0 lv1) (append (Cons lv0 lv1) Nil)).

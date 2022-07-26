@@ -1,0 +1,36 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj10: forall  (x:natural) (y:natural) , (@eq natural (mult (qexp x y (Succ Zero)) x) (qexp x y x))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj4_hyp: forall (lf1:natural) (x:natural) (y:natural), (@eq natural (exp x y) lf1) ->  (@eq natural (mult lf1 x) (qexp x y x))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj6_hyp: forall  (x:natural) (y:natural)(lf1:natural), (@eq natural (exp x y) (qexp x y lf1)) ->  (@eq natural (mult (qexp x y lf1) x) (qexp x y x))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj8_hyp: forall  (x:natural) (y:natural)(lf1:natural), (@eq natural (exp x y) (qexp x y (Succ lf1))) ->  (@eq natural (mult (qexp x y (Succ lf1)) x) (qexp x y x))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

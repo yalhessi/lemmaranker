@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal28.v
+Lemma lfind_state  (x:tree):@eq lst (revflat x) (qrevaflat x Nil).
+Admitted.

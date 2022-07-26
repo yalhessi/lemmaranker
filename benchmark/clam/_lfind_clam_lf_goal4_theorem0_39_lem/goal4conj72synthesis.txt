@@ -1,0 +1,1504 @@
+let synth (lf2:lst)  =
+  Succ (len lf2)
+;;
+let synth (lf2:lst)  =
+  len (Cons (Zero, lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Zero), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len lf2, lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len Nil, lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double Zero, lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Zero)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len lf2), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len Nil), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double Zero), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Zero)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Zero))), lf2))
+;;
+let synth (lf2:lst)  =
+  Succ (len (append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  Succ (len (append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Zero, append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Zero, append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len lf2), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len Nil), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double Zero)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (Zero))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double Zero), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (Zero))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (Zero)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (Zero, lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Zero, Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (Zero, Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Zero, lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Zero), append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Zero), append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (len lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (Zero, lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (len lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (Zero), lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (len lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (len Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (len Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (Zero, Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (len Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (Zero), Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (double Zero))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (Succ (Zero)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (double Zero)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (Succ (Zero)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (double Zero)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (Succ (Zero))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (Succ (Zero)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (Succ (Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (Succ (Zero), lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (Zero), Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (Succ (Zero), Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (Zero), lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (Cons (len lf2, append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len lf2, append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len Nil, append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len Nil, append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double Zero, append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double Zero, append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Zero)), append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Zero)), append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (len lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len (Cons (Zero, lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (len lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (Succ (Zero), lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (len lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, Cons (Zero, lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (len lf2, lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (len lf2, Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (len Nil, lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (double Zero, lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (Succ (Zero)), lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (append Nil lf2), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (append lf2 lf2), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (append lf2 Nil), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (len lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len (Cons (Zero, lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (len lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (len Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (len Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len (Cons (Zero, Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (len Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (Succ (Zero), Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (len Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (len Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len (Cons (Zero, Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (len Nil, Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (append Nil Nil), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (double Zero, Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, Cons (Zero, Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (Succ (Zero)), Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (double Zero)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (double (Succ (Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (double Zero))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (Succ (Succ (Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (double Zero))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (double (Succ (Zero)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (Succ (Succ (Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (double Zero))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (double (Succ (Zero)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (double Zero)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (Succ (Succ (Zero)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (Succ (Succ (Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (Succ (Succ (Zero)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (len lf2, lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (len Nil, lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (double Zero, lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (Succ (Succ (Zero)), lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (len Nil, Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (double Zero, Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (Succ (Zero)), Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (len lf2, Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (len Nil, Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (double Zero, Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (Succ (Succ (Zero)), Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (len lf2, lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (len lf2, Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (len Nil, lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (double Zero, lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (Succ (Zero)), lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len lf2), append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len lf2), append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len Nil), append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len Nil), append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double Zero), append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double Zero), append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Zero)), append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Zero)), append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Zero))), append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Zero))), append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (Succ (len lf2))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (len (Cons (Zero, lf2))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (double (len lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len (Cons (Succ (Zero), lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (Succ (len lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (Zero, Cons (Zero, lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (len lf2, lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (len lf2, Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (len Nil, lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (double Zero, lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (Succ (Succ (Zero)), lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (append Nil lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (append lf2 lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (append lf2 Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (Succ (len lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (len (Cons (Zero, lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (double (len lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, Cons (Succ (Zero), lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (Zero), Cons (Zero, lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (len lf2), lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (len lf2), Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (len Nil), lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (double Zero), lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (double (Succ (Zero)), lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (Succ (Succ (Zero))), lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (Succ (len lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (len (Cons (Zero, lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (double (len lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len (Cons (Succ (Zero), lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (Succ (len lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (Succ (len Nil))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (double (len Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (len (Cons (Zero, Nil))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (Succ (len Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len (Cons (Succ (Zero), Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (Succ (len Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (double (len Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (len (Cons (Zero, Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (len Nil, Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (append Nil Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (double Zero, Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (Zero, Cons (Zero, Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (Succ (Succ (Zero)), Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (Succ (len Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (double (len Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (len (Cons (Zero, Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (Succ (len Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len (Cons (Succ (Zero), Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (len Nil), Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (double Zero), Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (double (Succ (Zero)), Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, Cons (Succ (Zero), Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (Zero), Cons (Zero, Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (Succ (Succ (Zero))), Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (Succ (double Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (double (Succ (Zero)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (double (double Zero)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (double (Succ (Succ (Zero)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (Succ (double Zero)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (double (Succ (Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (Succ (Succ (Succ (Zero)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (Succ (double Zero)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (double (Succ (Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (double (double Zero))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (double (Succ (Succ (Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (Succ (Succ (Succ (Zero)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (Succ (double Zero)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (double (Succ (Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (double (double Zero))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (double (Succ (Succ (Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (Succ (double Zero))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (double (Succ (Zero)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (Succ (Succ (Succ (Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (Succ (Succ (Succ (Zero)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (Succ (Succ (Succ (Zero))))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (Succ (len lf2), lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (Succ (len Nil), lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (Succ (double Zero), lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (double (Succ (Zero)), lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (Succ (Succ (Succ (Zero))), lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (len Nil), Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (double Zero), Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (double (Succ (Zero)), Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (Succ (Succ (Zero))), Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (Succ (len lf2), Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (Succ (len Nil), Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (Succ (double Zero), Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (double (Succ (Zero)), Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (Succ (Succ (Succ (Zero))), Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (len lf2), lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (len lf2), Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (len Nil), lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (double Zero), lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (double (Succ (Zero)), lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (Succ (Succ (Zero))), lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  Succ (len (append Nil (append Nil lf2)))
+;;
+let synth (lf2:lst)  =
+  Succ (len (append Nil (append lf2 Nil)))
+;;
+let synth (lf2:lst)  =
+  Succ (len (append (append Nil Nil) lf2))
+;;
+let synth (lf2:lst)  =
+  Succ (len (append lf2 (append Nil Nil)))
+;;
+let synth (lf2:lst)  =
+  Succ (len (append (append Nil lf2) Nil))
+;;
+let synth (lf2:lst)  =
+  Succ (len (append (append lf2 Nil) Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Zero, append Nil (append Nil lf2)))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Zero, append Nil (append lf2 Nil)))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Zero, append (append Nil Nil) lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Zero, append lf2 (append Nil Nil)))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Zero, append (append Nil lf2) Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Zero, append (append lf2 Nil) Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len lf2)), append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len lf2)), append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, lf2)), append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, lf2)), append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len lf2), append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len lf2), append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len Nil)), append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len Nil)), append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len Nil), append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len Nil), append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, Nil)), append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, Nil)), append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double Zero)), append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double Zero)), append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (Zero))), append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (Zero))), append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double Zero), append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double Zero), append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (Zero))), append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (Zero))), append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (Zero)))), append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (Zero)))), append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (Succ (Succ (len lf2)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (len (Cons (Zero, lf2)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (double (len lf2))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (len (Cons (Succ (Zero), lf2))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (double (Succ (len lf2))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len (Cons (Zero, Cons (Zero, lf2))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len (Cons (len lf2, lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len (Cons (len lf2, Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len (Cons (len Nil, lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len (Cons (double Zero, lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len (Cons (Succ (Succ (Zero)), lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len (append Nil lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len (append lf2 lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len (append lf2 Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (Succ (Succ (len lf2))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (len (Cons (Zero, lf2))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (double (len lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (Zero, Cons (Succ (Zero), lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (Succ (Zero), Cons (Zero, lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (Succ (len lf2), lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (Succ (len lf2), Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (Succ (len Nil), lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (Succ (double Zero), lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (double (Succ (Zero)), lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (Succ (Succ (Succ (Zero))), lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (Succ (Succ (len lf2))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (len (Cons (Zero, lf2))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (double (len lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (len (Cons (Succ (Zero), lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (double (Succ (len lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, Cons (Zero, Cons (Zero, lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, Cons (len lf2, lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, Cons (len lf2, Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, Cons (len Nil, lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, Cons (double Zero, lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, Cons (Succ (Succ (Zero)), lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, append Nil lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, append lf2 lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, append lf2 Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (Zero), Cons (Succ (Zero), lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (len lf2, Cons (Zero, lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (len lf2, Cons (Zero, Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (len Nil, Cons (Zero, lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (double Zero, Cons (Zero, lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (Succ (Zero)), Cons (Zero, lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (Succ (len lf2)), lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (Succ (len lf2)), Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (len (Cons (Zero, lf2)), lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (len (Cons (Zero, lf2)), Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (double (len lf2), lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (double (len lf2), Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (Succ (len Nil)), lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (double (len Nil), lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (len (Cons (Zero, Nil)), lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (Succ (double Zero)), lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (double (Succ (Zero))), lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (double (double Zero), lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (double (Succ (Succ (Zero))), lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (Succ (Succ (Succ (Zero)))), lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (append Nil (Cons (Zero, lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (append (Cons (Zero, Nil)) lf2), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (append lf2 (Cons (Zero, lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (append lf2 (Cons (Zero, Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (append (Cons (Zero, lf2)) lf2), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (append (Cons (Zero, lf2)) Nil), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (Succ (Succ (len lf2))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (len (Cons (Zero, lf2))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (double (len lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (len (Cons (Succ (Zero), lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (double (Succ (len lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len (Cons (Zero, Cons (Zero, lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len (Cons (len lf2, lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len (Cons (len lf2, Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len (Cons (len Nil, lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len (Cons (double Zero, lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len (Cons (Succ (Succ (Zero)), lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len (append Nil lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len (append lf2 lf2)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len (append lf2 Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (Succ (Succ (len lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (len (Cons (Zero, lf2)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (double (len lf2))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (Succ (Succ (len Nil)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (double (len Nil))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (len (Cons (Zero, Nil)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (double (Succ (len Nil))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (len (Cons (Succ (Zero), Nil))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (Succ (Succ (len Nil))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (double (len Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (len (Cons (Zero, Nil))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len (Cons (len Nil, Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len (append Nil Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len (Cons (double Zero, Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len (Cons (Zero, Cons (Zero, Nil))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (len (Cons (Succ (Succ (Zero)), Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (Succ (Succ (len Nil))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (double (len Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (len (Cons (Zero, Nil))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (double (Succ (len Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (len (Cons (Succ (Zero), Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (Succ (len Nil), Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (Succ (double Zero), Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (double (Succ (Zero)), Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (Zero, Cons (Succ (Zero), Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (Succ (Zero), Cons (Zero, Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (len (Cons (Succ (Succ (Succ (Zero))), Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (Succ (Succ (len Nil))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (double (len Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (len (Cons (Zero, Nil))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (double (Succ (len Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (len (Cons (Succ (Zero), Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (Succ (Succ (len Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (double (len Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (len (Cons (Zero, Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len (Cons (len Nil, Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len (append Nil Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len (Cons (double Zero, Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len (Cons (Zero, Cons (Zero, Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (len (Cons (Succ (Succ (Zero)), Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, Cons (len Nil, Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (len Nil, Cons (Zero, Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (Succ (len Nil)), Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (double (len Nil), Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (len (Cons (Zero, Nil)), Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, append Nil Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (append Nil (Cons (Zero, Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (append (Cons (Zero, Nil)) Nil), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, Cons (double Zero, Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (double Zero, Cons (Zero, Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (Succ (double Zero)), Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (double (Succ (Zero))), Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (double (double Zero), Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (double (Succ (Succ (Zero))), Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, Cons (Zero, Cons (Zero, Nil)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Zero, Cons (Succ (Succ (Zero)), Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (Zero), Cons (Succ (Zero), Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (Succ (Zero)), Cons (Zero, Nil))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (len (Cons (Succ (Succ (Succ (Succ (Zero)))), Nil)), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (Succ (Succ (double Zero)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (Succ (double (Succ (Zero))))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (double (double Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (Succ (double (Succ (Succ (Zero))))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (double (Succ (double Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (double (double (Succ (Zero)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (Succ (double (Succ (Succ (Succ (Zero))))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (Succ (Succ (double Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (Succ (double (Succ (Zero)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (double (double Zero)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (double (Succ (Succ (Zero)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (Succ (double (Succ (Succ (Succ (Succ (Zero))))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (Succ (Succ (double Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (Succ (double (Succ (Zero)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (double (double Zero)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (double (Succ (Succ (Zero)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (double (Succ (double Zero)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (double (double (Succ (Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (double (Succ (Succ (Succ (Zero)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (Succ (double (Succ (Succ (Succ (Succ (Succ (Zero))))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (Succ (Succ (double Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (Succ (double (Succ (Zero)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (double (double Zero)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (double (Succ (Succ (Zero)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (double (Succ (double Zero)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (double (double (Succ (Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (double (Succ (Succ (Succ (Zero)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (Succ (Succ (double Zero)))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (Succ (double (Succ (Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (double (double Zero))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (double (Succ (Succ (Zero))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (double (Succ (Succ (Succ (Succ (Zero)))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (Cons (double (Succ (Succ (Succ (Succ (Succ (Succ (Zero))))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len
+    (Cons (Succ (Succ (Succ (Succ (Succ (Succ (Succ (Succ (Zero)))))))), lf2))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (Zero, append Nil lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (Zero, append lf2 Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (Succ (Succ (len lf2)), lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (len (Cons (Zero, lf2)), lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (double (len lf2), lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (Succ (Succ (len Nil)), lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (double (len Nil), lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (len (Cons (Zero, Nil)), lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (Succ (Succ (double Zero)), lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (Succ (double (Succ (Zero))), lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (double (double Zero), lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (double (Succ (Succ (Zero))), lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (Cons (Succ (Succ (Succ (Succ (Zero)))), lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (append Nil (Cons (Zero, lf2))))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (append (Cons (Zero, Nil)) lf2))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (append lf2 (Cons (Zero, Nil))))
+;;
+let synth (lf2:lst)  =
+  len (append Nil (append (Cons (Zero, lf2)) Nil))
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Zero, Nil)) (append Nil lf2))
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Zero, Nil)) (append lf2 Nil))
+;;
+let synth (lf2:lst)  =
+  len (append (append Nil Nil) (Cons (Zero, lf2)))
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (Succ (len Nil)), Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (double (len Nil), Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (len (Cons (Zero, Nil)), Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Zero, append Nil Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append (append Nil (Cons (Zero, Nil))) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append (append (Cons (Zero, Nil)) Nil) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (Succ (double Zero)), Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (double (Succ (Zero))), Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (double (double Zero), Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (double (Succ (Succ (Zero))), Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (Succ (Succ (Succ (Zero)))), Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (Succ (Succ (len lf2)), Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (len (Cons (Zero, lf2)), Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (double (len lf2), Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (Succ (Succ (len Nil)), Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (double (len Nil), Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (len (Cons (Zero, Nil)), Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (Zero, append Nil Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (append Nil (Cons (Zero, Nil))))
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (append (Cons (Zero, Nil)) Nil))
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (Succ (Succ (double Zero)), Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (Succ (double (Succ (Zero))), Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (double (double Zero), Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (double (Succ (Succ (Zero))), Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append lf2 (Cons (Succ (Succ (Succ (Succ (Zero)))), Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Zero, lf2)) (append Nil Nil))
+;;
+let synth (lf2:lst)  =
+  len (append (append Nil lf2) (Cons (Zero, Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append (append lf2 Nil) (Cons (Zero, Nil)))
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Zero, append Nil lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Zero, append lf2 Nil)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (Succ (len lf2)), lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (Succ (len lf2)), Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (len (Cons (Zero, lf2)), lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (len (Cons (Zero, lf2)), Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (double (len lf2), lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (double (len lf2), Nil)) lf2)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (Succ (len Nil)), lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (double (len Nil), lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (len (Cons (Zero, Nil)), lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (Succ (double Zero)), lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (double (Succ (Zero))), lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (double (double Zero), lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (double (Succ (Succ (Zero))), lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (Cons (Succ (Succ (Succ (Succ (Zero)))), lf2)) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (append Nil (Cons (Zero, lf2))) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (append (Cons (Zero, Nil)) lf2) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (append lf2 (Cons (Zero, Nil))) Nil)
+;;
+let synth (lf2:lst)  =
+  len (append (append (Cons (Zero, lf2)) Nil) Nil)
+;;

@@ -1,0 +1,1 @@
+Lemma conj20synthconj3_hyp: forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus lv0 lv1) (mult lv1 (Succ lv2))) ->  (@eq natural (Succ (plus lv0 (plus lv1 lv2))) (plus (mult lv1 (plus lv2 (Succ Zero))) (plus lv2 (Succ Zero)))).

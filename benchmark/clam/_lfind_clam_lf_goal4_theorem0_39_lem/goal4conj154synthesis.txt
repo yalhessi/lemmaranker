@@ -1,0 +1,33 @@
+let synth (n:natural) (x:lst)  =
+  append x (Cons (n, x))
+;;
+let synth (n:natural) (x:lst)  =
+  append Nil (append x (Cons (n, x)))
+;;
+let synth (n:natural) (x:lst)  =
+  append x (Cons (n, append Nil x))
+;;
+let synth (n:natural) (x:lst)  =
+  append x (Cons (n, append x Nil))
+;;
+let synth (n:natural) (x:lst)  =
+  append x (append Nil (Cons (n, x)))
+;;
+let synth (n:natural) (x:lst)  =
+  append x (append (Cons (n, Nil)) x)
+;;
+let synth (n:natural) (x:lst)  =
+  append x (append (Cons (n, x)) Nil)
+;;
+let synth (n:natural) (x:lst)  =
+  append (append Nil x) (Cons (n, x))
+;;
+let synth (n:natural) (x:lst)  =
+  append (append x Nil) (Cons (n, x))
+;;
+let synth (n:natural) (x:lst)  =
+  append (append x (Cons (n, x))) Nil
+;;
+let synth (n:natural) (x:lst)  =
+  append (append x (Cons (n, Nil))) x
+;;

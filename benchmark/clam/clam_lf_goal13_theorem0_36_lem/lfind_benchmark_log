@@ -1,0 +1,23 @@
+COQDEP VFILES
+COQC goal13.v
+Lemma lfind_state  (x:natural) (IHx:@eq natural (half (plus (Succ x) (Succ x))) (Succ x)):@eq natural (Succ (half (plus x (Succ (Succ x))))) (Succ (Succ x)).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal13_theorem0_36_lem/goal13_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal13_theorem0_36_lem goal13_lfind_orig goal13
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

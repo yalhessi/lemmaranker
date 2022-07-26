@@ -1,0 +1,18 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj17: forall  (x:natural) (y:natural) (z:natural) , (@eq natural (mult (exp x y) (mult x z)) (mult (exp x y) (mult z x)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj11: forall (lf1:natural) (x:natural) (z:natural) , (@eq natural (mult lf1 (mult x z)) (mult lf1 (mult z x)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

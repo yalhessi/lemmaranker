@@ -1,0 +1,18 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj12: forall  (x:lst) (n:natural) , (@eq bool (negb (even (len (append x (Cons n x))))) true)
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj6_hyp: forall  (x:lst) (n:natural)(lf1:bool), (@eq bool (even (len (append x x))) lf1) ->  (@eq bool (negb (even (len (append x (Cons n x))))) lf1)
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

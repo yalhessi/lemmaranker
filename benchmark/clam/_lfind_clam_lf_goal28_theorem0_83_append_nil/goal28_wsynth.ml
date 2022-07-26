@@ -1,0 +1,28 @@
+type nat =
+ | O
+ | S of nat
+
+type natural =
+| Succ of natural
+| Zero
+
+type lst =
+| Cons of natural * lst
+| Nil
+
+type tree =
+| Node of natural * tree * tree
+| Leaf
+
+let rec append (append_arg0:lst) (append_arg1:lst):lst=
+  match append_arg0 with
+  | Cons (x, y) -> Cons (x, (append y append_arg1))
+  | Nil -> append_arg1
+
+;;
+let rec revflat (n:tree):lst=
+ match n with
+| Node (d, l, r) -> append (revflat l) (Cons (d, (revflat r)))
+| Leaf -> Nil
+;;
+let synth : tree|> {} = ?

@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal35.v
+Lemma lfind_state  (x:natural) (y:natural) (IHy:@eq natural (exp x y) (qexp x y (Succ Zero))):@eq natural (mult (qexp x y (Succ Zero)) x) (qexp x y x).
+Admitted.

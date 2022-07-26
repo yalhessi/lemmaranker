@@ -1,0 +1,11 @@
+COQDEP VFILES
+COQC goal49.v
+Lemma lfind_state  (x:natural) (n:natural) (H:Bool.Is_true (eqb x n)):@eq natural x n.
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal49_mem_cons_96_eqb_elim/goal49_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal49_mem_cons_96_eqb_elim goal49_lfind_orig goal49
+lemmafinder_ml_generation_success
+Example file not found, generating
+1

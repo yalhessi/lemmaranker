@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal15.v
+Lemma lfind_state  (x:natural) (IHx:@eq natural (plus x (Succ x)) (Succ (plus x x))):@eq natural (plus x (Succ (Succ x))) (Succ (Succ (plus x x))).
+Admitted.

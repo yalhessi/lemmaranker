@@ -1,0 +1,27 @@
+COQDEP VFILES
+COQC goal47.v
+Lemma lfind_state  (x:natural) (y:natural) (n:natural) (z:lst) (H:not (@eq natural x y)) (IHz:@eq bool (mem (insort z y) x) (mem z x)):@eq bool (orb (eqb x y) (orb (eqb x n) (mem z x))) (orb (eqb x n) (mem z x)).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal47_theorem0_66_eqb_not_eq/goal47_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal47_theorem0_66_eqb_not_eq goal47_lfind_orig goal47
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

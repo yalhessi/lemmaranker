@@ -1,0 +1,9 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj6: forall  (y:natural) , (@eq bool (even y) (even (plus y Zero)))
+is_valid : true
+is_prover_provable (be proven by proverbot): true
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

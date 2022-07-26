@@ -1,0 +1,5 @@
+Provable and Useful in Completing Stuck Goal
+
+Useful in Completing Stuck Goal
+Lemma conj13: forall  (y:lst) (x:lst)(lf1:lst) , (@eq bool (lst_subset (lst_intersection x y) (append lf1 x)) true)
+Valid Lemmas

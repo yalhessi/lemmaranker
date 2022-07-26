@@ -1,0 +1,5 @@
+Provable and Useful in Completing Stuck Goal
+
+Useful in Completing Stuck Goal
+Lemma conj7: forall  (x:lst)(lf1:lst) , (@eq bool (lst_subset x (append lf1 x)) true)
+Valid Lemmas

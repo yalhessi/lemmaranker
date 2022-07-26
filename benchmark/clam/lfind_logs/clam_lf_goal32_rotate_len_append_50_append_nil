@@ -1,0 +1,6 @@
+Provable and Useful in Completing Stuck Goal
+Lemma conj2synthconj2 : forall  (lv0 : lst), (@eq lst lv0 (append Nil (append lv0 Nil)))
+
+Useful in Completing Stuck Goal
+Lemma conj2synthconj2 : forall  (lv0 : lst), (@eq lst lv0 (append Nil (append lv0 Nil)))
+Valid Lemmas

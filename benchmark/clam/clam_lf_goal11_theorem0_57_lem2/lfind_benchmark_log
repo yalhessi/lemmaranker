@@ -1,0 +1,20 @@
+COQDEP VFILES
+COQC goal11.v
+Lemma lfind_state  (y:lst):@eq lst (rev (rev y)) (append y Nil).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal11_theorem0_57_lem2/goal11_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal11_theorem0_57_lem2 goal11_lfind_orig goal11
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0

@@ -1,0 +1,48 @@
+let synth (x:lst)  =
+  double (len x)
+;;
+let synth (x:lst)  =
+  len (append x x)
+;;
+let synth (x:lst)  =
+  double (len (append Nil x))
+;;
+let synth (x:lst)  =
+  double (len (append x Nil))
+;;
+let synth (x:lst)  =
+  len (append Nil (append x x))
+;;
+let synth (x:lst)  =
+  len (append x (append Nil x))
+;;
+let synth (x:lst)  =
+  len (append x (append x Nil))
+;;
+let synth (x:lst)  =
+  len (append (append Nil x) x)
+;;
+let synth (x:lst)  =
+  len (append (append x x) Nil)
+;;
+let synth (x:lst)  =
+  len (append (append x Nil) x)
+;;
+let synth (x:lst)  =
+  double (len (append Nil (append Nil x)))
+;;
+let synth (x:lst)  =
+  double (len (append Nil (append x Nil)))
+;;
+let synth (x:lst)  =
+  double (len (append (append Nil Nil) x))
+;;
+let synth (x:lst)  =
+  double (len (append x (append Nil Nil)))
+;;
+let synth (x:lst)  =
+  double (len (append (append Nil x) Nil))
+;;
+let synth (x:lst)  =
+  double (len (append (append x Nil) Nil))
+;;

@@ -5,7 +5,8 @@ from os import listdir
 
 def parse():
   parser = argparse.ArgumentParser(description='Parse LFind Logs')
-  parser.add_argument('--dir', type=str, help='Benchmark directory')
+  parser.add_argument('--benchmark-root', required=True, dest='benchmark_root', type=str, help='Benchmark Root')
+  parser.add_argument('--benchmark-name', required=True, dest='benchmark_name', type=str, help='Benchmark Name')
   args = parser.parse_args()
   return args
 
@@ -44,7 +45,7 @@ def read_stuck_state(dirname, subdirname):
     
 def read_original_file(dirname, subdirname, filename, theorem_name, helper_lemma_name):
   with open(os.path.join(dirname, '_lfind_' + subdirname, filename+'.v')) as f:
-    prelude = ''
+    prefix = ''
     helper_lemma = ''
     helper_lemma_proof = ''
     for l in f:
@@ -59,7 +60,7 @@ def read_original_file(dirname, subdirname, filename, theorem_name, helper_lemma
       elif helper_lemma:
         helper_lemma += l.strip()
       else:
-        prelude += l
+        prefix += l
     theorem = ''
     theorem_proof = ''
     for l in f:
@@ -73,18 +74,18 @@ def read_original_file(dirname, subdirname, filename, theorem_name, helper_lemma
           break
       elif theorem:
         theorem += l.strip()
-  return prelude, helper_lemma, helper_lemma_proof, theorem, theorem_proof
+  return prefix, helper_lemma, helper_lemma_proof, theorem, theorem_proof
 
 
-def parse_file_name(filename):
+def parse_file_name(benchmark_name, filename):
   '''
   These files are names smallclam_lf_orignalfile_originaltheorem_lineno_helperlemma
   '''
   import re
-  return re.match(r'smallclam_lf_(?P<file>[a-zA-Z0-9]+)_(?P<theorem>\w+)_(?P<lineno>\d+)_(?P<helper>\w+)', filename).groups()
+  return re.match(f'{benchmark_name}_lf_(?P<file>[a-zA-Z0-9]+)_(?P<theorem>\w+)_(?P<lineno>\d+)_(?P<helper>\w+)', filename).groups()
 
 
-def read_data(dir):
+def read_data(benchmark_root, benchmark_name):
   '''
   Structure of dir should be
   dir 
@@ -97,24 +98,25 @@ def read_data(dir):
     ...
   '''
   data = []
-  logs_dir = os.path.join(dir, 'lfind_logs')
+  benchmark_dir = os.path.join(benchmark_root, benchmark_name)
+  logs_dir = os.path.join(benchmark_dir, 'lfind_logs')
 
   for filename in listdir(logs_dir):
     print(filename)
-    if not os.path.exists(os.path.join(dir, filename)):
+    if not os.path.exists(os.path.join(benchmark_dir, filename)):
       print("Could not find data for file: " + filename)
       continue
-    original_filename, theorem_name, lineno, helper_lemma_name = parse_file_name(filename)
-    filedata = {"file": filename, "theorem_name": theorem_name, "helper_lemma_name": helper_lemma_name}
+    original_filename, theorem_name, lineno, helper_lemma_name = parse_file_name(benchmark_name, filename)
+    filedata = {"file": filename, "theorem_name": theorem_name, "helper_lemma_name": helper_lemma_name, "prelude": os.path.join(benchmark_dir, benchmark_name)}
     filedata["lemmas"] = read_synthesized_lemmas(logs_dir, filename)
-    filedata["stuck_state"] = read_stuck_state(dir, filename)
-    filedata["prelude"], filedata["helper_lemma"], filedata["helper_lemma_proof"], filedata["theorem"], filedata["theorem_proof"] = read_original_file(dir, filename, original_filename, theorem_name, helper_lemma_name)
+    filedata["stuck_state"] = read_stuck_state(benchmark_dir, filename)
+    filedata["prefix"], filedata["helper_lemma"], filedata["helper_lemma_proof"], filedata["theorem"], filedata["theorem_proof"] = read_original_file(benchmark_dir, filename, original_filename, theorem_name, helper_lemma_name)
     data.append(filedata)
   return data
 
 def main():
   args = parse()
-  data = read_data(args.dir)
+  data = read_data(args.benchmark_root, args.benchmark_name)
   print(data[0]["lemmas"][0])
 
 if __name__=="__main__":

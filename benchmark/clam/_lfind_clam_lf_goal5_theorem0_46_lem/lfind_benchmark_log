@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal5.v
+Lemma lfind_state  (n:natural) (x:lst) (IHx:@eq natural (len (rev x)) (len x)):@eq natural (len (append (rev x) (Cons n Nil))) (Succ (len (rev x))).
+Admitted.

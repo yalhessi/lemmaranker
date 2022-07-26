@@ -1,0 +1,457 @@
+Provable and Useful in Completing Stuck Goal
+Lemma conj259: forall  (n:natural) (x:natural)(lf2:lst)(lf1:lst) , (@eq lst (append (append lf1 (Cons x lf2)) (Cons n Nil)) (append lf1 (Cons x (append lf2 (Cons n Nil)))))
+
+Lemma conj290: forall  (x:natural) (n0:natural)(lf3:lst)(lf2:lst)(lf1:lst) , (@eq lst (append (append (append lf2 (Cons n0 Nil)) (Cons x lf3)) lf1) (append (append lf2 (Cons n0 Nil)) (Cons x (append lf3 lf1))))
+
+Useful in Completing Stuck Goal
+Lemma conj305eqsynthconj6 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (append (append (rev lv1) lv0) lv2) ((append (rev lv1) (append lv0 lv2))))
+
+Lemma conj313eqsynthconj6 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (append (append (rev lv0) lv2) lv1) ((append (rev lv0) (append lv2 lv1))))
+
+Lemma conj87: forall  (x:natural)(lf3:lst)(lf2:lst)(lf1:lst) , (@eq lst (append (append lf1 (Cons x lf3)) lf2) (append lf1 (Cons x (append lf3 lf2))))
+
+Lemma conj305eqsynthconj5 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst) (lv3 : natural), (@eq lst (append (append (rev lv1) lv0) (Cons lv3 lv2)) ((append (rev lv1) (append lv0 (Cons lv3 lv2)))))
+
+Lemma conj310eqsynthconj5 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (rev lv1) lv3) (Cons lv2 lv0)) ((append (rev lv1) (append lv3 (Cons lv2 lv0)))))
+
+Lemma conj314eqsynthconj5 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (rev lv0) lv3) (Cons lv2 lv1)) ((append (rev lv0) (append lv3 (Cons lv2 lv1)))))
+
+Lemma conj95: forall  (l1:lst) (x:natural)(lf2:lst)(lf1:lst) , (@eq lst (append (append lf1 (Cons x (rev l1))) lf2) (append lf1 (Cons x (append (rev l1) lf2))))
+
+Lemma conj318eqsynthconj3 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv1) (Cons lv2 Nil)) lv3) lv0) ((append (rev (Cons lv2 lv1)) (append lv3 lv0))))
+
+Lemma conj324synthconj3 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) lv2) lv3) (append (rev (Cons lv1 lv0)) (append lv2 lv3)))
+
+Lemma conj113: forall  (x:natural)(lf3:lst)(lf2:lst)(lf4:lst)(lf1:lst) , (@eq lst (append (append (append lf3 lf1) (Cons x lf4)) lf2) (append (append lf3 lf1) (Cons x (append lf4 lf2))))
+
+Lemma conj91: forall  (n:natural) (x:natural)(lf3:lst)(lf2:lst)(lf1:lst) , (@eq lst (append (append lf1 (Cons x lf2)) (Cons n lf3)) (append lf1 (Cons x (append lf2 (Cons n lf3)))))
+
+Lemma conj305synthconj5 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv1) lv0) lv3) (Cons lv2 Nil)) (append (append (rev lv1) lv0) (append lv3 (Cons lv2 Nil))))
+
+Lemma conj307synthconj5 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : lst), (@eq lst (append (append (append (rev lv0) lv3) lv2) (Cons lv1 Nil)) (append (append (rev lv0) lv3) (append lv2 (Cons lv1 Nil))))
+
+Lemma conj263: forall  (n:natural) (l1:lst) (x:natural)(lf1:lst) , (@eq lst (append (append lf1 (Cons x (rev l1))) (Cons n Nil)) (append lf1 (Cons x (append (rev l1) (Cons n Nil)))))
+
+Lemma conj165: forall  (x:natural) (l2:lst)(lf3:lst)(lf2:lst)(lf1:lst) , (@eq lst (append (append (append (rev l2) lf1) (Cons x lf3)) lf2) (append (append (rev l2) lf1) (Cons x (append lf3 lf2))))
+
+Lemma conj121: forall  (l1:lst) (x:natural)(lf3:lst)(lf2:lst)(lf1:lst) , (@eq lst (append (append (append lf3 lf1) (Cons x (rev l1))) lf2) (append (append lf3 lf1) (Cons x (append (rev l1) lf2))))
+
+Lemma conj99: forall  (n:natural) (l1:lst) (x:natural)(lf2:lst)(lf1:lst) , (@eq lst (append (append lf1 (Cons x (rev l1))) (Cons n lf2)) (append lf1 (Cons x (append (rev l1) (Cons n lf2)))))
+
+Lemma conj305synthconj4 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv1) lv0) lv3) (Cons lv2 Nil)) (append (append (rev lv1) lv0) (append lv3 (Cons lv2 (rev Nil)))))
+
+Lemma conj305synthconj3 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv1) lv0) lv3) (Cons lv2 Nil)) (append (append (rev lv1) lv0) (append lv3 (rev (Cons lv2 Nil)))))
+
+Lemma conj307synthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : lst), (@eq lst (append (append (append (rev lv0) lv3) lv2) (Cons lv1 Nil)) (append (append (rev lv0) lv3) (append lv2 (Cons lv1 (rev Nil)))))
+
+Lemma conj307synthconj3 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : lst), (@eq lst (append (append (append (rev lv0) lv3) lv2) (Cons lv1 Nil)) (append (append (rev lv0) lv3) (append lv2 (rev (Cons lv1 Nil)))))
+
+Lemma conj318synthconj1 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv1) (Cons lv2 Nil)) lv3) lv0) (append (append (rev lv1) (Cons lv2 Nil)) (append lv3 (rev (rev lv0)))))
+
+Lemma conj324synthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) lv2) lv3) (append (append (rev lv0) (Cons lv1 Nil)) (append lv2 (rev (rev lv3)))))
+
+Lemma conj272: forall  (n:natural) (x:natural)(lf3:lst)(lf2:lst)(lf1:lst) , (@eq lst (append (append (append lf2 lf1) (Cons x lf3)) (Cons n Nil)) (append (append lf2 lf1) (Cons x (append lf3 (Cons n Nil)))))
+
+Lemma conj173: forall  (l1:lst) (x:natural) (l2:lst)(lf2:lst)(lf1:lst) , (@eq lst (append (append (append (rev l2) lf1) (Cons x (rev l1))) lf2) (append (append (rev l2) lf1) (Cons x (append (rev l1) lf2))))
+
+Lemma conj139: forall  (x:natural) (n0:natural)(lf3:lst)(lf2:lst)(lf4:lst)(lf1:lst) , (@eq lst (append (append (append lf2 (Cons n0 lf4)) (Cons x lf3)) lf1) (append (append lf2 (Cons n0 lf4)) (Cons x (append lf3 lf1))))
+
+Lemma conj117: forall  (n:natural) (x:natural)(lf3:lst)(lf2:lst)(lf4:lst)(lf1:lst) , (@eq lst (append (append (append lf2 lf1) (Cons x lf3)) (Cons n lf4)) (append (append lf2 lf1) (Cons x (append lf3 (Cons n lf4)))))
+
+Lemma conj310synthconj5 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv1) lv4) (Cons lv3 lv0)) (Cons lv2 Nil)) (append (append (rev lv1) lv4) (append (Cons lv3 lv0) (Cons lv2 Nil))))
+
+Lemma conj310synthconj3 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv1) lv4) (Cons lv3 lv0)) (Cons lv2 Nil)) (append (append (rev lv1) lv4) (Cons lv3 (append lv0 (Cons lv2 Nil)))))
+
+Lemma conj314synthconj6 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst) (lv4 : lst), (@eq lst (append (append (append (rev lv0) lv3) (Cons lv2 (rev lv4))) (Cons lv1 Nil)) (append (append (rev lv0) lv3) (Cons lv2 (rev (Cons lv1 lv4)))))
+
+Lemma conj325synthconj5 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) lv3) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (append lv3 (Cons lv2 Nil))))
+
+Lemma conj328synthconj6 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv1) (Cons lv2 Nil)) (Cons lv3 lv0)) lv4) (append (append (rev lv1) (Cons lv2 Nil)) (append (Cons lv3 lv0) lv4)))
+
+Lemma conj328synthconj5 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv1) (Cons lv2 Nil)) (Cons lv3 lv0)) lv4) (append (append (rev lv1) (Cons lv2 Nil)) (Cons lv3 (append lv0 lv4))))
+
+Lemma conj329: forall  (x:natural) (n0:natural) (l2:lst)(lf2:lst)(lf1:lst) , (@eq lst (append (append (append (rev l2) (Cons n0 Nil)) (Cons x lf2)) lf1) (append (append (rev l2) (Cons n0 Nil)) (Cons x (append lf2 lf1))))
+
+Lemma conj311: forall  (n:natural) (x:natural) (l2:lst)(lf2:lst)(lf1:lst) , (@eq lst (append (append (append (rev l2) lf1) (Cons x lf2)) (Cons n Nil)) (append (append (rev l2) lf1) (Cons x (append lf2 (Cons n Nil)))))
+
+Lemma conj298: forall  (l1:lst) (x:natural) (n0:natural)(lf2:lst)(lf1:lst) , (@eq lst (append (append (append lf2 (Cons n0 Nil)) (Cons x (rev l1))) lf1) (append (append lf2 (Cons n0 Nil)) (Cons x (append (rev l1) lf1))))
+
+Lemma conj276: forall  (n:natural) (l1:lst) (x:natural)(lf2:lst)(lf1:lst) , (@eq lst (append (append (append lf2 lf1) (Cons x (rev l1))) (Cons n Nil)) (append (append lf2 lf1) (Cons x (append (rev l1) (Cons n Nil)))))
+
+Lemma conj191: forall  (x:natural) (n0:natural) (l2:lst)(lf3:lst)(lf2:lst)(lf1:lst) , (@eq lst (append (append (append (rev l2) (Cons n0 lf3)) (Cons x lf2)) lf1) (append (append (rev l2) (Cons n0 lf3)) (Cons x (append lf2 lf1))))
+
+Lemma conj169: forall  (n:natural) (x:natural) (l2:lst)(lf3:lst)(lf2:lst)(lf1:lst) , (@eq lst (append (append (append (rev l2) lf1) (Cons x lf2)) (Cons n lf3)) (append (append (rev l2) lf1) (Cons x (append lf2 (Cons n lf3)))))
+
+Lemma conj147: forall  (l1:lst) (x:natural) (n0:natural)(lf3:lst)(lf2:lst)(lf1:lst) , (@eq lst (append (append (append lf2 (Cons n0 lf3)) (Cons x (rev l1))) lf1) (append (append lf2 (Cons n0 lf3)) (Cons x (append (rev l1) lf1))))
+
+Lemma conj125: forall  (n:natural) (l1:lst) (x:natural)(lf3:lst)(lf2:lst)(lf1:lst) , (@eq lst (append (append (append lf2 lf1) (Cons x (rev l1))) (Cons n lf3)) (append (append lf2 lf1) (Cons x (append (rev l1) (Cons n lf3)))))
+
+Lemma conj310synthconj2 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv1) lv4) (Cons lv3 lv0)) (Cons lv2 Nil)) (append (append (rev lv1) lv4) (append (Cons lv3 lv0) (Cons lv2 (rev Nil)))))
+
+Lemma conj310synthconj1 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv1) lv4) (Cons lv3 lv0)) (Cons lv2 Nil)) (append (append (rev lv1) lv4) (append (Cons lv3 lv0) (rev (Cons lv2 Nil)))))
+
+Lemma conj325synthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) lv3) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (append lv3 (Cons lv2 (rev Nil)))))
+
+Lemma conj325synthconj3 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) lv3) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (append lv3 (rev (Cons lv2 Nil)))))
+
+Lemma conj301synthconj6 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural) (lv3 : lst) (lv4 : lst), (@eq lst (append (append (append lv3 (Cons lv0 Nil)) (Cons lv2 (rev lv4))) (Cons lv1 Nil)) (append (append lv3 (Cons lv0 Nil)) (Cons lv2 (rev (Cons lv1 lv4)))))
+
+Lemma conj314synthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst) (lv4 : lst), (@eq lst (append (append (append (rev lv0) lv3) (Cons lv2 (rev lv4))) (Cons lv1 Nil)) (append (append (rev lv0) lv3) (append Nil (Cons lv2 (rev (Cons lv1 lv4))))))
+
+Lemma conj336synthconj6 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst) (lv4 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv2 (rev lv4))) lv3) (append (append (rev lv0) (Cons lv1 Nil)) (append (Cons lv2 (rev lv4)) lv3)))
+
+Lemma conj336synthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst) (lv4 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv2 (rev lv4))) lv3) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv2 (append (rev lv4) lv3))))
+
+Lemma conj337: forall  (l1:lst) (x:natural) (n0:natural) (l2:lst)(lf1:lst) , (@eq lst (append (append (append (rev l2) (Cons n0 Nil)) (Cons x (rev l1))) lf1) (append (append (rev l2) (Cons n0 Nil)) (Cons x (append (rev l1) lf1))))
+
+Lemma conj315: forall  (n:natural) (l1:lst) (x:natural) (l2:lst)(lf1:lst) , (@eq lst (append (append (append (rev l2) lf1) (Cons x (rev l1))) (Cons n Nil)) (append (append (rev l2) lf1) (Cons x (append (rev l1) (Cons n Nil)))))
+
+Lemma conj294: forall  (n:natural) (x:natural) (n0:natural)(lf2:lst)(lf1:lst) , (@eq lst (append (append (append lf1 (Cons n0 Nil)) (Cons x lf2)) (Cons n Nil)) (append (append lf1 (Cons n0 Nil)) (Cons x (append lf2 (Cons n Nil)))))
+
+Lemma conj199: forall  (l1:lst) (x:natural) (n0:natural) (l2:lst)(lf2:lst)(lf1:lst) , (@eq lst (append (append (append (rev l2) (Cons n0 lf2)) (Cons x (rev l1))) lf1) (append (append (rev l2) (Cons n0 lf2)) (Cons x (append (rev l1) lf1))))
+
+Lemma conj177: forall  (n:natural) (l1:lst) (x:natural) (l2:lst)(lf2:lst)(lf1:lst) , (@eq lst (append (append (append (rev l2) lf1) (Cons x (rev l1))) (Cons n lf2)) (append (append (rev l2) lf1) (Cons x (append (rev l1) (Cons n lf2)))))
+
+Lemma conj143: forall  (n:natural) (x:natural) (n0:natural)(lf3:lst)(lf2:lst)(lf1:lst) , (@eq lst (append (append (append lf1 (Cons n0 lf3)) (Cons x lf2)) (Cons n lf3)) (append (append lf1 (Cons n0 lf3)) (Cons x (append lf2 (Cons n lf3)))))
+
+Lemma conj336synthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst) (lv4 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv2 (rev lv4))) lv3) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv2 (rev (append (rev lv3) lv4)))))
+
+Lemma conj301synthconj1 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural) (lv3 : lst) (lv4 : lst), (@eq lst (append (append (append lv3 (Cons lv0 Nil)) (Cons lv2 (rev lv4))) (Cons lv1 Nil)) (append (append lv3 (Cons lv0 Nil)) (append Nil (Cons lv2 (rev (Cons lv1 lv4))))))
+
+Lemma conj332synthconj5 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 lv4)) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (append (Cons lv3 lv4) (Cons lv2 Nil))))
+
+Lemma conj332synthconj3 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 lv4)) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 (append lv4 (Cons lv2 Nil)))))
+
+Lemma conj340synthconj6 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 (rev lv4))) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 (rev (Cons lv2 lv4)))))
+
+Lemma conj333: forall  (n:natural) (x:natural) (n0:natural) (l2:lst)(lf1:lst) , (@eq lst (append (append (append (rev l2) (Cons n0 Nil)) (Cons x lf1)) (Cons n Nil)) (append (append (rev l2) (Cons n0 Nil)) (Cons x (append lf1 (Cons n Nil)))))
+
+Lemma conj302: forall  (n:natural) (l1:lst) (x:natural) (n0:natural)(lf1:lst) , (@eq lst (append (append (append lf1 (Cons n0 Nil)) (Cons x (rev l1))) (Cons n Nil)) (append (append lf1 (Cons n0 Nil)) (Cons x (append (rev l1) (Cons n Nil)))))
+
+Lemma conj195: forall  (n:natural) (x:natural) (n0:natural) (l2:lst)(lf2:lst)(lf1:lst) , (@eq lst (append (append (append (rev l2) (Cons n0 lf2)) (Cons x lf1)) (Cons n lf2)) (append (append (rev l2) (Cons n0 lf2)) (Cons x (append lf1 (Cons n lf2)))))
+
+Lemma conj151: forall  (n:natural) (l1:lst) (x:natural) (n0:natural)(lf2:lst)(lf1:lst) , (@eq lst (append (append (append lf1 (Cons n0 lf2)) (Cons x (rev l1))) (Cons n lf2)) (append (append lf1 (Cons n0 lf2)) (Cons x (append (rev l1) (Cons n lf2)))))
+
+Lemma conj332synthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 lv4)) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (append (Cons lv3 lv4) (Cons lv2 (rev Nil)))))
+
+Lemma conj332synthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 lv4)) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (append (Cons lv3 lv4) (rev (Cons lv2 Nil)))))
+
+Lemma conj340synthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 (rev lv4))) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (append Nil (Cons lv3 (rev (Cons lv2 lv4))))))
+
+Lemma conj203: forall  (n:natural) (l1:lst) (x:natural) (n0:natural) (l2:lst)(lf1:lst) , (@eq lst (append (append (append (rev l2) (Cons n0 lf1)) (Cons x (rev l1))) (Cons n lf1)) (append (append (rev l2) (Cons n0 lf1)) (Cons x (append (rev l1) (Cons n lf1)))))
+Valid Lemmas
+Lemma conj338synthconj5 : forall  (lv0 : lst), (@eq lst (rev (rev lv0)) lv0)
+
+Lemma conj338synthconj3 : forall  (lv0 : lst), (@eq lst (append lv0 Nil) lv0)
+
+Lemma conj338eqsynthconj5 : forall  (lv0 : lst), (@eq lst (lv0) ((rev (rev lv0))))
+
+Lemma conj338eqsynthconj3 : forall  (lv0 : lst), (@eq lst (lv0) ((append lv0 Nil)))
+
+Lemma conj338synthconj1 : forall  (lv0 : lst), (@eq lst (append lv0 (rev Nil)) lv0)
+
+Lemma conj338eqsynthconj1 : forall  (lv0 : lst), (@eq lst (lv0) ((append lv0 (rev Nil))))
+
+Lemma conj340eqsynthconj5 : forall  (lv0 : lst), (@eq lst (rev lv0) ((rev (rev (rev lv0)))))
+
+Lemma conj340eqsynthconj3 : forall  (lv0 : lst), (@eq lst (rev lv0) ((rev (append lv0 Nil))))
+
+Lemma conj340eqsynthconj1 : forall  (lv0 : lst), (@eq lst (rev lv0) ((append (rev lv0) Nil)))
+
+Lemma conj340eqsynthconj5 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (Cons lv1 lv0) ((rev (rev (Cons lv1 lv0)))))
+
+Lemma conj340eqsynthconj3 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (Cons lv1 lv0) ((append (Cons lv1 lv0) Nil)))
+
+Lemma conj340eqsynthconj1 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (Cons lv1 lv0) ((Cons lv1 (rev (rev lv0)))))
+
+Lemma conj332eqsynthconj5 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (Cons lv0 lv1) ((rev (rev (Cons lv0 lv1)))))
+
+Lemma conj332eqsynthconj3 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (Cons lv0 lv1) ((append (Cons lv0 lv1) Nil)))
+
+Lemma conj332eqsynthconj1 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (Cons lv0 lv1) ((Cons lv0 (rev (rev lv1)))))
+
+Lemma conj319eqsynthconj4 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv0 lv1) ((rev (rev (append lv0 lv1)))))
+
+Lemma conj319eqsynthconj1 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append lv0 lv1) ((append lv0 (rev (rev lv1)))))
+
+Lemma conj324eqsynthconj4 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (rev lv1) lv0) ((rev (append (rev lv0) lv1))))
+
+Lemma conj314eqsynthconj4 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (rev lv0) lv1) ((rev (append (rev lv1) lv0))))
+
+Lemma conj340eqsynthconj5 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (Cons lv0 (rev lv1)) ((rev (rev (Cons lv0 (rev lv1))))))
+
+Lemma conj340eqsynthconj1 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (Cons lv0 (rev lv1)) ((append (Cons lv0 (rev lv1)) Nil)))
+
+Lemma conj323eqsynthconj6 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (append lv1 (Cons lv0 Nil)) ((rev (Cons lv0 (rev lv1)))))
+
+Lemma conj314eqsynthconj1 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (append (rev lv0) lv1) ((rev (rev (append (rev lv0) lv1)))))
+
+Lemma conj306eqsynthconj6 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (append lv0 (Cons lv1 Nil)) ((rev (Cons lv1 (rev lv0)))))
+
+Lemma conj340eqsynthconj5 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (append (rev lv0) (Cons lv1 Nil)) ((rev (Cons lv1 (rev (rev lv0))))))
+
+Lemma conj340eqsynthconj3 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (append (rev lv0) (Cons lv1 Nil)) ((rev (Cons lv1 (append lv0 Nil)))))
+
+Lemma conj340eqsynthconj2 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (append (rev lv0) (Cons lv1 Nil)) ((rev (rev (rev (Cons lv1 lv0))))))
+
+Lemma conj325eqsynthconj5 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (append (rev lv1) (Cons lv0 Nil)) ((rev (Cons lv0 (rev (rev lv1))))))
+
+Lemma conj325eqsynthconj3 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (append (rev lv1) (Cons lv0 Nil)) ((rev (Cons lv0 (append lv1 Nil)))))
+
+Lemma conj325eqsynthconj2 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (append (rev lv1) (Cons lv0 Nil)) ((rev (rev (rev (Cons lv0 lv1))))))
+
+Lemma conj323eqsynthconj2 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (append lv1 (Cons lv0 Nil)) ((rev (Cons lv0 (rev (rev (rev lv1)))))))
+
+Lemma conj323eqsynthconj1 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (append lv1 (Cons lv0 Nil)) ((rev (Cons lv0 (rev (append Nil lv1))))))
+
+Lemma conj319eqsynthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst), (@eq lst (Cons lv1 (append lv0 lv2)) ((rev (rev (Cons lv1 (append lv0 lv2))))))
+
+Lemma conj319eqsynthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst), (@eq lst (Cons lv1 (append lv0 lv2)) ((rev (rev (append (Cons lv1 lv0) lv2)))))
+
+Lemma conj313synthconj6 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (append (rev lv0) (append lv2 lv1)) (append (append (rev lv0) lv2) lv1))
+
+Lemma conj306eqsynthconj2 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (append lv0 (Cons lv1 Nil)) ((rev (Cons lv1 (rev (rev (rev lv0)))))))
+
+Lemma conj306eqsynthconj1 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (append lv0 (Cons lv1 Nil)) ((rev (Cons lv1 (rev (append Nil lv0))))))
+
+Lemma conj304synthconj6 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (append (rev lv1) (append lv0 lv2)) (append (append (rev lv1) lv0) lv2))
+
+Lemma conj324eqsynthconj2 : forall  (lv0 : natural) (lv1 : lst) (lv2 : lst), (@eq lst (Cons lv0 (append (rev lv2) lv1)) ((Cons lv0 (rev (append (rev lv1) lv2)))))
+
+Lemma conj313synthconj2 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (rev (append (rev (append lv2 lv1)) lv0)) (append (append (rev lv0) lv2) lv1))
+
+Lemma conj313eqsynthconj2 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (append (append (rev lv0) lv2) lv1) ((rev (append (rev (append lv2 lv1)) lv0))))
+
+Lemma conj305eqsynthconj2 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (append (append (rev lv1) lv0) lv2) ((rev (append (rev (append lv0 lv2)) lv1))))
+
+Lemma conj304synthconj2 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst), (@eq lst (rev (append (rev (append lv0 lv2)) lv1)) (append (append (rev lv1) lv0) lv2))
+
+Lemma conj339synthconj6 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst), (@eq lst (append (rev lv0) (Cons lv1 lv2)) (append (append (rev lv0) (Cons lv1 Nil)) lv2))
+
+Lemma conj339eqsynthconj6 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst), (@eq lst (append (append (rev lv0) (Cons lv1 Nil)) lv2) ((append (rev lv0) (Cons lv1 lv2))))
+
+Lemma conj323eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq lst (Cons lv1 (append lv2 (Cons lv0 Nil))) ((rev (Cons lv0 (rev (Cons lv1 lv2))))))
+
+Lemma conj323eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq lst (Cons lv1 (append lv2 (Cons lv0 Nil))) ((Cons lv1 (rev (Cons lv0 (rev lv2))))))
+
+Lemma conj306eqsynthconj6 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural), (@eq lst (Cons lv2 (append lv0 (Cons lv1 Nil))) ((rev (Cons lv1 (rev (Cons lv2 lv0))))))
+
+Lemma conj306eqsynthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural), (@eq lst (Cons lv2 (append lv0 (Cons lv1 Nil))) ((Cons lv2 (rev (Cons lv1 (rev lv0))))))
+
+Lemma conj339synthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst), (@eq lst (rev (append (rev lv2) (Cons lv1 lv0))) (append (append (rev lv0) (Cons lv1 Nil)) lv2))
+
+Lemma conj339synthconj3 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst), (@eq lst (rev (append (rev (Cons lv1 lv2)) lv0)) (append (append (rev lv0) (Cons lv1 Nil)) lv2))
+
+Lemma conj339eqsynthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst), (@eq lst (append (append (rev lv0) (Cons lv1 Nil)) lv2) ((rev (append (rev lv2) (Cons lv1 lv0)))))
+
+Lemma conj339eqsynthconj3 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst), (@eq lst (append (append (rev lv0) (Cons lv1 Nil)) lv2) ((rev (append (rev (Cons lv1 lv2)) lv0))))
+
+Lemma conj339synthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst), (@eq lst (rev (rev (append (rev lv0) (Cons lv1 lv2)))) (append (append (rev lv0) (Cons lv1 Nil)) lv2))
+
+Lemma conj339synthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst), (@eq lst (rev (rev (append (rev (Cons lv1 lv0)) lv2))) (append (append (rev lv0) (Cons lv1 Nil)) lv2))
+
+Lemma conj339eqsynthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst), (@eq lst (append (append (rev lv0) (Cons lv1 Nil)) lv2) ((rev (rev (append (rev lv0) (Cons lv1 lv2))))))
+
+Lemma conj339eqsynthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst), (@eq lst (append (append (rev lv0) (Cons lv1 Nil)) lv2) ((rev (rev (append (rev (Cons lv1 lv0)) lv2)))))
+
+Lemma conj325eqsynthconj5 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq lst (Cons lv1 (append (rev lv2) (Cons lv0 Nil))) ((rev (Cons lv0 (rev (Cons lv1 (rev lv2)))))))
+
+Lemma conj325eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq lst (Cons lv1 (append (rev lv2) (Cons lv0 Nil))) ((rev (Cons lv0 (append lv2 (Cons lv1 Nil))))))
+
+Lemma conj325eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq lst (Cons lv1 (append (rev lv2) (Cons lv0 Nil))) ((rev (rev (Cons lv1 (rev (Cons lv0 lv2)))))))
+
+Lemma conj314synthconj5 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (rev lv0) (append lv3 (Cons lv2 lv1))) (append (append (rev lv0) lv3) (Cons lv2 lv1)))
+
+Lemma conj305synthconj5 : forall  (lv0 : lst) (lv1 : lst) (lv2 : lst) (lv3 : natural), (@eq lst (append (rev lv1) (append lv0 (Cons lv3 lv2))) (append (append (rev lv1) lv0) (Cons lv3 lv2)))
+
+Lemma conj301synthconj6 : forall  (lv0 : natural) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append lv3 (Cons lv0 (Cons lv2 lv1))) (append (append lv3 (Cons lv0 Nil)) (Cons lv2 lv1)))
+
+Lemma conj301eqsynthconj6 : forall  (lv0 : natural) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (append lv3 (Cons lv0 Nil)) (Cons lv2 lv1)) ((append lv3 (Cons lv0 (Cons lv2 lv1)))))
+
+Lemma conj340synthconj6 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : natural), (@eq lst (append (rev lv0) (Cons lv1 (Cons lv3 lv2))) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 lv2)))
+
+Lemma conj340synthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : natural), (@eq lst (append (rev (Cons lv3 (Cons lv1 lv0))) lv2) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 lv2)))
+
+Lemma conj340eqsynthconj6 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : natural), (@eq lst (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 lv2)) ((append (rev lv0) (Cons lv1 (Cons lv3 lv2)))))
+
+Lemma conj340eqsynthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : natural), (@eq lst (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 lv2)) ((append (rev (Cons lv3 (Cons lv1 lv0))) lv2)))
+
+Lemma conj332eqsynthconj6 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv2 lv3)) ((append (rev lv0) (Cons lv1 (Cons lv2 lv3)))))
+
+Lemma conj332eqsynthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv2 lv3)) ((append (rev (Cons lv2 (Cons lv1 lv0))) lv3)))
+
+Lemma conj328eqsynthconj6 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural), (@eq lst (append (append (rev lv1) (Cons lv2 Nil)) (Cons lv3 lv0)) ((append (rev lv1) (Cons lv2 (Cons lv3 lv0)))))
+
+Lemma conj328eqsynthconj4 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural), (@eq lst (append (append (rev lv1) (Cons lv2 Nil)) (Cons lv3 lv0)) ((append (rev (Cons lv3 (Cons lv2 lv1))) lv0)))
+
+Lemma conj324synthconj5 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) lv2) lv3) (append (rev lv0) (Cons lv1 (append lv2 lv3))))
+
+Lemma conj324synthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) lv2) lv3) (append (rev lv0) (append (Cons lv1 lv2) lv3)))
+
+Lemma conj324synthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) lv2) lv3) (append (append (rev lv0) (Cons lv1 lv2)) lv3))
+
+Lemma conj318eqsynthconj5 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv1) (Cons lv2 Nil)) lv3) lv0) ((append (rev lv1) (Cons lv2 (append lv3 lv0)))))
+
+Lemma conj318eqsynthconj4 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv1) (Cons lv2 Nil)) lv3) lv0) ((append (rev lv1) (append (Cons lv2 lv3) lv0))))
+
+Lemma conj318eqsynthconj2 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv1) (Cons lv2 Nil)) lv3) lv0) ((append (append (rev lv1) (Cons lv2 lv3)) lv0)))
+
+Lemma conj301synthconj5 : forall  (lv0 : natural) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (rev (rev (append lv3 (Cons lv0 (Cons lv2 lv1))))) (append (append lv3 (Cons lv0 Nil)) (Cons lv2 lv1)))
+
+Lemma conj301synthconj4 : forall  (lv0 : natural) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append Nil (append lv3 (Cons lv0 (Cons lv2 lv1)))) (append (append lv3 (Cons lv0 Nil)) (Cons lv2 lv1)))
+
+Lemma conj301synthconj3 : forall  (lv0 : natural) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append lv3 (Cons lv0 (Cons lv2 (rev (rev lv1))))) (append (append lv3 (Cons lv0 Nil)) (Cons lv2 lv1)))
+
+Lemma conj301synthconj2 : forall  (lv0 : natural) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append lv3 (Cons lv0 (Cons lv2 (append Nil lv1)))) (append (append lv3 (Cons lv0 Nil)) (Cons lv2 lv1)))
+
+Lemma conj301synthconj1 : forall  (lv0 : natural) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append lv3 (Cons lv0 (Cons lv2 (append lv1 Nil)))) (append (append lv3 (Cons lv0 Nil)) (Cons lv2 lv1)))
+
+Lemma conj301eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst) (lv3 : lst), (@eq lst (append (append lv2 (Cons lv0 Nil)) (Cons lv1 (rev lv3))) ((append lv2 (Cons lv0 (Cons lv1 (rev lv3))))))
+
+Lemma conj301eqsynthconj5 : forall  (lv0 : natural) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (append lv3 (Cons lv0 Nil)) (Cons lv2 lv1)) ((rev (rev (append lv3 (Cons lv0 (Cons lv2 lv1)))))))
+
+Lemma conj301eqsynthconj4 : forall  (lv0 : natural) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (append lv3 (Cons lv0 Nil)) (Cons lv2 lv1)) ((append Nil (append lv3 (Cons lv0 (Cons lv2 lv1))))))
+
+Lemma conj301eqsynthconj3 : forall  (lv0 : natural) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (append lv3 (Cons lv0 Nil)) (Cons lv2 lv1)) ((append lv3 (Cons lv0 (Cons lv2 (rev (rev lv1)))))))
+
+Lemma conj301eqsynthconj2 : forall  (lv0 : natural) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (append lv3 (Cons lv0 Nil)) (Cons lv2 lv1)) ((append lv3 (Cons lv0 (Cons lv2 (append Nil lv1))))))
+
+Lemma conj301eqsynthconj1 : forall  (lv0 : natural) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (append lv3 (Cons lv0 Nil)) (Cons lv2 lv1)) ((append lv3 (Cons lv0 (Cons lv2 (append lv1 Nil))))))
+
+Lemma conj340synthconj3 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : natural), (@eq lst (rev (append (rev lv2) (Cons lv3 (Cons lv1 lv0)))) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 lv2)))
+
+Lemma conj340synthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : natural), (@eq lst (rev (append (rev (Cons lv3 lv2)) (Cons lv1 lv0))) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 lv2)))
+
+Lemma conj340synthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : natural), (@eq lst (rev (append (rev (Cons lv1 (Cons lv3 lv2))) lv0)) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 lv2)))
+
+Lemma conj340eqsynthconj3 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : natural), (@eq lst (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 lv2)) ((rev (append (rev lv2) (Cons lv3 (Cons lv1 lv0))))))
+
+Lemma conj340eqsynthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : natural), (@eq lst (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 lv2)) ((rev (append (rev (Cons lv3 lv2)) (Cons lv1 lv0)))))
+
+Lemma conj340eqsynthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : natural), (@eq lst (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 lv2)) ((rev (append (rev (Cons lv1 (Cons lv3 lv2))) lv0))))
+
+Lemma conj332eqsynthconj3 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv2 lv3)) ((rev (append (rev lv3) (Cons lv2 (Cons lv1 lv0))))))
+
+Lemma conj332eqsynthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv2 lv3)) ((rev (append (rev (Cons lv2 lv3)) (Cons lv1 lv0)))))
+
+Lemma conj332eqsynthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv2 lv3)) ((rev (append (rev (Cons lv1 (Cons lv2 lv3))) lv0))))
+
+Lemma conj328eqsynthconj3 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural), (@eq lst (append (append (rev lv1) (Cons lv2 Nil)) (Cons lv3 lv0)) ((rev (append (rev lv0) (Cons lv3 (Cons lv2 lv1))))))
+
+Lemma conj328eqsynthconj2 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural), (@eq lst (append (append (rev lv1) (Cons lv2 Nil)) (Cons lv3 lv0)) ((rev (append (rev (Cons lv3 lv0)) (Cons lv2 lv1)))))
+
+Lemma conj328eqsynthconj1 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural), (@eq lst (append (append (rev lv1) (Cons lv2 Nil)) (Cons lv3 lv0)) ((rev (append (rev (Cons lv2 (Cons lv3 lv0))) lv1))))
+
+Lemma conj301eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst) (lv3 : lst), (@eq lst (append (append lv2 (Cons lv0 Nil)) (Cons lv1 (rev lv3))) ((rev (append lv3 (Cons lv1 (Cons lv0 (rev lv2)))))))
+
+Lemma conj340eqsynthconj3 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv2 (rev lv3))) ((append (rev lv0) (Cons lv1 (Cons lv2 (rev lv3))))))
+
+Lemma conj340eqsynthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv2 (rev lv3))) ((append (rev (Cons lv2 (Cons lv1 lv0))) (rev lv3))))
+
+Lemma conj307synthconj6 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : lst), (@eq lst (append (append (append (rev lv0) lv3) lv2) (Cons lv1 Nil)) (append (append (rev lv0) lv3) (rev (Cons lv1 (rev lv2)))))
+
+Lemma conj305synthconj6 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv1) lv0) lv3) (Cons lv2 Nil)) (append (append (rev lv1) lv0) (rev (Cons lv2 (rev lv3)))))
+
+Lemma conj325synthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) lv3) (Cons lv2 Nil)) (rev (Cons lv2 (append (rev lv3) (Cons lv1 lv0)))))
+
+Lemma conj325synthconj3 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) lv3) (Cons lv2 Nil)) (rev (Cons lv2 (append (rev (Cons lv1 lv3)) lv0))))
+
+Lemma conj325synthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) lv3) (Cons lv2 Nil)) (rev (append (Cons lv2 (rev lv3)) (Cons lv1 lv0))))
+
+Lemma conj325synthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) lv3) (Cons lv2 Nil)) (rev (append (Cons lv2 (rev (Cons lv1 lv3))) lv0)))
+
+Lemma conj324synthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) lv2) lv3) (append (append (rev lv0) (Cons lv1 Nil)) (rev (rev (append lv2 lv3)))))
+
+Lemma conj319synthconj6 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (rev lv1) (Cons lv2 (Cons lv3 lv0))) lv4) (append (append (rev lv1) (Cons lv2 Nil)) (Cons lv3 (append lv0 lv4))))
+
+Lemma conj319synthconj4 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (rev (Cons lv3 (Cons lv2 lv1))) lv0) lv4) (append (append (rev lv1) (Cons lv2 Nil)) (Cons lv3 (append lv0 lv4))))
+
+Lemma conj318synthconj4 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv1) (Cons lv2 Nil)) lv3) lv0) (append (append (rev lv1) (Cons lv2 Nil)) (rev (rev (append lv3 lv0)))))
+
+Lemma conj307synthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : lst), (@eq lst (append (append (append (rev lv0) lv3) lv2) (Cons lv1 Nil)) (append (append (rev lv0) lv3) (rev (Cons lv1 (rev (rev (rev lv2)))))))
+
+Lemma conj307synthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : lst) (lv3 : lst), (@eq lst (append (append (append (rev lv0) lv3) lv2) (Cons lv1 Nil)) (append (append (rev lv0) lv3) (rev (Cons lv1 (rev (append Nil lv2))))))
+
+Lemma conj305synthconj2 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv1) lv0) lv3) (Cons lv2 Nil)) (append (append (rev lv1) lv0) (rev (Cons lv2 (rev (rev (rev lv3)))))))
+
+Lemma conj305synthconj1 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv1) lv0) lv3) (Cons lv2 Nil)) (append (append (rev lv1) lv0) (rev (Cons lv2 (rev (append Nil lv3))))))
+
+Lemma conj324synthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst) (lv4 : lst), (@eq lst (append (rev (append lv4 (Cons lv2 (Cons lv1 lv0)))) lv3) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv2 (append (rev lv4) lv3))))
+
+Lemma conj319synthconj3 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (rev (append (rev lv0) (Cons lv3 (Cons lv2 lv1)))) lv4) (append (append (rev lv1) (Cons lv2 Nil)) (Cons lv3 (append lv0 lv4))))
+
+Lemma conj319synthconj2 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (rev (append (rev (Cons lv3 lv0)) (Cons lv2 lv1))) lv4) (append (append (rev lv1) (Cons lv2 Nil)) (Cons lv3 (append lv0 lv4))))
+
+Lemma conj319synthconj1 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (rev (append (rev (Cons lv2 (Cons lv3 lv0))) lv1)) lv4) (append (append (rev lv1) (Cons lv2 Nil)) (Cons lv3 (append lv0 lv4))))
+
+Lemma conj325synthconj6 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) lv3) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (rev (Cons lv2 (rev lv3)))))
+
+Lemma conj324synthconj3 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst) (lv4 : lst), (@eq lst (append (append (rev lv0) (Cons lv1 (Cons lv2 (rev lv4)))) lv3) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv2 (append (rev lv4) lv3))))
+
+Lemma conj324synthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst) (lv4 : lst), (@eq lst (append (append (rev (Cons lv2 (Cons lv1 lv0))) (rev lv4)) lv3) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv2 (append (rev lv4) lv3))))
+
+Lemma conj310synthconj6 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv1) lv4) (Cons lv3 lv0)) (Cons lv2 Nil)) (append (append (rev lv1) lv4) (rev (Cons lv2 (rev (Cons lv3 lv0))))))
+
+Lemma conj310synthconj4 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv1) lv4) (Cons lv3 lv0)) (Cons lv2 Nil)) (append (append (rev lv1) lv4) (Cons lv3 (rev (Cons lv2 (rev lv0))))))
+
+Lemma conj306synthconj5 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (rev lv1) (append lv4 (Cons lv3 lv0))) (Cons lv2 Nil)) (append (append (rev lv1) lv4) (Cons lv3 (append lv0 (Cons lv2 Nil)))))
+
+Lemma conj301eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural) (lv3 : lst) (lv4 : lst), (@eq lst (append (append (append lv3 (Cons lv0 Nil)) (Cons lv2 (rev lv4))) (Cons lv1 Nil)) ((append lv3 (Cons lv0 (Cons lv2 (rev (Cons lv1 lv4)))))))
+
+Lemma conj340eqsynthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 (rev lv4))) (Cons lv2 Nil)) ((rev (Cons lv2 (append lv4 (Cons lv3 (Cons lv1 lv0)))))))
+
+Lemma conj340eqsynthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 (rev lv4))) (Cons lv2 Nil)) ((rev (append (Cons lv2 lv4) (Cons lv3 (Cons lv1 lv0))))))
+
+Lemma conj325eqsynthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 (append (rev lv4) (Cons lv2 Nil)))) ((rev (Cons lv2 (append lv4 (Cons lv3 (Cons lv1 lv0)))))))
+
+Lemma conj325synthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (rev (Cons lv2 (append lv4 (Cons lv3 (Cons lv1 lv0))))) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 (append (rev lv4) (Cons lv2 Nil)))))
+
+Lemma conj328synthconj2 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv1) (Cons lv2 Nil)) (Cons lv3 lv0)) lv4) (append (append (rev lv1) (Cons lv2 Nil)) (rev (rev (Cons lv3 (append lv0 lv4))))))
+
+Lemma conj328synthconj1 : forall  (lv0 : lst) (lv1 : lst) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv1) (Cons lv2 Nil)) (Cons lv3 lv0)) lv4) (append (append (rev lv1) (Cons lv2 Nil)) (rev (rev (append (Cons lv3 lv0) lv4)))))
+
+Lemma conj325synthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) lv3) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (rev (Cons lv2 (rev (rev (rev lv3)))))))
+
+Lemma conj325synthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) lv3) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (rev (Cons lv2 (rev (append Nil lv3))))))
+
+Lemma conj323synthconj6 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (rev lv0) (Cons lv1 (Cons lv3 lv4))) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 (append lv4 (Cons lv2 Nil)))))
+
+Lemma conj323synthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (rev (Cons lv3 (Cons lv1 lv0))) lv4) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 (append lv4 (Cons lv2 Nil)))))
+
+Lemma conj314synthconj5 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst) (lv4 : lst), (@eq lst (append (append (append (rev lv0) lv3) (Cons lv2 (rev lv4))) (Cons lv1 Nil)) (append (append (rev lv0) lv3) (rev (Cons lv1 (rev (Cons lv2 (rev lv4)))))))
+
+Lemma conj314synthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst) (lv4 : lst), (@eq lst (append (append (append (rev lv0) lv3) (Cons lv2 (rev lv4))) (Cons lv1 Nil)) (append (append (rev lv0) lv3) (rev (Cons lv1 (append lv4 (Cons lv2 Nil))))))
+
+Lemma conj314synthconj3 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst) (lv4 : lst), (@eq lst (append (append (append (rev lv0) lv3) (Cons lv2 (rev lv4))) (Cons lv1 Nil)) (append (append (rev lv0) lv3) (rev (rev (Cons lv2 (rev (Cons lv1 lv4)))))))
+
+Lemma conj314synthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : lst) (lv4 : lst), (@eq lst (append (append (append (rev lv0) lv3) (Cons lv2 (rev lv4))) (Cons lv1 Nil)) (append (append (rev lv0) lv3) (rev (append (Cons lv1 lv4) (Cons lv2 Nil)))))
+
+Lemma conj323synthconj3 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (rev (append (rev lv4) (Cons lv3 (Cons lv1 lv0)))) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 (append lv4 (Cons lv2 Nil)))))
+
+Lemma conj323synthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (rev (append (rev (Cons lv3 lv4)) (Cons lv1 lv0))) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 (append lv4 (Cons lv2 Nil)))))
+
+Lemma conj323synthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (rev (append (rev (Cons lv1 (Cons lv3 lv4))) lv0)) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 (append lv4 (Cons lv2 Nil)))))
+
+Lemma conj332synthconj6 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 lv4)) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (rev (Cons lv2 (rev (Cons lv3 lv4))))))
+
+Lemma conj332synthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 lv4)) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 (rev (Cons lv2 (rev lv4))))))
+
+Lemma conj325synthconj3 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (rev lv0) (Cons lv1 (Cons lv3 (rev lv4)))) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 (append (rev lv4) (Cons lv2 Nil)))))
+
+Lemma conj325synthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (rev (Cons lv3 (Cons lv1 lv0))) (rev lv4)) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 (append (rev lv4) (Cons lv2 Nil)))))
+
+Lemma conj301synthconj5 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural) (lv3 : lst) (lv4 : lst), (@eq lst (append (append (append lv3 (Cons lv0 Nil)) (Cons lv2 (rev lv4))) (Cons lv1 Nil)) (append (append lv3 (Cons lv0 Nil)) (rev (Cons lv1 (rev (Cons lv2 (rev lv4)))))))
+
+Lemma conj301synthconj4 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural) (lv3 : lst) (lv4 : lst), (@eq lst (append (append (append lv3 (Cons lv0 Nil)) (Cons lv2 (rev lv4))) (Cons lv1 Nil)) (append (append lv3 (Cons lv0 Nil)) (rev (Cons lv1 (append lv4 (Cons lv2 Nil))))))
+
+Lemma conj301synthconj3 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural) (lv3 : lst) (lv4 : lst), (@eq lst (append (append (append lv3 (Cons lv0 Nil)) (Cons lv2 (rev lv4))) (Cons lv1 Nil)) (append (append lv3 (Cons lv0 Nil)) (rev (rev (Cons lv2 (rev (Cons lv1 lv4)))))))
+
+Lemma conj301synthconj2 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural) (lv3 : lst) (lv4 : lst), (@eq lst (append (append (append lv3 (Cons lv0 Nil)) (Cons lv2 (rev lv4))) (Cons lv1 Nil)) (append (append lv3 (Cons lv0 Nil)) (rev (append (Cons lv1 lv4) (Cons lv2 Nil)))))
+
+Lemma conj340synthconj5 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 (rev lv4))) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (rev (Cons lv2 (rev (Cons lv3 (rev lv4)))))))
+
+Lemma conj340synthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 (rev lv4))) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (rev (Cons lv2 (append lv4 (Cons lv3 Nil))))))
+
+Lemma conj340synthconj3 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 (rev lv4))) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (rev (rev (Cons lv3 (rev (Cons lv2 lv4)))))))
+
+Lemma conj340synthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural) (lv4 : lst), (@eq lst (append (append (append (rev lv0) (Cons lv1 Nil)) (Cons lv3 (rev lv4))) (Cons lv2 Nil)) (append (append (rev lv0) (Cons lv1 Nil)) (rev (append (Cons lv2 lv4) (Cons lv3 Nil)))))

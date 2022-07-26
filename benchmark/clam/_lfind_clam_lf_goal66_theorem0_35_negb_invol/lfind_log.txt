@@ -1,0 +1,18 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj6: forall  (y:natural) , (@eq bool (even y) (negb (negb (even y))))
+is_valid : true
+is_prover_provable (be proven by proverbot): true
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj3: forall (lf1:bool) , (@eq bool lf1 (negb (negb lf1)))
+is_valid : true
+is_prover_provable (be proven by proverbot): true
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

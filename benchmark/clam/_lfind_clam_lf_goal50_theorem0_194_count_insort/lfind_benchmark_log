@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal50.v
+Lemma lfind_state  (n:natural) (y:lst) (IHy:@eq natural (count (sort y) n) (count y n)):@eq natural (count (insort (sort y) n) n) (Succ (count y n)).
+Admitted.

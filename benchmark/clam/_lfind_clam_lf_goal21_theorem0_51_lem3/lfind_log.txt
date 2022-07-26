@@ -1,0 +1,97 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj3: forall  (y:lst) , (@eq lst y (append y Nil))
+is_valid : true
+is_prover_provable (be proven by proverbot): true
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj2: forall  (y:lst)(lf1:lst) , (@eq lst y (append y lf1))
+is_valid : false
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+ 		
+### Synthesis Stats ###
+		 Synthesis Term : append y lf1
+		 # Myth Enumerated Terms : 12
+		 # Valid Synthesized Lemmas : 1
+		 Valid Lemmas
+ 			 Myth Term : ( append Nil (append y Nil))
+			 Lemma : conj2synthconj2 : forall  (lv0 : lst), (@eq lst lv0 (append Nil (append lv0 Nil)))
+
+		 # Lemmas useful to prove original goal : 1
+		 Lemmas that can prove the original goal 
+ 			 Myth Term : ( append Nil (append y Nil))
+			 Lemma : conj2synthconj2 : forall  (lv0 : lst), (@eq lst lv0 (append Nil (append lv0 Nil)))
+
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : y
+		 # Myth Enumerated Terms : 12
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+ 
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj1: forall  (y:lst)(lf1:lst) , (@eq lst y lf1)
+is_valid : false
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+ 		
+### Synthesis Stats ###
+		 Synthesis Term : lf1
+		 # Myth Enumerated Terms : 12
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : lst
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : @eq
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : y
+		 # Myth Enumerated Terms : 6
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+ 
+

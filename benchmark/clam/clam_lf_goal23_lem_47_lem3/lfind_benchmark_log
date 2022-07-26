@@ -1,0 +1,17 @@
+COQDEP VFILES
+COQC goal23.v
+Lemma lfind_state  (l2:lst):@eq natural (len l2) (len (append l2 Nil)).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal23_lem_47_lem3/goal23_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal23_lem_47_lem3 goal23_lfind_orig goal23
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0

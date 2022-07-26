@@ -1,0 +1,24 @@
+Load LFindLoad.
+From lfind Require Import LFind.
+Require Import Arith.
+From QuickChick Require Import QuickChick.
+From adtind Require Import goal40.
+
+Derive Show for bool.
+
+              Derive Arbitrary for bool.
+
+              Instance Dec_Eq_bool : Dec_Eq bool.
+
+              Proof. dec_eq. Qed.
+Derive Show for lst.
+
+              Derive Arbitrary for lst.
+
+              Instance Dec_Eq_lst : Dec_Eq lst.
+
+              Proof. dec_eq. Qed.
+
+Lemma lfind_hyp_test : (@eq bool (lst_subset Nil (Nil)) (false)).
+Admitted.
+QuickChick lfind_hyp_test.

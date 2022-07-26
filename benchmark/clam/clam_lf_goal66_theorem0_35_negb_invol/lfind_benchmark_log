@@ -1,0 +1,16 @@
+COQDEP VFILES
+COQC goal66.v
+Lemma lfind_state  (y:natural):@eq bool (even y) (negb (negb (even y))).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal66_theorem0_35_negb_invol/goal66_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal66_theorem0_35_negb_invol goal66_lfind_orig goal66
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0

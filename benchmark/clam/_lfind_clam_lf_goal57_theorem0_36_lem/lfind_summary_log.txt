@@ -1,0 +1,23 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 96 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (u:natural) (v:natural) (w:natural) (x:natural) (y:natural) (z:lst):@eq lst (drop u (drop (Succ v) (drop (Succ w) (Cons x (Cons y z)))))
+  (drop (Succ u) (drop v (drop w (Cons x z)))).
+Admitted.
+Yes Cat 1: false
+# Generalizations : 0
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj144: forall  (u:natural) (v:natural) (w:natural) (x:natural) (y:natural) (z:lst) , (@eq lst (drop u (drop (Succ v) (drop (Succ w) (Cons x (Cons y z))))) (drop (Succ u) (drop v (drop w (Cons x z)))))
+Valid Lemmas (Category 3)
+
+

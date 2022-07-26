@@ -1,0 +1,18 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj2_hyp: forall  (x:natural) (y:natural)(lf1:natural), (not (@eq natural x y)) ->  (@eq natural (if eqb x y then Succ lf1 else lf1) lf1)
+is_valid : true
+is_prover_provable (be proven by proverbot): true
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj4_hyp: forall  (x:natural) (y:natural), (not (@eq natural x y)) ->  (@eq natural (if eqb x y then Succ Zero else Zero) Zero)
+is_valid : true
+is_prover_provable (be proven by proverbot): true
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

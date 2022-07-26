@@ -1,0 +1,18 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj26: forall  (n:natural) (l1:lst) (n0:natural) (l3:lst) , (@eq lst (Cons n (append l1 (Cons n0 l3))) (Cons n (append (append l1 Nil) (Cons n0 l3))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj25: forall  (n:natural) (l1:lst)(lf1:lst) , (@eq lst (Cons n (append l1 lf1)) (Cons n (append (append l1 Nil) lf1)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

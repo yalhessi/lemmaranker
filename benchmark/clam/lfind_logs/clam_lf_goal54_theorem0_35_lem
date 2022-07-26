@@ -1,0 +1,141 @@
+Provable and Useful in Completing Stuck Goal
+Lemma conj18eqsynthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural), (@eq lst (drop (Succ lv1) (drop lv2 lv0)) ((drop lv1 (drop (Succ lv2) lv0))))
+
+Lemma conj18synthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural), (@eq lst (drop (Succ lv1) (drop lv2 lv0)) (drop lv1 (drop Zero (drop (Succ lv2) lv0))))
+
+Useful in Completing Stuck Goal
+Lemma conj7eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq lst (drop lv0 (drop lv1 lv2)) ((drop lv1 (drop lv0 lv2))))
+
+Lemma conj8eqsynthconj6 : forall  (lv0 : natural) (lv1 : lst) (lv2 : natural), (@eq lst (drop lv0 (drop lv2 lv1)) ((drop lv2 (drop lv0 lv1))))
+
+Lemma conj18eqsynthconj6 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural), (@eq lst (drop lv1 (drop lv2 lv0)) ((drop lv2 (drop lv1 lv0))))
+
+Lemma conj18synthconj6 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural), (@eq lst (drop lv2 (drop lv1 lv0)) (drop lv1 (drop lv2 lv0)))
+
+Lemma conj16eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq lst (drop (Succ lv0) (drop lv1 lv2)) ((drop lv0 (drop (Succ lv1) lv2))))
+
+Lemma conj18eqsynthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural), (@eq lst (drop (Succ lv1) (drop lv2 lv0)) ((drop lv1 (drop (Succ lv2) lv0))))
+
+Lemma conj7eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq lst (drop lv0 (drop lv1 lv2)) ((drop lv1 (drop (Succ lv0) (Cons lv0 lv2)))))
+
+Lemma conj7eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq lst (drop lv0 (drop lv1 lv2)) ((drop lv1 (drop (Succ lv0) (Cons lv1 lv2)))))
+
+Lemma conj7eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq lst (drop lv0 (drop lv1 lv2)) ((drop lv1 (drop (Succ lv0) (Cons Zero lv2)))))
+
+Lemma conj7eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq lst (drop lv0 (drop lv1 lv2)) ((drop (Succ lv1) (Cons lv0 (drop lv0 lv2)))))
+
+Lemma conj8eqsynthconj4 : forall  (lv0 : natural) (lv1 : lst) (lv2 : natural), (@eq lst (drop lv0 (drop lv2 lv1)) ((drop lv2 (drop (Succ lv0) (Cons lv0 lv1)))))
+
+Lemma conj8eqsynthconj3 : forall  (lv0 : natural) (lv1 : lst) (lv2 : natural), (@eq lst (drop lv0 (drop lv2 lv1)) ((drop lv2 (drop (Succ lv0) (Cons lv2 lv1)))))
+
+Lemma conj8eqsynthconj2 : forall  (lv0 : natural) (lv1 : lst) (lv2 : natural), (@eq lst (drop lv0 (drop lv2 lv1)) ((drop lv2 (drop (Succ lv0) (Cons Zero lv1)))))
+
+Lemma conj8eqsynthconj1 : forall  (lv0 : natural) (lv1 : lst) (lv2 : natural), (@eq lst (drop lv0 (drop lv2 lv1)) ((drop (Succ lv2) (Cons lv0 (drop lv0 lv1)))))
+
+Lemma conj18eqsynthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural), (@eq lst (drop lv1 (drop lv2 lv0)) ((drop lv2 (drop (Succ lv1) (Cons lv1 lv0)))))
+
+Lemma conj18eqsynthconj3 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural), (@eq lst (drop lv1 (drop lv2 lv0)) ((drop lv2 (drop (Succ lv1) (Cons lv2 lv0)))))
+
+Lemma conj18eqsynthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural), (@eq lst (drop lv1 (drop lv2 lv0)) ((drop lv2 (drop (Succ lv1) (Cons Zero lv0)))))
+
+Lemma conj18eqsynthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural), (@eq lst (drop lv1 (drop lv2 lv0)) ((drop (Succ lv2) (Cons lv1 (drop lv1 lv0)))))
+
+Lemma conj18synthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural), (@eq lst (drop (Succ lv1) (drop lv2 lv0)) (drop lv1 (drop Zero (drop (Succ lv2) lv0))))
+Valid Lemmas
+Lemma conj19synthconj5 : forall  (lv0 : lst), (@eq lst (drop Zero lv0) lv0)
+
+Lemma conj19eqsynthconj5 : forall  (lv0 : lst), (@eq lst (lv0) ((drop Zero lv0)))
+
+Lemma conj1synthconj4 : forall  (lv0 : lst) (lv1 : lst), (@eq lst lv0 (drop Zero lv0))
+
+Lemma conj1synthconj3 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (drop Zero lv1) lv1)
+
+Lemma conj19synthconj3 : forall  (lv0 : lst), (@eq lst (drop Zero (drop Zero lv0)) lv0)
+
+Lemma conj19eqsynthconj3 : forall  (lv0 : lst), (@eq lst (lv0) ((drop Zero (drop Zero lv0))))
+
+Lemma conj19synthconj4 : forall  (lv0 : lst), (@eq lst (drop (Succ Zero) (Cons Zero lv0)) lv0)
+
+Lemma conj19eqsynthconj4 : forall  (lv0 : lst), (@eq lst (lv0) ((drop (Succ Zero) (Cons Zero lv0))))
+
+Lemma conj1synthconj2 : forall  (lv0 : lst) (lv1 : lst), (@eq lst lv0 (drop (Succ Zero) (Cons Zero lv0)))
+
+Lemma conj1synthconj1 : forall  (lv0 : lst) (lv1 : lst), (@eq lst (drop (Succ Zero) (Cons Zero lv1)) lv1)
+
+Lemma conj20synthconj3 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (drop Zero (drop lv1 lv0)) (drop lv1 lv0))
+
+Lemma conj20synthconj1 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (drop lv1 (drop Zero lv0)) (drop lv1 lv0))
+
+Lemma conj20eqsynthconj3 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (drop lv1 lv0) ((drop Zero (drop lv1 lv0))))
+
+Lemma conj20eqsynthconj1 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (drop lv1 lv0) ((drop lv1 (drop Zero lv0))))
+
+Lemma conj20eqsynthconj4 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (Cons lv1 lv0) ((Cons lv1 (drop Zero lv0))))
+
+Lemma conj19synthconj2 : forall  (lv0 : lst), (@eq lst (drop (Succ Zero) (Cons (Succ Zero) lv0)) lv0)
+
+Lemma conj19eqsynthconj2 : forall  (lv0 : lst), (@eq lst (lv0) ((drop (Succ Zero) (Cons (Succ Zero) lv0))))
+
+Lemma conj17synthconj3 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (drop Zero (drop lv0 lv1)) (drop lv0 lv1))
+
+Lemma conj17synthconj1 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (drop lv0 (drop Zero lv1)) (drop lv0 lv1))
+
+Lemma conj17eqsynthconj3 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (drop lv0 lv1) ((drop Zero (drop lv0 lv1))))
+
+Lemma conj17eqsynthconj1 : forall  (lv0 : natural) (lv1 : lst), (@eq lst (drop lv0 lv1) ((drop lv0 (drop Zero lv1))))
+
+Lemma conj19synthconj1 : forall  (lv0 : lst), (@eq lst (drop (Succ Zero) (Cons (Succ (Succ Zero)) lv0)) lv0)
+
+Lemma conj19eqsynthconj1 : forall  (lv0 : lst), (@eq lst (lv0) ((drop (Succ Zero) (Cons (Succ (Succ Zero)) lv0))))
+
+Lemma conj15synthconj3 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (drop (Succ lv1) lv0) (drop Zero (drop (Succ lv1) lv0)))
+
+Lemma conj15synthconj2 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (drop (Succ lv1) lv0) (drop (Succ Zero) (drop lv1 lv0)))
+
+Lemma conj15synthconj6 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (drop (Succ lv1) lv0) (drop lv1 (drop (Succ Zero) lv0)))
+
+Lemma conj20eqsynthconj1 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (Cons lv1 lv0) ((Cons lv1 (drop (Succ Zero) (Cons lv1 lv0)))))
+
+Lemma conj20eqsynthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural), (@eq lst (drop lv2 (Cons lv1 lv0)) ((drop Zero (drop lv2 (Cons lv1 lv0)))))
+
+Lemma conj20eqsynthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural), (@eq lst (drop lv2 (Cons lv1 lv0)) ((drop lv2 (Cons lv1 (drop Zero lv0)))))
+
+Lemma conj18eqsynthconj6 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural), (@eq lst (drop (Succ lv1) (drop lv2 lv0)) ((drop lv2 (drop (Succ lv1) lv0))))
+
+Lemma conj18eqsynthconj5 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural), (@eq lst (drop (Succ lv1) (drop lv2 lv0)) ((drop (Succ lv2) (drop lv1 lv0))))
+
+Lemma conj16eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq lst (drop (Succ lv0) (drop lv1 lv2)) ((drop lv1 (drop (Succ lv0) lv2))))
+
+Lemma conj16eqsynthconj5 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq lst (drop (Succ lv0) (drop lv1 lv2)) ((drop (Succ lv1) (drop lv0 lv2))))
+
+Lemma conj15synthconj2 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (drop (Succ lv1) lv0) (drop lv1 (drop Zero (drop (Succ Zero) lv0))))
+
+Lemma conj15synthconj1 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (drop (Succ lv1) lv0) (drop lv1 (drop (Succ Zero) (drop Zero lv0))))
+
+Lemma conj20eqsynthconj6 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural), (@eq lst (drop (Succ lv2) (drop lv3 (Cons lv1 lv0))) ((drop lv3 (drop lv2 lv0))))
+
+Lemma conj15synthconj5 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (drop (Succ lv1) lv0) (drop lv1 (drop (Succ (Succ Zero)) (Cons lv1 lv0))))
+
+Lemma conj15synthconj4 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (drop (Succ lv1) lv0) (drop lv1 (drop (Succ (Succ Zero)) (Cons Zero lv0))))
+
+Lemma conj15synthconj3 : forall  (lv0 : lst) (lv1 : natural), (@eq lst (drop (Succ lv1) lv0) (drop lv1 (drop (Succ (Succ Zero)) (Cons (Succ lv1) lv0))))
+
+Lemma conj12eqsynthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural), (@eq lst (drop lv2 (drop lv3 (Cons lv1 lv0))) ((drop lv3 (drop lv2 (Cons lv1 lv0)))))
+
+Lemma conj11eqsynthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural), (@eq lst (drop lv3 (drop lv2 (Cons lv1 lv0))) ((drop lv2 (drop lv3 (Cons lv1 lv0)))))
+
+Lemma conj18eqsynthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural), (@eq lst (drop (Succ lv1) (drop lv2 lv0)) ((drop lv2 (drop (Succ (Succ lv1)) (Cons lv1 lv0)))))
+
+Lemma conj18eqsynthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural), (@eq lst (drop (Succ lv1) (drop lv2 lv0)) ((drop lv2 (drop (Succ (Succ lv1)) (Cons lv2 lv0)))))
+
+Lemma conj16eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq lst (drop (Succ lv0) (drop lv1 lv2)) ((drop lv1 (drop (Succ (Succ lv0)) (Cons lv0 lv2)))))
+
+Lemma conj16eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural) (lv2 : lst), (@eq lst (drop (Succ lv0) (drop lv1 lv2)) ((drop lv1 (drop (Succ (Succ lv0)) (Cons lv1 lv2)))))
+
+Lemma conj20eqsynthconj4 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural), (@eq lst (drop (Succ lv2) (drop lv3 (Cons lv1 lv0))) ((drop lv3 (drop (Succ lv2) (Cons lv2 lv0)))))
+
+Lemma conj20eqsynthconj3 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural), (@eq lst (drop (Succ lv2) (drop lv3 (Cons lv1 lv0))) ((drop lv3 (drop (Succ lv2) (Cons lv3 lv0)))))
+
+Lemma conj20eqsynthconj2 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural), (@eq lst (drop (Succ lv2) (drop lv3 (Cons lv1 lv0))) ((drop lv3 (drop (Succ lv2) (Cons lv1 lv0)))))
+
+Lemma conj20eqsynthconj1 : forall  (lv0 : lst) (lv1 : natural) (lv2 : natural) (lv3 : natural), (@eq lst (drop (Succ lv2) (drop lv3 (Cons lv1 lv0))) ((drop lv3 (drop (Succ lv2) (Cons Zero lv0)))))

@@ -1,0 +1,9 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj16: forall  (n:natural) (l1:lst) , (@eq lst (Cons n (append l1 Nil)) (Cons n (append (append l1 Nil) Nil)))
+is_valid : true
+is_prover_provable (be proven by proverbot): true
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

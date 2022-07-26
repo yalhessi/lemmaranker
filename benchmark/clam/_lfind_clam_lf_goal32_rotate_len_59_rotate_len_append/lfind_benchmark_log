@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal32.v
+Lemma lfind_state  (n:natural) (x:lst) (IHx:@eq lst (rotate (len x) x) x):@eq lst (rotate (len x) (append x (Cons n Nil))) (Cons n x).
+Admitted.

@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal17.v
+Lemma lfind_state  (n:natural) (l:lst) (IHl:@eq lst (rev (rev l)) l):@eq lst (rev (append (rev l) (Cons n Nil))) (Cons n l).
+Admitted.

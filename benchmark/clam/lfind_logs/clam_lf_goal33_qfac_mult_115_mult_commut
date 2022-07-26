@@ -1,0 +1,9 @@
+Provable and Useful in Completing Stuck Goal
+
+Useful in Completing Stuck Goal
+Lemma conj13: forall  (x:natural) (y:natural)(lf1:natural) , (@eq natural (mult lf1 (mult y x)) (mult lf1 (mult x y)))
+
+Lemma conj19: forall  (y:natural) (x:natural)(lf1:natural) , (@eq natural (mult (qfac x lf1) (mult y x)) (mult (qfac x lf1) (mult x y)))
+
+Lemma conj25: forall  (y:natural) (x:natural)(lf1:natural) , (@eq natural (mult (qfac x (Succ lf1)) (mult y x)) (mult (qfac x (Succ lf1)) (mult x y)))
+Valid Lemmas

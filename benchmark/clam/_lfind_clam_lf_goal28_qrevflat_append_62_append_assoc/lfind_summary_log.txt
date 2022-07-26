@@ -1,0 +1,26 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 191 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (n:natural) (x1:tree) (x2:tree) (n0:natural) (y:lst) (IHy:@eq lst (append (revflat (Node n x1 x2)) y) (qrevaflat (Node n x1 x2) y)):@eq lst (append (append (revflat x1) (Cons n (revflat x2))) (Cons n0 y))
+  (append (revflat x1) (Cons n (qrevaflat x2 (Cons n0 y)))).
+Admitted.
+Yes Cat 1: false
+# Generalizations : 3
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj43: forall (lf1:lst) (n:natural) (x2:tree)(lf2:lst) , (@eq lst (append (append lf1 (Cons n (revflat x2))) lf2) (append lf1 (Cons n (qrevaflat x2 lf2))))
+conj67: forall  (x1:tree) (n:natural) (x2:tree)(lf1:lst) , (@eq lst (append (append (revflat x1) (Cons n (revflat x2))) lf1) (append (revflat x1) (Cons n (qrevaflat x2 lf1))))
+conj47: forall (lf1:lst) (n:natural) (x2:tree) (n0:natural) (y:lst) , (@eq lst (append (append lf1 (Cons n (revflat x2))) (Cons n0 y)) (append lf1 (Cons n (qrevaflat x2 (Cons n0 y)))))
+conj71: forall  (x1:tree) (n:natural) (x2:tree) (n0:natural) (y:lst) , (@eq lst (append (append (revflat x1) (Cons n (revflat x2))) (Cons n0 y)) (append (revflat x1) (Cons n (qrevaflat x2 (Cons n0 y)))))
+Valid Lemmas (Category 3)
+
+

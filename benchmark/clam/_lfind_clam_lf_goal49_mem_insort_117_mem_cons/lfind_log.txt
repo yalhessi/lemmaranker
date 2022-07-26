@@ -1,0 +1,18 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj8_hyp: forall  (x:natural) (n:natural) (n0:natural) (l:lst)(lf1:bool), (@eq bool (mem x (Cons n0 (insort n l))) lf1) ->  (or (@eq natural x n) (@eq bool (mem x (Cons n0 l)) lf1))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj14_hyp: forall  (x:natural) (n:natural) (n0:natural) (l:lst), (@eq bool (mem x (Cons n0 (insort n l))) true) ->  (or (@eq natural x n) (@eq bool (mem x (Cons n0 l)) true))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+  
+

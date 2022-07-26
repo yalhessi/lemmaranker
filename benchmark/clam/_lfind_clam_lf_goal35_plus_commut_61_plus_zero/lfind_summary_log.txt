@@ -1,0 +1,23 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 36 
+Total Time: 36 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (y:natural):@eq natural (plus Zero y) (plus y Zero).
+Admitted.
+Yes Cat 1: true
+# Generalizations : 1
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+conj7: forall  (y:natural) , (@eq natural (plus Zero y) (plus y Zero))
+Useful in Completing Stuck Goal (Category 2)
+
+conj4: forall (lf1:natural) (y:natural) , (@eq natural (plus lf1 y) (plus y lf1))
+Valid Lemmas (Category 3)
+
+

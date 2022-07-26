@@ -1,0 +1,9 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj12: forall  (x:natural) , (@eq natural (Succ (half (plus x (Succ (Succ x))))) (Succ (Succ x)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

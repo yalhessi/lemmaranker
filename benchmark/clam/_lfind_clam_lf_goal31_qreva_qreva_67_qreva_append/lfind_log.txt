@@ -1,0 +1,27 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj22: forall  (x:lst) (n:natural) , (@eq lst (qreva (append (qreva x Nil) (Cons n Nil)) Nil) (Cons n x))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj12_hyp: forall  (x:lst)(lf1:lst) (n:natural), (@eq lst (qreva (qreva x lf1) lf1) x) ->  (@eq lst (qreva (append (qreva x lf1) (Cons n lf1)) lf1) (Cons n x))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj18_hyp: forall (lf1:lst) (n:natural) (x:lst), (@eq lst (qreva lf1 Nil) x) ->  (@eq lst (qreva (append lf1 (Cons n Nil)) Nil) (Cons n x))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

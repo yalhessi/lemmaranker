@@ -1,0 +1,15 @@
+Provable and Useful in Completing Stuck Goal
+Lemma conj3synthconj1 : forall  (lv0 : lst), (@eq lst (append lv0 Nil) lv0)
+
+Lemma conj3eqsynthconj1 : forall  (lv0 : lst), (@eq lst (lv0) ((append lv0 Nil)))
+
+Lemma conj5: forall (lf1:lst) , (@eq lst lf1 (append lf1 Nil))
+
+Useful in Completing Stuck Goal
+Lemma conj3synthconj1 : forall  (lv0 : lst), (@eq lst (append lv0 Nil) lv0)
+
+Lemma conj3eqsynthconj1 : forall  (lv0 : lst), (@eq lst (lv0) ((append lv0 Nil)))
+Valid Lemmas
+Lemma conj4synthconj4 : forall  (lv0 : tree), (@eq lst (revflat lv0) (qrevaflat lv0 Nil))
+
+Lemma conj3synthconj2 : forall  (lv0 : tree) (lv1 : lst), (@eq lst (revflat lv0) (qrevaflat lv0 Nil))

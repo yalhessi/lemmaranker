@@ -1,0 +1,19 @@
+COQDEP VFILES
+COQC goal42.v
+Lemma lfind_state  (x:natural) (n:natural) (y:lst) (z:lst) (H:@eq bool (eqb x n) true) (IHy:forall _ : @eq bool (lst_mem x y) true,
+@eq bool (lst_mem x (lst_union y z)) true) (Heqb:@eq bool (lst_mem n z) true):@eq bool (lst_mem x (lst_union y z)) true.
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal42_theorem0_67_mem_union/goal42_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal42_theorem0_67_mem_union goal42_lfind_orig goal42
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0

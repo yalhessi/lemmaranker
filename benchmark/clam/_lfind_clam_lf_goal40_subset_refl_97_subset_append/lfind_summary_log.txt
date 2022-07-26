@@ -1,0 +1,25 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 116 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (n:natural) (x:lst) (IHx:@eq bool (lst_subset x x) true):@eq bool (lst_subset x (append (Cons n Nil) x)) true.
+Admitted.
+Yes Cat 1: false
+# Generalizations : 3
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj7: forall  (x:lst)(lf1:lst) , (@eq bool (lst_subset x (append lf1 x)) true)
+conj8: forall  (x:lst) (n:natural) , (@eq bool (lst_subset x (append (Cons n Nil) x)) true)
+conj3_hyp: forall  (x:lst)(lf1:lst)(lf2:bool), (@eq bool (lst_subset x x) lf2) ->  (@eq bool (lst_subset x (append lf1 x)) lf2)
+conj4_hyp: forall  (x:lst) (n:natural)(lf1:bool), (@eq bool (lst_subset x x) lf1) ->  (@eq bool (lst_subset x (append (Cons n Nil) x)) lf1)
+Valid Lemmas (Category 3)
+
+

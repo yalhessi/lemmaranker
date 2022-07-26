@@ -1,0 +1,6 @@
+Provable and Useful in Completing Stuck Goal
+Lemma conj9: forall  (n:natural)(lf1:bool) , (@eq bool (orb (eqb n n) lf1) true)
+
+Useful in Completing Stuck Goal
+
+Valid Lemmas

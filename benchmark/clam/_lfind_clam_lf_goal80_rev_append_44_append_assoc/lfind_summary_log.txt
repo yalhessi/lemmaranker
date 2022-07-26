@@ -1,0 +1,36 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 241 
+Total Time: 364 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (n:natural) (x:lst) (y:lst) (IHx:@eq lst (rev (append x y)) (append (rev y) (rev x))):@eq lst (append (append (rev y) (rev x)) (Cons n Nil))
+  (append (rev y) (append (rev x) (Cons n Nil))).
+Admitted.
+Yes Cat 1: true
+# Generalizations : 13
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+conj28: forall (lf2:lst)(lf3:lst)(lf1:lst) , (@eq lst (append (append lf2 lf3) lf1) (append lf2 (append lf3 lf1)))
+conj63: forall (lf1:lst)(lf2:lst) (n:natural) , (@eq lst (append (append lf1 lf2) (Cons n Nil)) (append lf1 (append lf2 (Cons n Nil))))
+conj31: forall (lf1:lst)(lf2:lst) (n:natural)(lf3:lst) , (@eq lst (append (append lf1 lf2) (Cons n lf3)) (append lf1 (append lf2 (Cons n lf3))))
+conj66: forall (lf1:lst) (x:lst) (n:natural) , (@eq lst (append (append lf1 (rev x)) (Cons n Nil)) (append lf1 (append (rev x) (Cons n Nil))))
+conj37: forall (lf1:lst) (x:lst) (n:natural)(lf2:lst) , (@eq lst (append (append lf1 (rev x)) (Cons n lf2)) (append lf1 (append (rev x) (Cons n lf2))))
+Useful in Completing Stuck Goal (Category 2)
+
+conj40: forall  (y:lst)(lf2:lst)(lf1:lst) , (@eq lst (append (append (rev y) lf2) lf1) (append (rev y) (append lf2 lf1)))
+conj46: forall  (y:lst) (x:lst)(lf1:lst) , (@eq lst (append (append (rev y) (rev x)) lf1) (append (rev y) (append (rev x) lf1)))
+conj69: forall  (y:lst)(lf1:lst) (n:natural) , (@eq lst (append (append (rev y) lf1) (Cons n Nil)) (append (rev y) (append lf1 (Cons n Nil))))
+conj43: forall  (y:lst)(lf1:lst) (n:natural)(lf2:lst) , (@eq lst (append (append (rev y) lf1) (Cons n lf2)) (append (rev y) (append lf1 (Cons n lf2))))
+conj72: forall  (y:lst) (x:lst) (n:natural) , (@eq lst (append (append (rev y) (rev x)) (Cons n Nil)) (append (rev y) (append (rev x) (Cons n Nil))))
+conj49: forall  (y:lst) (x:lst) (n:natural)(lf1:lst) , (@eq lst (append (append (rev y) (rev x)) (Cons n lf1)) (append (rev y) (append (rev x) (Cons n lf1))))
+conj24_hyp: forall (lf1:lst)(lf2:lst) (y:lst) (x:lst), (@eq lst (rev (append x y)) lf1) ->  (@eq lst (append lf1 lf2) (append (rev y) (append (rev x) lf2)))
+conj60_hyp: forall (lf1:lst) (n:natural) (y:lst) (x:lst), (@eq lst (rev (append x y)) lf1) ->  (@eq lst (append lf1 (Cons n Nil)) (append (rev y) (append (rev x) (Cons n Nil))))
+conj25_hyp: forall (lf1:lst) (n:natural)(lf2:lst) (y:lst) (x:lst), (@eq lst (rev (append x y)) lf1) ->  (@eq lst (append lf1 (Cons n lf2)) (append (rev y) (append (rev x) (Cons n lf2))))
+Valid Lemmas (Category 3)
+
+

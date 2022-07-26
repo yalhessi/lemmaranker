@@ -1,0 +1,18 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj15_hyp: forall  (x:natural) (n:natural) (y:lst)(lf1:natural), (@eq bool (eqb x n) true) -> (@eq bool (less x n) true) ->  (@eq natural (count (Cons x (Cons n y)) x) (Succ (Succ lf1)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj16_hyp: forall  (x:natural) (n:natural) (y:lst), (@eq bool (eqb x n) true) ->  (@eq natural (count (Cons x (Cons n y)) x) (Succ (Succ (count y x))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

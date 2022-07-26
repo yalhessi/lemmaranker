@@ -1,0 +1,9 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj16: forall  (y:natural) (x:natural) , (@eq bool (negb (even (plus y x))) (even (plus y (Succ x))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

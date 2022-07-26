@@ -1,0 +1,31 @@
+COQDEP VFILES
+COQC goal17.v
+Lemma lfind_state  (x:lst) (y:lst):@eq lst (append x y) (append (rev (rev x)) (rev (rev y))).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal17_theorem0_40_lem/goal17_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal17_theorem0_40_lem goal17_lfind_orig goal17
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

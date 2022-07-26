@@ -1,0 +1,28 @@
+COQDEP VFILES
+COQC goal85.v
+Hypotheses contains forall, Quickchick might not work!
+There is a hypothesis that is neither Set or Prop
+Lemma lfind_state  (x:natural) (y:natural) (z:natural):@eq natural (plus (plus (mult x y) y) z) (plus (mult x y) (plus z y)).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal85_theorem0_66_plus_assoc/goal85_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal85_theorem0_66_plus_assoc goal85_lfind_orig goal85
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

@@ -1,0 +1,5 @@
+Provable and Useful in Completing Stuck Goal
+
+Useful in Completing Stuck Goal
+Lemma conj1: forall  (x1:natural) (x2:natural)(lf1:lst) , (@eq lst match drop x2 lf1 with | Cons _ z => drop x1 z | lf1 => lf1 end match drop x1 lf1 with | Cons _ z => drop x2 z | lf1 => lf1 end)
+Valid Lemmas

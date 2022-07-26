@@ -1,0 +1,1 @@
+Lemma conj25synthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (plus (mult lv0 lv1) lv1) (Succ lv0)) (plus (mult lv0 (Succ lv1)) (Succ lv1))).

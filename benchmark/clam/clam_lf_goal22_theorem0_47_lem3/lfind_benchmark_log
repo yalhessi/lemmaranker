@@ -1,0 +1,23 @@
+COQDEP VFILES
+COQC goal22.v
+Lemma lfind_state  (y:lst):@eq bool (even (len y)) (even (len (append y Nil))).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal22_theorem0_47_lem3/goal22_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal22_theorem0_47_lem3 goal22_lfind_orig goal22
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

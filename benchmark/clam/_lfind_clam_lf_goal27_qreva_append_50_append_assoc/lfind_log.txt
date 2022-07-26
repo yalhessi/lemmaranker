@@ -1,0 +1,36 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj53: forall  (x:lst) (n:natural) (n0:natural) (y:lst) , (@eq lst (append (rev x) (Cons n (Cons n0 y))) (append (append (rev x) (Cons n Nil)) (Cons n0 y)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj52: forall  (x:lst) (n:natural)(lf1:lst) , (@eq lst (append (rev x) (Cons n lf1)) (append (append (rev x) (Cons n Nil)) lf1))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj49: forall (lf1:lst) (n:natural) (n0:natural) (y:lst) , (@eq lst (append lf1 (Cons n (Cons n0 y))) (append (append lf1 (Cons n Nil)) (Cons n0 y)))
+is_valid : true
+is_prover_provable (be proven by proverbot): true
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj48: forall (lf2:lst) (n:natural)(lf1:lst) , (@eq lst (append lf2 (Cons n lf1)) (append (append lf2 (Cons n Nil)) lf1))
+is_valid : true
+is_prover_provable (be proven by proverbot): true
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

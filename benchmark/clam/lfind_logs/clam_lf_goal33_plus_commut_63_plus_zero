@@ -1,0 +1,12 @@
+Provable and Useful in Completing Stuck Goal
+Lemma conj6synthconj2 : forall  (lv0 : natural), (@eq natural (plus Zero (plus lv0 Zero)) lv0)
+
+Lemma conj6eqsynthconj2 : forall  (lv0 : natural), (@eq natural (lv0) ((plus Zero (plus lv0 Zero))))
+
+Useful in Completing Stuck Goal
+Lemma conj4: forall  (y:natural)(lf1:natural) , (@eq natural (plus lf1 y) (plus y lf1))
+
+Lemma conj6synthconj2 : forall  (lv0 : natural), (@eq natural (plus Zero (plus lv0 Zero)) lv0)
+
+Lemma conj6eqsynthconj2 : forall  (lv0 : natural), (@eq natural (lv0) ((plus Zero (plus lv0 Zero))))
+Valid Lemmas

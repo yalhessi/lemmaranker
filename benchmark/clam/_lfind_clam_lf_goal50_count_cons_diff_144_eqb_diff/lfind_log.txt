@@ -1,0 +1,9 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj4_hyp: forall  (x:natural) (y:natural) (l:lst), (not (@eq natural x y)) ->  (@eq natural (if eqb x y then Succ (count l x) else count l x) (count l x))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

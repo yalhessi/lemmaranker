@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal26.v
+Lemma lfind_state  (x:natural) (y:natural):@eq natural (half (plus x y)) (half (plus y x)).
+Admitted.

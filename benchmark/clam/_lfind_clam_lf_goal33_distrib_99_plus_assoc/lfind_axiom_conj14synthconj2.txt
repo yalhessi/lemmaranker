@@ -1,0 +1,1 @@
+Lemma conj14synthconj2 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (mult lv0 (plus lv1 (Succ lv2))) (plus (plus (mult lv1 lv0) lv0) (mult lv2 lv0))).

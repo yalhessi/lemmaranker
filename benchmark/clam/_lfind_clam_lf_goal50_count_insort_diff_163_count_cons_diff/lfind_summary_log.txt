@@ -1,0 +1,23 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 105 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (x:natural) (y:natural) (n:natural) (l:lst) (H:not (@eq natural x y)) (IHl:@eq natural (count (insort l y) x) (count l x)) (El:@eq bool (less y n) true) (Ee:@eq bool (eqb x n) false):@eq natural (count (Cons y (Cons n l)) x) (count l x).
+Admitted.
+Yes Cat 1: false
+# Generalizations : 1
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj7_hyp: forall  (y:natural) (n:natural) (l:lst) (x:natural)(lf1:natural), (not (@eq natural x y)) -> (@eq natural (count (insort l y) x) lf1) -> (@eq bool (less y n) true) -> (@eq bool (eqb x n) false) ->  (@eq natural (count (Cons y (Cons n l)) x) lf1)
+conj8_hyp: forall  (y:natural) (n:natural) (l:lst) (x:natural), (not (@eq natural x y)) -> (@eq natural (count (insort l y) x) (count l x)) -> (@eq bool (less y n) true) -> (@eq bool (eqb x n) false) ->  (@eq natural (count (Cons y (Cons n l)) x) (count l x))
+Valid Lemmas (Category 3)
+
+

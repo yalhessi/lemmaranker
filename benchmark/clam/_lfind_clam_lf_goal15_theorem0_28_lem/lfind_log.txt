@@ -1,0 +1,54 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj16: forall  (x:natural) , (@eq natural (plus x (Succ (Succ x))) (Succ (Succ (plus x x))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj10_hyp: forall  (x:natural)(lf2:natural)(lf1:natural), (@eq natural (plus x lf2) lf1) ->  (@eq natural (plus x (Succ lf2)) (Succ lf1))
+is_valid : true
+is_prover_provable (be proven by proverbot): true
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj11_hyp: forall  (x:natural)(lf2:natural)(lf1:natural), (@eq natural (plus x lf2) (Succ lf1)) ->  (@eq natural (plus x (Succ lf2)) (Succ (Succ lf1)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj12_hyp: forall  (x:natural)(lf1:natural), (@eq natural (plus x lf1) (Succ (plus x x))) ->  (@eq natural (plus x (Succ lf1)) (Succ (Succ (plus x x))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj14_hyp: forall  (x:natural)(lf1:natural), (@eq natural (plus x (Succ x)) lf1) ->  (@eq natural (plus x (Succ (Succ x))) (Succ lf1))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj15_hyp: forall  (x:natural)(lf1:natural), (@eq natural (plus x (Succ x)) (Succ lf1)) ->  (@eq natural (plus x (Succ (Succ x))) (Succ (Succ lf1)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

@@ -1,0 +1,19 @@
+COQDEP VFILES
+COQC goal34.v
+Lemma lfind_state  (x:natural) (y:natural) (IHx:@eq natural (mult x y) (qmult x y Zero)):@eq natural (plus (qmult x y Zero) y) (qmult x y y).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal34_mult_eq_qmult_75_plus_qmult/goal34_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal34_mult_eq_qmult_75_plus_qmult goal34_lfind_orig goal34
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0

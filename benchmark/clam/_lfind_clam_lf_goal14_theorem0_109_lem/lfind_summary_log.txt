@@ -1,0 +1,25 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 123 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (n:natural) (x:lst) (IHx:@eq bool (sorted (sort x)) true):@eq bool (sorted (insort n (sort x))) true.
+Admitted.
+Yes Cat 1: false
+# Generalizations : 3
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj8: forall  (n:natural) (x:lst) , (@eq bool (sorted (insort n (sort x))) true)
+conj7_hyp: forall  (n:natural)(lf1:lst), (@eq bool (sorted lf1) true) ->  (@eq bool (sorted (insort n lf1)) true)
+conj3_hyp: forall  (n:natural)(lf1:lst)(lf2:bool), (@eq bool (sorted lf1) lf2) ->  (@eq bool (sorted (insort n lf1)) lf2)
+conj4_hyp: forall  (n:natural) (x:lst)(lf1:bool), (@eq bool (sorted (sort x)) lf1) ->  (@eq bool (sorted (insort n (sort x))) lf1)
+Valid Lemmas (Category 3)
+
+

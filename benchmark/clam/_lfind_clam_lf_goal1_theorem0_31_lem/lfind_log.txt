@@ -1,0 +1,18 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj9: forall  (x:natural) , (@eq natural (Succ (plus x x)) (plus x (Succ x)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj6_hyp: forall (lf1:natural) (x:natural), (@eq natural (double x) lf1) ->  (@eq natural (Succ lf1) (plus x (Succ x)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

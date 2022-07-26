@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal11.v
+Lemma lfind_state  (y:lst):@eq lst y (append y Nil).
+Admitted.

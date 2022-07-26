@@ -1,0 +1,26 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 122 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (x:natural) (y:natural):@eq natural (mult (qfac x (Succ Zero)) (mult y x))
+  (mult (mult (qfac x (Succ Zero)) x) y).
+Admitted.
+Yes Cat 1: false
+# Generalizations : 3
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj11: forall (lf1:natural) (y:natural) (x:natural) , (@eq natural (mult lf1 (mult y x)) (mult (mult lf1 x) y))
+conj17: forall  (x:natural)(lf1:natural) (y:natural) , (@eq natural (mult (qfac x lf1) (mult y x)) (mult (mult (qfac x lf1) x) y))
+conj30: forall  (x:natural) (y:natural) , (@eq natural (mult (qfac x (Succ Zero)) (mult y x)) (mult (mult (qfac x (Succ Zero)) x) y))
+conj23: forall  (x:natural)(lf1:natural) (y:natural) , (@eq natural (mult (qfac x (Succ lf1)) (mult y x)) (mult (mult (qfac x (Succ lf1)) x) y))
+Valid Lemmas (Category 3)
+
+

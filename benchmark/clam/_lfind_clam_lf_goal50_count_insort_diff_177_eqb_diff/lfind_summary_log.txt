@@ -1,0 +1,23 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 50 
+Total Time: 50 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (x:natural) (y:natural) (H:not (@eq natural x y)):@eq natural (if eqb x y then Succ Zero else Zero) Zero.
+Admitted.
+Yes Cat 1: true
+# Generalizations : 1
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+conj4_hyp: forall  (x:natural) (y:natural), (not (@eq natural x y)) ->  (@eq natural (if eqb x y then Succ Zero else Zero) Zero)
+conj2_hyp: forall  (x:natural) (y:natural)(lf1:natural), (not (@eq natural x y)) ->  (@eq natural (if eqb x y then Succ lf1 else lf1) lf1)
+Useful in Completing Stuck Goal (Category 2)
+
+Valid Lemmas (Category 3)
+
+

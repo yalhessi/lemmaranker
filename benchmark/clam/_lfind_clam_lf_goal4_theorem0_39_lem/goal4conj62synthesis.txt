@@ -1,0 +1,3 @@
+let synth (lf2:natural)  =
+  Succ (lf2)
+;;

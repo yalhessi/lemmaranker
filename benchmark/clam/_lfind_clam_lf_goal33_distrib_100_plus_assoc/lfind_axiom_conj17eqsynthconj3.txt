@@ -1,0 +1,1 @@
+Lemma conj17eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus lv0 (plus lv1 (mult lv2 lv1))) (plus lv0 (mult lv1 (Succ lv2)))).

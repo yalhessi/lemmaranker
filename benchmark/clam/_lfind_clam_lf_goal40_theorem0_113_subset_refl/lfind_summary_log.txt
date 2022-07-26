@@ -1,0 +1,23 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 64 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (y:lst) (H:@eq bool (lst_subset Nil y) true):@eq bool (lst_subset y y) true.
+Admitted.
+Yes Cat 1: false
+# Generalizations : 1
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj4: forall  (y:lst) , (@eq bool (lst_subset y y) true)
+conj2_hyp: forall  (y:lst)(lf1:bool), (@eq bool (lst_subset Nil y) lf1) ->  (@eq bool (lst_subset y y) lf1)
+Valid Lemmas (Category 3)
+
+

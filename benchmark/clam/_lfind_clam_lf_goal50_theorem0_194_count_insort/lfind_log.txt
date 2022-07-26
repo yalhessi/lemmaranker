@@ -1,0 +1,36 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj12: forall  (y:lst) (n:natural) , (@eq natural (count (insort (sort y) n) n) (Succ (count y n)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj8_hyp: forall (lf2:lst) (n:natural)(lf1:natural), (@eq natural (count lf2 n) lf1) ->  (@eq natural (count (insort lf2 n) n) (Succ lf1))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj9_hyp: forall (lf1:lst) (n:natural) (y:lst), (@eq natural (count lf1 n) (count y n)) ->  (@eq natural (count (insort lf1 n) n) (Succ (count y n)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj11_hyp: forall  (y:lst) (n:natural)(lf1:natural), (@eq natural (count (sort y) n) lf1) ->  (@eq natural (count (insort (sort y) n) n) (Succ lf1))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

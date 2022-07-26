@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal49.v
+Lemma lfind_state  (n:natural) (y:lst) (IHy:forall _ : @eq bool (mem n (sort y)) true, @eq bool (mem n y) true):@eq bool (orb (eqb n n) (mem n y)) true.
+Admitted.

@@ -1,0 +1,27 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj10: forall  (x:lst) (y:lst) (n:natural) , (@eq bool (lst_subset (lst_intersection x y) (Cons n x)) true)
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj5_hyp: forall  (x:lst) (y:lst) (n:natural)(lf1:bool), (@eq bool (lst_subset (lst_intersection x y) x) lf1) -> (@eq bool (lst_subset x (lst_intersection x y)) lf1) -> (forall _ : @eq bool (lst_subset x y) true, @eq bool (lst_eq (lst_intersection x y) x) lf1) ->  (@eq bool (lst_subset (lst_intersection x y) (Cons n x)) lf1)
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj8_hyp: forall (lf1:lst) (n:natural) (x:lst), (@eq bool (lst_subset lf1 x) true) ->  (@eq bool (lst_subset lf1 (Cons n x)) true)
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

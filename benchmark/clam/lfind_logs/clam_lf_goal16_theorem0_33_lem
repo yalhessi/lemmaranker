@@ -1,0 +1,48 @@
+Provable and Useful in Completing Stuck Goal
+
+Useful in Completing Stuck Goal
+Lemma conj9eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv1 lv0) ((plus lv0 lv1)))
+
+Lemma conj9synthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq bool (negb (even (plus lv1 (Succ lv1)))) true)
+
+Lemma conj5synthconj4 : forall  (lv0 : bool) (lv1 : natural), (@eq bool (negb (even (plus lv1 (Succ lv1)))) (even Zero))
+
+Lemma conj5eqsynthconj5 : forall  (lv0 : natural), (@eq natural (plus lv0 (Succ lv0)) ((plus (Succ lv0) lv0)))
+
+Lemma conj5eqsynthconj4 : forall  (lv0 : natural), (@eq natural (plus lv0 (Succ lv0)) ((Succ (plus lv0 lv0))))
+
+Lemma conj5eqsynthconj4 : forall  (lv0 : natural), (@eq bool (even (plus lv0 (Succ lv0))) ((even (Succ Zero))))
+
+Lemma conj5eqsynthconj3 : forall  (lv0 : natural), (@eq bool (even (plus lv0 (Succ lv0))) ((negb (even Zero))))
+
+Lemma conj5eqsynthconj5 : forall  (lv0 : natural), (@eq bool (negb (even (plus lv0 (Succ lv0)))) ((even Zero)))
+
+Lemma conj9eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv1 lv0) ((plus lv0 (plus Zero lv1))))
+
+Lemma conj5synthconj1 : forall  (lv0 : bool) (lv1 : natural), (@eq bool (negb (even (plus lv1 (Succ lv1)))) (even (Succ (Succ Zero))))
+
+Lemma conj5eqsynthconj3 : forall  (lv0 : natural), (@eq natural (plus lv0 (Succ lv0)) ((plus Zero (Succ (plus lv0 lv0)))))
+
+Lemma conj5eqsynthconj1 : forall  (lv0 : natural), (@eq natural (plus lv0 (Succ lv0)) ((plus Zero (plus (Succ lv0) lv0))))
+
+Lemma conj5eqsynthconj1 : forall  (lv0 : natural), (@eq bool (even (plus lv0 (Succ lv0))) ((even (Succ (Succ (Succ Zero))))))
+
+Lemma conj5eqsynthconj3 : forall  (lv0 : natural), (@eq bool (negb (even (plus lv0 (Succ lv0)))) ((even (Succ (Succ Zero)))))
+
+Lemma conj5eqsynthconj1 : forall  (lv0 : natural), (@eq bool (negb (even (plus lv0 (Succ lv0)))) ((negb (even (Succ Zero)))))
+Valid Lemmas
+Lemma conj6synthconj2 : forall  (lv0 : bool), (@eq bool lv0 (negb (negb lv0)))
+
+Lemma conj5synthconj2 : forall  (lv0 : bool), (@eq bool (negb (negb lv0)) lv0)
+
+Lemma conj1synthconj1 : forall  (lv0 : bool) (lv1 : bool), (@eq bool lv0 (negb (negb lv0)))
+
+Lemma conj8eqsynthconj2 : forall  (lv0 : natural), (@eq bool (even lv0) ((even (Succ (Succ lv0)))))
+
+Lemma conj5eqsynthconj3 : forall  (lv0 : natural), (@eq natural (Succ lv0) ((plus lv0 (Succ Zero))))
+
+Lemma conj5eqsynthconj2 : forall  (lv0 : natural), (@eq natural (Succ lv0) ((plus (Succ lv0) Zero)))
+
+Lemma conj9synthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq bool (negb (even (plus (Succ lv1) lv1))) true)
+
+Lemma conj9synthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq bool (negb (even (Succ (plus lv1 lv1)))) true)

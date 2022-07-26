@@ -1,0 +1,36 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj71: forall  (x1:tree) (n:natural) (x2:tree) (n0:natural) (y:lst) , (@eq lst (append (append (revflat x1) (Cons n (revflat x2))) (Cons n0 y)) (append (revflat x1) (Cons n (qrevaflat x2 (Cons n0 y)))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj67: forall  (x1:tree) (n:natural) (x2:tree)(lf1:lst) , (@eq lst (append (append (revflat x1) (Cons n (revflat x2))) lf1) (append (revflat x1) (Cons n (qrevaflat x2 lf1))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj47: forall (lf1:lst) (n:natural) (x2:tree) (n0:natural) (y:lst) , (@eq lst (append (append lf1 (Cons n (revflat x2))) (Cons n0 y)) (append lf1 (Cons n (qrevaflat x2 (Cons n0 y)))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj43: forall (lf1:lst) (n:natural) (x2:tree)(lf2:lst) , (@eq lst (append (append lf1 (Cons n (revflat x2))) lf2) (append lf1 (Cons n (qrevaflat x2 lf2))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

@@ -1,0 +1,770 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj17: forall  (x:natural) (y:natural) , (@eq natural (Succ (plus (mult x (Succ y)) y)) (plus (mult x (Succ y)) (Succ y)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj13: forall (lf1:natural) (y:natural) , (@eq natural (Succ (plus lf1 y)) (plus lf1 (Succ y)))
+is_valid : true
+is_prover_provable (be proven by proverbot): true
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj16: forall  (x:natural) (y:natural)(lf1:natural) , (@eq natural (Succ (plus (mult x (Succ y)) y)) lf1)
+is_valid : false
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+ 		
+### Synthesis Stats ###
+		 Synthesis Term : Succ (plus (mult x (Succ y)) y)
+		 # Myth Enumerated Terms : 6
+		 # Valid Synthesized Lemmas : 4
+		 Valid Lemmas
+ 			 Myth Term : (  plus y (Succ (mult (Succ y) x)))
+			 Lemma : conj16eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus (mult lv0 (Succ lv1)) lv1)) (plus lv1 (Succ (mult (Succ lv1) lv0))))
+			 Myth Term : (  plus y (Succ (mult x (Succ y))))
+			 Lemma : conj16eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus (mult lv0 (Succ lv1)) lv1)) (plus lv1 (Succ (mult lv0 (Succ lv1)))))
+			 Myth Term : (  plus Zero (mult (Succ y) (Succ x)))
+			 Lemma : conj16eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus (mult lv0 (Succ lv1)) lv1)) (plus Zero (mult (Succ lv1) (Succ lv0))))
+			 Myth Term : (  plus Zero (mult (Succ x) (Succ y)))
+			 Lemma : conj16eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus (mult lv0 (Succ lv1)) lv1)) (plus Zero (mult (Succ lv0) (Succ lv1))))
+
+		 # Lemmas useful to prove original goal : 1
+		 Lemmas that can prove the original goal 
+ 			 Myth Term : (  plus Zero (mult (Succ x) (Succ y)))
+			 Lemma : conj16eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (Succ (plus (mult lv0 (Succ lv1)) lv1)) (plus Zero (mult (Succ lv0) (Succ lv1))))
+
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : plus (mult x (Succ y)) y
+		 # Myth Enumerated Terms : 6
+		 # Valid Synthesized Lemmas : 5
+		 Valid Lemmas
+ 			 Myth Term : (  plus y (mult (Succ y) x))
+			 Lemma : conj16eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 (Succ lv1)) lv1) (plus lv1 (mult (Succ lv1) lv0)))
+			 Myth Term : (  plus y (mult x (Succ y)))
+			 Lemma : conj16eqsynthconj5 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 (Succ lv1)) lv1) (plus lv1 (mult lv0 (Succ lv1))))
+			 Myth Term : (  plus x (mult y (Succ x)))
+			 Lemma : conj16eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 (Succ lv1)) lv1) (plus lv0 (mult lv1 (Succ lv0))))
+			 Myth Term : (  plus x (mult (Succ x) y))
+			 Lemma : conj16eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 (Succ lv1)) lv1) (plus lv0 (mult (Succ lv0) lv1)))
+			 Myth Term : (  plus (mult (Succ y) x) y)
+			 Lemma : conj16eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 (Succ lv1)) lv1) (plus (mult (Succ lv1) lv0) lv1))
+
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : mult x (Succ y)
+		 # Myth Enumerated Terms : 6
+		 # Valid Synthesized Lemmas : 3
+		 Valid Lemmas
+ 			 Myth Term : ( plus x (mult y x))
+			 Lemma : conj16eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv0 (Succ lv1)) (plus lv0 (mult lv1 lv0)))
+			 Myth Term : ( plus x (mult x y))
+			 Lemma : conj16eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv0 (Succ lv1)) (plus lv0 (mult lv0 lv1)))
+			 Myth Term : ( plus (mult y x) x)
+			 Lemma : conj16eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv0 (Succ lv1)) (plus (mult lv1 lv0) lv0))
+
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : Succ y
+		 # Myth Enumerated Terms : 6
+		 # Valid Synthesized Lemmas : 2
+		 Valid Lemmas
+ 			 Myth Term : ( plus y (Succ Zero))
+			 Lemma : conj16eqsynthconj3 : forall  (lv0 : natural), (@eq natural (Succ lv0) (plus lv0 (Succ Zero)))
+			 Myth Term : ( plus (Succ y) Zero)
+			 Lemma : conj16eqsynthconj2 : forall  (lv0 : natural), (@eq natural (Succ lv0) (plus (Succ lv0) Zero))
+
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : lf1
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+ 
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj15: forall  (x:natural)(lf1:natural) (y:natural) , (@eq natural (Succ (plus (mult x lf1) y)) (plus (mult x lf1) lf1))
+is_valid : false
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+ 		
+### Synthesis Stats ###
+		 Synthesis Term : Succ (plus (mult x lf1) y)
+		 # Myth Enumerated Terms : 12
+		 # Valid Synthesized Lemmas : 5
+		 Valid Lemmas
+ 			 Myth Term : 
+			 Lemma : conj15eqsynthconj3_hyp: forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (mult lv0 lv2) lv0) (mult lv0 lv1)) ->  (@eq natural (Succ (plus (mult lv0 lv1) lv2)) (mult (Succ lv0) (Succ lv2)))
+			 Myth Term : 
+			 Lemma : conj15eqsynthconj4_hyp: forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (mult lv0 lv2) lv0) (mult lv0 lv1)) ->  (@eq natural (Succ (plus (mult lv0 lv1) lv2)) (mult (Succ lv2) (Succ lv0)))
+			 Myth Term : (  plus lf1 (mult lf1 x))
+			 Lemma : conj15synthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 (mult lv0 lv1)) (plus (mult lv1 lv0) lv0))
+			 Myth Term : (  plus lf1 (mult x lf1))
+			 Lemma : conj15synthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 (mult lv1 lv0)) (plus (mult lv1 lv0) lv0))
+			 Myth Term : (  plus (mult lf1 x) lf1)
+			 Lemma : conj15synthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 lv1) lv0) (plus (mult lv1 lv0) lv0))
+
+		 # Lemmas useful to prove original goal : 1
+		 Lemmas that can prove the original goal 
+ 			 Myth Term : 
+			 Lemma : conj15eqsynthconj3_hyp: forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (mult lv0 lv2) lv0) (mult lv0 lv1)) ->  (@eq natural (Succ (plus (mult lv0 lv1) lv2)) (mult (Succ lv0) (Succ lv2)))
+
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : plus (mult x lf1) lf1
+		 # Myth Enumerated Terms : 12
+		 # Valid Synthesized Lemmas : 4
+		 Valid Lemmas
+ 			 Myth Term : ( mult lf1 (Succ x))
+			 Lemma : conj15eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 lv1) lv1) (mult lv1 (Succ lv0)))
+			 Myth Term : (  plus lf1 (mult lf1 x))
+			 Lemma : conj15eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 lv1) lv1) (plus lv1 (mult lv1 lv0)))
+			 Myth Term : (  plus lf1 (mult x lf1))
+			 Lemma : conj15eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 lv1) lv1) (plus lv1 (mult lv0 lv1)))
+			 Myth Term : (  plus (mult lf1 x) lf1)
+			 Lemma : conj15eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 lv1) lv1) (plus (mult lv1 lv0) lv1))
+
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : plus (mult x lf1) y
+		 # Myth Enumerated Terms : 6
+		 # Valid Synthesized Lemmas : 5
+		 Valid Lemmas
+ 			 Myth Term : 
+			 Lemma : conj15eqsynthconj1_hyp: forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (mult lv0 lv2) lv0) (mult lv0 lv1)) ->  (@eq natural (plus (mult lv0 lv1) lv2) (plus lv2 (mult lv0 (Succ lv2))))
+			 Myth Term : 
+			 Lemma : conj15eqsynthconj2_hyp: forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (mult lv0 lv2) lv0) (mult lv0 lv1)) ->  (@eq natural (plus (mult lv0 lv1) lv2) (plus lv2 (mult (Succ lv2) lv0)))
+			 Myth Term : (  plus y (mult lf1 x))
+			 Lemma : conj15eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (mult lv0 lv1) lv2) (plus lv2 (mult lv1 lv0)))
+			 Myth Term : (  plus y (mult x lf1))
+			 Lemma : conj15eqsynthconj5 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (mult lv0 lv1) lv2) (plus lv2 (mult lv0 lv1)))
+			 Myth Term : (  plus (mult lf1 x) y)
+			 Lemma : conj15eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (mult lv0 lv1) lv2) (plus (mult lv1 lv0) lv2))
+
+		 # Lemmas useful to prove original goal : 2
+		 Lemmas that can prove the original goal 
+ 			 Myth Term : (  plus y (mult lf1 x))
+			 Lemma : conj15eqsynthconj6 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (mult lv0 lv1) lv2) (plus lv2 (mult lv1 lv0)))
+			 Myth Term : (  plus y (mult x lf1))
+			 Lemma : conj15eqsynthconj5 : forall  (lv0 : natural) (lv1 : natural) (lv2 : natural), (@eq natural (plus (mult lv0 lv1) lv2) (plus lv2 (mult lv0 lv1)))
+
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : mult x lf1
+		 # Myth Enumerated Terms : 6
+		 # Valid Synthesized Lemmas : 2
+		 Valid Lemmas
+ 			 Myth Term : (  mult lf1 (plus x Zero))
+			 Lemma : conj15eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv0 lv1) (mult lv1 (plus lv0 Zero)))
+			 Myth Term : (  plus Zero (mult lf1 x))
+			 Lemma : conj15eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv0 lv1) (plus Zero (mult lv1 lv0)))
+
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+ 
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj14: forall  (x:natural)(lf2:natural) (y:natural)(lf1:natural) , (@eq natural (Succ (plus (mult x lf2) y)) lf1)
+is_valid : false
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+ 		
+### Synthesis Stats ###
+		 Synthesis Term : Succ (plus (mult x lf2) y)
+		 # Myth Enumerated Terms : 6
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : plus (mult x lf2) y
+		 # Myth Enumerated Terms : 6
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : mult x lf2
+		 # Myth Enumerated Terms : 6
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : lf1
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+ 
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj12: forall (lf1:natural) (y:natural)(lf2:natural) , (@eq natural (Succ (plus lf1 y)) (plus lf1 lf2))
+is_valid : false
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+ 		
+### Synthesis Stats ###
+		 Synthesis Term : Succ (plus lf1 y)
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : plus lf1 lf2
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : plus lf1 y
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+ 
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj11: forall (lf2:natural) (y:natural)(lf1:natural) , (@eq natural (Succ (plus lf2 y)) lf1)
+is_valid : false
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+ 		
+### Synthesis Stats ###
+		 Synthesis Term : Succ (plus lf2 y)
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : plus lf2 y
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : lf1
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+ 
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj10: forall (lf1:natural) (x:natural) (y:natural) , (@eq natural (Succ lf1) (plus (mult x (Succ y)) (Succ y)))
+is_valid : false
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+ 		
+### Synthesis Stats ###
+		 Synthesis Term : plus (mult x (Succ y)) (Succ y)
+		 # Myth Enumerated Terms : 6
+		 # Valid Synthesized Lemmas : 3
+		 Valid Lemmas
+ 			 Myth Term : (  plus y (Succ (mult (Succ y) x)))
+			 Lemma : conj10eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 (Succ lv1)) (Succ lv1)) (plus lv1 (Succ (mult (Succ lv1) lv0))))
+			 Myth Term : (  plus y (Succ (mult x (Succ y))))
+			 Lemma : conj10eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 (Succ lv1)) (Succ lv1)) (plus lv1 (Succ (mult lv0 (Succ lv1)))))
+			 Myth Term : (  plus Zero (mult (Succ y) (Succ x)))
+			 Lemma : conj10eqsynthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 (Succ lv1)) (Succ lv1)) (plus Zero (mult (Succ lv1) (Succ lv0))))
+
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : mult x (Succ y)
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : Succ lf1
+		 # Myth Enumerated Terms : 6
+		 # Valid Synthesized Lemmas : 2
+		 Valid Lemmas
+ 			 Myth Term : (  plus y (Succ (mult (Succ y) x)))
+			 Lemma : conj10synthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 (Succ (mult (Succ lv0) lv1))) (plus (mult lv1 (Succ lv0)) (Succ lv0)))
+			 Myth Term : (  plus y (Succ (mult x (Succ y))))
+			 Lemma : conj10synthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 (Succ (mult lv1 (Succ lv0)))) (plus (mult lv1 (Succ lv0)) (Succ lv0)))
+
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : Succ y
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+ 
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj9: forall (lf1:natural) (x:natural)(lf2:natural) , (@eq natural (Succ lf1) (plus (mult x lf2) lf2))
+is_valid : false
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+ 		
+### Synthesis Stats ###
+		 Synthesis Term : plus (mult x lf2) lf2
+		 # Myth Enumerated Terms : 6
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : mult x lf2
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : Succ lf1
+		 # Myth Enumerated Terms : 6
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+ 
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj8: forall (lf1:natural)(lf2:natural) (y:natural) , (@eq natural (Succ lf1) (plus lf2 (Succ y)))
+is_valid : false
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+ 		
+### Synthesis Stats ###
+		 Synthesis Term : plus lf2 (Succ y)
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : Succ lf1
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : Succ y
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+ 
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj7: forall (lf1:natural)(lf2:natural)(lf3:natural) , (@eq natural (Succ lf1) (plus lf2 lf3))
+is_valid : false
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+ 		
+### Synthesis Stats ###
+		 Synthesis Term : plus lf2 lf3
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : Succ lf1
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+ 
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj6: forall (lf2:natural)(lf1:natural) , (@eq natural (Succ lf2) lf1)
+is_valid : false
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+ 		
+### Synthesis Stats ###
+		 Synthesis Term : Succ lf2
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : lf1
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+ 
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj5: forall (lf1:natural) (x:natural) (y:natural) , (@eq natural lf1 (plus (mult x (Succ y)) (Succ y)))
+is_valid : false
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+ 		
+### Synthesis Stats ###
+		 Synthesis Term : plus (mult x (Succ y)) (Succ y)
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : mult x (Succ y)
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : Succ y
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : lf1
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+ 
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj4: forall (lf1:natural) (x:natural)(lf2:natural) , (@eq natural lf1 (plus (mult x lf2) lf2))
+is_valid : false
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+ 		
+### Synthesis Stats ###
+		 Synthesis Term : plus (mult x lf2) lf2
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : mult x lf2
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : lf1
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+ 
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj3: forall (lf1:natural)(lf2:natural) (y:natural) , (@eq natural lf1 (plus lf2 (Succ y)))
+is_valid : false
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+ 		
+### Synthesis Stats ###
+		 Synthesis Term : plus lf2 (Succ y)
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : Succ y
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : lf1
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+ 
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj2: forall (lf1:natural)(lf2:natural)(lf3:natural) , (@eq natural lf1 (plus lf2 lf3))
+is_valid : false
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+ 		
+### Synthesis Stats ###
+		 Synthesis Term : plus lf2 lf3
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : lf1
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+ 
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj1: forall (lf1:natural)(lf2:natural) , (@eq natural lf1 lf2)
+is_valid : false
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): false
+Synthesis Stats : 
+ 		
+### Synthesis Stats ###
+		 Synthesis Term : natural
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : lf2
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : lf1
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+		
+### Synthesis Stats ###
+		 Synthesis Term : @eq
+		 # Myth Enumerated Terms : 0
+		 # Valid Synthesized Lemmas : 0
+		 Valid Lemmas
+ 
+		 # Lemmas useful to prove original goal : 0
+		 Lemmas that can prove the original goal 
+ 
+------------------------------------------------------------------------
+ 
+

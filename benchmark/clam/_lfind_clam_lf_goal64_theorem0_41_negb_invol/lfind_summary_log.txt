@@ -1,0 +1,24 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 64 
+Total Time: 65 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (z:lst) (x:natural) (y:natural):@eq bool (even (len z)) (negb (negb (even (len z)))).
+Admitted.
+Yes Cat 1: true
+# Generalizations : 2
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+conj3: forall (lf1:bool) , (@eq bool lf1 (negb (negb lf1)))
+conj6: forall (lf1:natural) , (@eq bool (even lf1) (negb (negb (even lf1))))
+conj9: forall  (z:lst) , (@eq bool (even (len z)) (negb (negb (even (len z)))))
+Useful in Completing Stuck Goal (Category 2)
+
+Valid Lemmas (Category 3)
+
+

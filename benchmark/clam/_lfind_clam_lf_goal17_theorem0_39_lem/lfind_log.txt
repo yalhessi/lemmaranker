@@ -1,0 +1,9 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj40: forall  (x:lst) (y:lst) , (@eq lst (rev (rev (append x y))) (append (rev (rev x)) (rev (rev y))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

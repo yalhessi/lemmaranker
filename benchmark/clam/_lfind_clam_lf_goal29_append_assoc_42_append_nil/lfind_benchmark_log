@@ -1,0 +1,6 @@
+COQDEP VFILES
+COQC goal29.v
+Hypotheses contains forall, Quickchick might not work!
+There is a hypothesis that is neither Set or Prop
+Lemma lfind_state  (n:natural) (l1:lst):@eq lst (Cons n (append l1 Nil)) (Cons n (append (append l1 Nil) Nil)).
+Admitted.

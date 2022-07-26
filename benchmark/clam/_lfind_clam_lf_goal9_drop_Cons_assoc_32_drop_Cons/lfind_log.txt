@@ -1,0 +1,108 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj69: forall  (x1:natural) (x2:natural) (x3:natural) (n:natural) (l:lst) , (@eq lst (drop (Succ x1) (drop (Succ x2) (Cons x3 (Cons n l)))) (drop (Succ x2) (drop (Succ x1) (Cons x3 (Cons n l)))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj66: forall  (x1:natural) (x2:natural) (x3:natural)(lf1:lst) , (@eq lst (drop (Succ x1) (drop (Succ x2) (Cons x3 lf1))) (drop (Succ x2) (drop (Succ x1) (Cons x3 lf1))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj63: forall  (x1:natural) (x2:natural)(lf1:lst) , (@eq lst (drop (Succ x1) (drop (Succ x2) lf1)) (drop (Succ x2) (drop (Succ x1) lf1)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj60: forall  (x1:natural)(lf1:natural) (x3:natural) (n:natural) (l:lst) , (@eq lst (drop (Succ x1) (drop lf1 (Cons x3 (Cons n l)))) (drop lf1 (drop (Succ x1) (Cons x3 (Cons n l)))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj57: forall  (x1:natural)(lf2:natural) (x3:natural)(lf1:lst) , (@eq lst (drop (Succ x1) (drop lf2 (Cons x3 lf1))) (drop lf2 (drop (Succ x1) (Cons x3 lf1))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj54: forall  (x1:natural)(lf2:natural)(lf1:lst) , (@eq lst (drop (Succ x1) (drop lf2 lf1)) (drop lf2 (drop (Succ x1) lf1)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj42: forall (lf1:natural) (x2:natural) (x3:natural) (n:natural) (l:lst) , (@eq lst (drop lf1 (drop (Succ x2) (Cons x3 (Cons n l)))) (drop (Succ x2) (drop lf1 (Cons x3 (Cons n l)))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj39: forall (lf2:natural) (x2:natural) (x3:natural)(lf1:lst) , (@eq lst (drop lf2 (drop (Succ x2) (Cons x3 lf1))) (drop (Succ x2) (drop lf2 (Cons x3 lf1))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj36: forall (lf2:natural) (x2:natural)(lf1:lst) , (@eq lst (drop lf2 (drop (Succ x2) lf1)) (drop (Succ x2) (drop lf2 lf1)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj33: forall (lf1:natural)(lf2:natural) (x3:natural) (n:natural) (l:lst) , (@eq lst (drop lf1 (drop lf2 (Cons x3 (Cons n l)))) (drop lf2 (drop lf1 (Cons x3 (Cons n l)))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj30: forall (lf2:natural)(lf3:natural) (x3:natural)(lf1:lst) , (@eq lst (drop lf2 (drop lf3 (Cons x3 lf1))) (drop lf3 (drop lf2 (Cons x3 lf1))))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj27: forall (lf2:natural)(lf3:natural)(lf1:lst) , (@eq lst (drop lf2 (drop lf3 lf1)) (drop lf3 (drop lf2 lf1)))
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

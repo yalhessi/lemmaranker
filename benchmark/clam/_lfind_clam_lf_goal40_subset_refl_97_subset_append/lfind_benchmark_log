@@ -1,0 +1,4 @@
+COQDEP VFILES
+COQC goal40.v
+Lemma lfind_state  (n:natural) (x:lst) (IHx:@eq bool (lst_subset x x) true):@eq bool (lst_subset x (append (Cons n Nil) x)) true.
+Admitted.

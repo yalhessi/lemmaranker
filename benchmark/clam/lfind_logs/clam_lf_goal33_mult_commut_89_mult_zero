@@ -1,0 +1,6 @@
+Provable and Useful in Completing Stuck Goal
+Lemma conj5synthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult Zero lv1) (mult lv0 Zero))
+
+Useful in Completing Stuck Goal
+Lemma conj4: forall  (y:natural)(lf1:natural) , (@eq natural (mult lf1 y) (mult y lf1))
+Valid Lemmas

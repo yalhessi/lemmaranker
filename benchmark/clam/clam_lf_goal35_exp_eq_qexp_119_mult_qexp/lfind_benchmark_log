@@ -1,0 +1,21 @@
+COQDEP VFILES
+COQC goal35.v
+Lemma lfind_state  (x:natural) (y:natural) (IHy:@eq natural (exp x y) (qexp x y (Succ Zero))):@eq natural (mult (qexp x y (Succ Zero)) x) (qexp x y x).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal35_exp_eq_qexp_119_mult_qexp/goal35_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal35_exp_eq_qexp_119_mult_qexp goal35_lfind_orig goal35
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0
+0

@@ -1,0 +1,24 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 134 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (n:natural) (l1:lst) (n0:natural) (l2:lst):@eq lst (Cons n (append l1 (Cons n0 (append l2 Nil))))
+  (Cons n (append (append l1 (Cons n0 l2)) Nil)).
+Admitted.
+Yes Cat 1: false
+# Generalizations : 1
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj42: forall  (n:natural) (l1:lst) (n0:natural) (l2:lst) , (@eq lst (Cons n (append l1 (Cons n0 (append l2 Nil)))) (Cons n (append (append l1 (Cons n0 l2)) Nil)))
+conj25: forall  (n:natural) (l1:lst) (n0:natural) (l2:lst)(lf1:lst) , (@eq lst (Cons n (append l1 (Cons n0 (append l2 lf1)))) (Cons n (append (append l1 (Cons n0 l2)) lf1)))
+Valid Lemmas (Category 3)
+
+

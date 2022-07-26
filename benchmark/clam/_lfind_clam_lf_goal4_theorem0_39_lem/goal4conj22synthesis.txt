@@ -1,0 +1,6 @@
+let synth (lf2:natural) (lf1:natural)  =
+  lf1
+;;
+let synth (lf2:natural) (lf1:natural)  =
+  Succ (lf2)
+;;

@@ -1,0 +1,1 @@
+Lemma conj15eqsynthconj6 : forall  (lv0 : lst) (lv1 : natural), (@eq natural (len (append lv0 (Cons lv1 lv0))) (Succ (double (len lv0)))).

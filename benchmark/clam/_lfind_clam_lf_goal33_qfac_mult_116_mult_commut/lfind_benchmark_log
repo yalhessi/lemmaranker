@@ -1,0 +1,7 @@
+COQDEP VFILES
+COQC goal33.v
+Hypotheses contains forall, Quickchick might not work!
+There is a hypothesis that is neither Set or Prop
+Lemma lfind_state  (x:natural) (y:natural):@eq natural (mult (qfac x (Succ Zero)) (mult y x))
+  (mult (qfac x (Succ Zero)) (mult x y)).
+Admitted.

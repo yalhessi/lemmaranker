@@ -1,0 +1,24 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 730 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (x:natural) (y:natural) (IHy:@eq natural (exp x y) (qexp x y (Succ Zero))):@eq natural (mult (qexp x y (Succ Zero)) x) (qexp x y x).
+Admitted.
+Yes Cat 1: false
+# Generalizations : 3
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj10: forall  (x:natural) (y:natural) , (@eq natural (mult (qexp x y (Succ Zero)) x) (qexp x y x))
+conj6_hyp: forall  (x:natural) (y:natural)(lf1:natural), (@eq natural (exp x y) (qexp x y lf1)) ->  (@eq natural (mult (qexp x y lf1) x) (qexp x y x))
+conj8_hyp: forall  (x:natural) (y:natural)(lf1:natural), (@eq natural (exp x y) (qexp x y (Succ lf1))) ->  (@eq natural (mult (qexp x y (Succ lf1)) x) (qexp x y x))
+Valid Lemmas (Category 3)
+
+

@@ -1,0 +1,609 @@
+let synth (lf2:natural)  =
+  lf2
+;;
+let synth (lf2:natural)  =
+  plus Zero lf2
+;;
+let synth (lf2:natural)  =
+  plus lf2 Zero
+;;
+let synth (lf2:natural)  =
+  mult (Succ (Zero)) lf2
+;;
+let synth (lf2:natural)  =
+  mult lf2 (Succ (Zero))
+;;
+let synth (lf2:natural)  =
+  plus Zero (plus Zero lf2)
+;;
+let synth (lf2:natural)  =
+  plus Zero (plus lf2 Zero)
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero Zero) lf2
+;;
+let synth (lf2:natural)  =
+  plus (plus Zero Zero) lf2
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult Zero lf2)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult lf2 Zero)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult Zero Zero)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (plus Zero Zero)
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero lf2) lf2
+;;
+let synth (lf2:natural)  =
+  plus (plus Zero lf2) Zero
+;;
+let synth (lf2:natural)  =
+  plus (mult lf2 Zero) lf2
+;;
+let synth (lf2:natural)  =
+  plus (plus lf2 Zero) Zero
+;;
+let synth (lf2:natural)  =
+  plus Zero (mult (Succ (Zero)) lf2)
+;;
+let synth (lf2:natural)  =
+  plus Zero (mult lf2 (Succ (Zero)))
+;;
+let synth (lf2:natural)  =
+  mult (Succ (Zero)) (plus Zero lf2)
+;;
+let synth (lf2:natural)  =
+  mult (Succ (Zero)) (plus lf2 Zero)
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero (Succ (Zero))) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult (Succ (Zero)) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  mult (Succ (mult Zero Zero)) lf2
+;;
+let synth (lf2:natural)  =
+  mult (Succ (plus Zero Zero)) lf2
+;;
+let synth (lf2:natural)  =
+  mult (plus Zero (Succ (Zero))) lf2
+;;
+let synth (lf2:natural)  =
+  mult (plus (Succ (Zero)) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  mult lf2 (Succ (mult Zero lf2))
+;;
+let synth (lf2:natural)  =
+  mult lf2 (Succ (mult lf2 Zero))
+;;
+let synth (lf2:natural)  =
+  mult lf2 (Succ (mult Zero Zero))
+;;
+let synth (lf2:natural)  =
+  mult lf2 (Succ (plus Zero Zero))
+;;
+let synth (lf2:natural)  =
+  mult lf2 (plus Zero (Succ (Zero)))
+;;
+let synth (lf2:natural)  =
+  mult lf2 (plus (Succ (Zero)) Zero)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult Zero (Succ (lf2)))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult (Succ (lf2)) Zero)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult Zero (Succ (Zero)))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult (Succ (Zero)) Zero)
+;;
+let synth (lf2:natural)  =
+  mult (plus Zero lf2) (Succ (Zero))
+;;
+let synth (lf2:natural)  =
+  mult (plus lf2 Zero) (Succ (Zero))
+;;
+let synth (lf2:natural)  =
+  mult (Succ (mult Zero lf2)) lf2
+;;
+let synth (lf2:natural)  =
+  mult (Succ (mult lf2 Zero)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero (Succ (lf2))) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult (Succ (Zero)) lf2) Zero
+;;
+let synth (lf2:natural)  =
+  plus (mult lf2 (Succ (Zero))) Zero
+;;
+let synth (lf2:natural)  =
+  plus (mult (Succ (lf2)) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  mult (Succ (Zero)) (mult (Succ (Zero)) lf2)
+;;
+let synth (lf2:natural)  =
+  mult (Succ (Zero)) (mult lf2 (Succ (Zero)))
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero (Succ (Succ (Zero)))) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult (Succ (Succ (Zero))) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  mult (Succ (mult Zero (Succ (Zero)))) lf2
+;;
+let synth (lf2:natural)  =
+  mult (Succ (mult (Succ (Zero)) Zero)) lf2
+;;
+let synth (lf2:natural)  =
+  mult (mult (Succ (Zero)) (Succ (Zero))) lf2
+;;
+let synth (lf2:natural)  =
+  mult lf2 (Succ (mult Zero (Succ (lf2))))
+;;
+let synth (lf2:natural)  =
+  mult lf2 (Succ (mult (Succ (lf2)) Zero))
+;;
+let synth (lf2:natural)  =
+  mult lf2 (Succ (mult Zero (Succ (Zero))))
+;;
+let synth (lf2:natural)  =
+  mult lf2 (Succ (mult (Succ (Zero)) Zero))
+;;
+let synth (lf2:natural)  =
+  mult lf2 (mult (Succ (Zero)) (Succ (Zero)))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult Zero (Succ (Succ (lf2))))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult (Succ (Succ (lf2))) Zero)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult Zero (Succ (Succ (Zero))))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult (Succ (Succ (Zero))) Zero)
+;;
+let synth (lf2:natural)  =
+  mult (mult (Succ (Zero)) lf2) (Succ (Zero))
+;;
+let synth (lf2:natural)  =
+  mult (mult lf2 (Succ (Zero))) (Succ (Zero))
+;;
+let synth (lf2:natural)  =
+  mult (Succ (mult Zero (Succ (lf2)))) lf2
+;;
+let synth (lf2:natural)  =
+  mult (Succ (mult (Succ (lf2)) Zero)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero (Succ (Succ (lf2)))) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult (Succ (Succ (lf2))) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero (Succ (Succ (Succ (Zero))))) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult (Succ (Succ (Succ (Zero)))) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  mult (Succ (mult Zero (Succ (Succ (Zero))))) lf2
+;;
+let synth (lf2:natural)  =
+  mult (Succ (mult (Succ (Succ (Zero))) Zero)) lf2
+;;
+let synth (lf2:natural)  =
+  mult lf2 (Succ (mult Zero (Succ (Succ (lf2)))))
+;;
+let synth (lf2:natural)  =
+  mult lf2 (Succ (mult (Succ (Succ (lf2))) Zero))
+;;
+let synth (lf2:natural)  =
+  mult lf2 (Succ (mult Zero (Succ (Succ (Zero)))))
+;;
+let synth (lf2:natural)  =
+  mult lf2 (Succ (mult (Succ (Succ (Zero))) Zero))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult Zero (Succ (Succ (Succ (lf2)))))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult (Succ (Succ (Succ (lf2)))) Zero)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult Zero (Succ (Succ (Succ (Zero)))))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult (Succ (Succ (Succ (Zero)))) Zero)
+;;
+let synth (lf2:natural)  =
+  mult (Succ (mult Zero (Succ (Succ (lf2))))) lf2
+;;
+let synth (lf2:natural)  =
+  mult (Succ (mult (Succ (Succ (lf2))) Zero)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero (Succ (Succ (Succ (lf2))))) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult (Succ (Succ (Succ (lf2)))) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  plus Zero (plus Zero (plus Zero lf2))
+;;
+let synth (lf2:natural)  =
+  plus Zero (plus Zero (plus lf2 Zero))
+;;
+let synth (lf2:natural)  =
+  plus Zero (plus (mult Zero Zero) lf2)
+;;
+let synth (lf2:natural)  =
+  plus Zero (plus (plus Zero Zero) lf2)
+;;
+let synth (lf2:natural)  =
+  plus Zero (plus lf2 (mult Zero lf2))
+;;
+let synth (lf2:natural)  =
+  plus Zero (plus lf2 (mult lf2 Zero))
+;;
+let synth (lf2:natural)  =
+  plus Zero (plus lf2 (mult Zero Zero))
+;;
+let synth (lf2:natural)  =
+  plus Zero (plus lf2 (plus Zero Zero))
+;;
+let synth (lf2:natural)  =
+  plus Zero (plus (mult Zero lf2) lf2)
+;;
+let synth (lf2:natural)  =
+  plus Zero (plus (plus Zero lf2) Zero)
+;;
+let synth (lf2:natural)  =
+  plus Zero (plus (mult lf2 Zero) lf2)
+;;
+let synth (lf2:natural)  =
+  plus Zero (plus (plus lf2 Zero) Zero)
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero Zero) (plus Zero lf2)
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero Zero) (plus lf2 Zero)
+;;
+let synth (lf2:natural)  =
+  plus (plus Zero Zero) (plus Zero lf2)
+;;
+let synth (lf2:natural)  =
+  plus (plus Zero Zero) (plus lf2 Zero)
+;;
+let synth (lf2:natural)  =
+  plus (plus Zero (mult Zero Zero)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero (mult Zero Zero)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero (plus Zero Zero)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero (Succ (Succ (Succ (Succ (Zero)))))) lf2
+;;
+let synth (lf2:natural)  =
+  plus (plus (mult Zero Zero) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult (mult Zero Zero) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult (plus Zero Zero) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult (Succ (Succ (Succ (Succ (Zero))))) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  mult (Succ (mult Zero (Succ (Succ (Succ (Zero)))))) lf2
+;;
+let synth (lf2:natural)  =
+  mult (Succ (mult (Succ (Succ (Succ (Zero)))) Zero)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (plus Zero (plus Zero Zero)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (plus (plus Zero Zero) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  mult lf2 (Succ (mult Zero (Succ (Succ (Succ (lf2))))))
+;;
+let synth (lf2:natural)  =
+  mult lf2 (Succ (mult (Succ (Succ (Succ (lf2)))) Zero))
+;;
+let synth (lf2:natural)  =
+  mult lf2 (Succ (mult Zero (Succ (Succ (Succ (Zero))))))
+;;
+let synth (lf2:natural)  =
+  mult lf2 (Succ (mult (Succ (Succ (Succ (Zero)))) Zero))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult Zero (Succ (Succ (Succ (Succ (lf2))))))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult Zero (mult Zero lf2))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult Zero (plus Zero lf2))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult Zero (mult lf2 lf2))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult Zero (mult lf2 Zero))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult Zero (plus lf2 lf2))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult Zero (plus lf2 Zero))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (plus Zero (mult Zero lf2))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (plus Zero (mult lf2 Zero))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult (mult Zero Zero) lf2)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult (plus Zero Zero) lf2)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult lf2 (mult Zero lf2))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult lf2 (mult lf2 Zero))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult lf2 (mult Zero Zero))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult lf2 (plus Zero Zero))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult (Succ (Succ (Succ (Succ (lf2))))) Zero)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult (mult Zero lf2) lf2)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult (mult Zero lf2) Zero)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult (plus Zero lf2) Zero)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult (mult lf2 lf2) Zero)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult (mult lf2 Zero) lf2)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult (mult lf2 Zero) Zero)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult (plus lf2 lf2) Zero)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult (plus lf2 Zero) Zero)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (plus (mult Zero lf2) Zero)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (plus (mult lf2 Zero) Zero)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (plus Zero (mult Zero Zero))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult Zero (mult Zero Zero))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult Zero (plus Zero Zero))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult Zero (Succ (Succ (Succ (Succ (Zero))))))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (plus (mult Zero Zero) Zero)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult (mult Zero Zero) Zero)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult (plus Zero Zero) Zero)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (mult (Succ (Succ (Succ (Succ (Zero))))) Zero)
+;;
+let synth (lf2:natural)  =
+  plus lf2 (plus Zero (plus Zero Zero))
+;;
+let synth (lf2:natural)  =
+  plus lf2 (plus (plus Zero Zero) Zero)
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero lf2) (plus Zero lf2)
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero lf2) (plus lf2 Zero)
+;;
+let synth (lf2:natural)  =
+  plus (plus Zero lf2) (mult Zero lf2)
+;;
+let synth (lf2:natural)  =
+  plus (plus Zero lf2) (mult lf2 Zero)
+;;
+let synth (lf2:natural)  =
+  plus (plus Zero lf2) (mult Zero Zero)
+;;
+let synth (lf2:natural)  =
+  plus (plus Zero lf2) (plus Zero Zero)
+;;
+let synth (lf2:natural)  =
+  plus (mult lf2 Zero) (plus Zero lf2)
+;;
+let synth (lf2:natural)  =
+  plus (mult lf2 Zero) (plus lf2 Zero)
+;;
+let synth (lf2:natural)  =
+  plus (plus lf2 Zero) (mult Zero lf2)
+;;
+let synth (lf2:natural)  =
+  plus (plus lf2 Zero) (mult lf2 Zero)
+;;
+let synth (lf2:natural)  =
+  plus (plus lf2 Zero) (mult Zero Zero)
+;;
+let synth (lf2:natural)  =
+  plus (plus lf2 Zero) (plus Zero Zero)
+;;
+let synth (lf2:natural)  =
+  mult (Succ (mult Zero (Succ (Succ (Succ (lf2)))))) lf2
+;;
+let synth (lf2:natural)  =
+  mult (Succ (mult (Succ (Succ (Succ (lf2)))) Zero)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero (Succ (Succ (Succ (Succ (lf2)))))) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero (mult Zero lf2)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero (plus Zero lf2)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero (mult lf2 lf2)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero (mult lf2 Zero)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero (plus lf2 lf2)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult Zero (plus lf2 Zero)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (plus Zero (mult Zero lf2)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (plus Zero (plus Zero lf2)) Zero
+;;
+let synth (lf2:natural)  =
+  plus (plus Zero (mult lf2 Zero)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (plus Zero (plus lf2 Zero)) Zero
+;;
+let synth (lf2:natural)  =
+  plus (plus (mult Zero Zero) lf2) Zero
+;;
+let synth (lf2:natural)  =
+  plus (mult (mult Zero Zero) lf2) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult (plus Zero Zero) lf2) lf2
+;;
+let synth (lf2:natural)  =
+  plus (plus (plus Zero Zero) lf2) Zero
+;;
+let synth (lf2:natural)  =
+  plus (mult lf2 (mult Zero lf2)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult lf2 (mult lf2 Zero)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult lf2 (mult Zero Zero)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult lf2 (plus Zero Zero)) lf2
+;;
+let synth (lf2:natural)  =
+  plus (plus lf2 (mult Zero lf2)) Zero
+;;
+let synth (lf2:natural)  =
+  plus (plus lf2 (mult lf2 Zero)) Zero
+;;
+let synth (lf2:natural)  =
+  plus (plus lf2 (mult Zero Zero)) Zero
+;;
+let synth (lf2:natural)  =
+  plus (plus lf2 (plus Zero Zero)) Zero
+;;
+let synth (lf2:natural)  =
+  plus (mult (Succ (Succ (Succ (Succ (lf2))))) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult (mult Zero lf2) lf2) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult (mult Zero lf2) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult (plus Zero lf2) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult (mult lf2 lf2) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult (mult lf2 Zero) lf2) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult (mult lf2 Zero) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult (plus lf2 lf2) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  plus (mult (plus lf2 Zero) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  plus (plus (mult Zero lf2) lf2) Zero
+;;
+let synth (lf2:natural)  =
+  plus (plus (mult Zero lf2) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  plus (plus (plus Zero lf2) Zero) Zero
+;;
+let synth (lf2:natural)  =
+  plus (plus (mult lf2 Zero) lf2) Zero
+;;
+let synth (lf2:natural)  =
+  plus (plus (mult lf2 Zero) Zero) lf2
+;;
+let synth (lf2:natural)  =
+  plus (plus (plus lf2 Zero) Zero) Zero
+;;

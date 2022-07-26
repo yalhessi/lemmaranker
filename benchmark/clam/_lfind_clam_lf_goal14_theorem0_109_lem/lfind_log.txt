@@ -1,0 +1,36 @@
+
+### Generalization Stat ###
+Generalized Conjecture : conj8: forall  (n:natural) (x:lst) , (@eq bool (sorted (insort n (sort x))) true)
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj3_hyp: forall  (n:natural)(lf1:lst)(lf2:bool), (@eq bool (sorted lf1) lf2) ->  (@eq bool (sorted (insort n lf1)) lf2)
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj4_hyp: forall  (n:natural) (x:lst)(lf1:bool), (@eq bool (sorted (sort x)) lf1) ->  (@eq bool (sorted (insort n (sort x))) lf1)
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+
+
+### Generalization Stat ###
+Generalized Conjecture : conj7_hyp: forall  (n:natural)(lf1:lst), (@eq bool (sorted lf1) true) ->  (@eq bool (sorted (insort n lf1)) true)
+is_valid : true
+is_prover_provable (be proven by proverbot): false
+is_provable (can help prove original goal): true
+Synthesis Stats : 
+  
+

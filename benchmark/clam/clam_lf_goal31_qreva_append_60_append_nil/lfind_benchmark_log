@@ -1,0 +1,11 @@
+COQDEP VFILES
+COQC goal31.v
+Lemma lfind_state  (y:lst):@eq lst (qreva y Nil) (append (qreva y Nil) Nil).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal31_qreva_append_60_append_nil/goal31_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal31_qreva_append_60_append_nil goal31_lfind_orig goal31
+lemmafinder_ml_generation_success
+Example file not found, generating
+0

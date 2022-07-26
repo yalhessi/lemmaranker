@@ -1,0 +1,1 @@
+Lemma conj28eqsynthconj2 : forall  (lv0 : natural), (@eq natural (Succ lv0) (plus (Succ lv0) Zero)).

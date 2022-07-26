@@ -1,0 +1,26 @@
+
+### SUMMARY ###
+Time to first category 1 (s): 0 
+Total Time: 113 
+Total Lemmas: 0 
+Filter Quickchick: 0 
+Filter duplicate: 0 
+Filter trivial: 0 
+Filter is_version: 0 
+Stuck Proof State: Lemma lfind_state  (x:natural) (y:natural) (z:natural) (IHx:@eq natural (mult (mult x y) z) (mult x (mult y z))):@eq natural (mult (plus (mult x y) y) z)
+  (plus (mult x (mult y z)) (mult y z)).
+Admitted.
+Yes Cat 1: false
+# Generalizations : 3
+#Synthesized Lemmas not disprovable : 0
+Provable and Useful in Completing Stuck Goal (Category 1)
+
+Useful in Completing Stuck Goal (Category 2)
+
+conj20: forall  (x:natural) (y:natural) (z:natural) , (@eq natural (mult (plus (mult x y) y) z) (plus (mult x (mult y z)) (mult y z)))
+conj13_hyp: forall (lf2:natural) (y:natural) (z:natural)(lf1:natural), (@eq natural (mult lf2 z) lf1) ->  (@eq natural (mult (plus lf2 y) z) (plus lf1 (mult y z)))
+conj18_hyp: forall  (x:natural) (y:natural) (z:natural)(lf1:natural), (@eq natural (mult (mult x y) z) lf1) ->  (@eq natural (mult (plus (mult x y) y) z) (plus lf1 (mult y z)))
+conj15_hyp: forall (lf1:natural) (y:natural) (z:natural) (x:natural), (@eq natural (mult lf1 z) (mult x (mult y z))) ->  (@eq natural (mult (plus lf1 y) z) (plus (mult x (mult y z)) (mult y z)))
+Valid Lemmas (Category 3)
+
+

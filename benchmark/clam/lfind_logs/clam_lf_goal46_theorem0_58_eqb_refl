@@ -1,0 +1,9 @@
+Provable and Useful in Completing Stuck Goal
+
+Useful in Completing Stuck Goal
+Lemma conj19: forall  (y:natural)(lf2:bool)(lf1:bool) , (@eq bool (orb (eqb y y) (orb lf1 lf2)) true)
+
+Lemma conj21: forall  (n:natural) (y:natural)(lf1:bool) , (@eq bool (orb (eqb y y) (orb (eqb y n) lf1)) true)
+
+Lemma conj20: forall  (z:lst) (y:natural)(lf1:bool) , (@eq bool (orb (eqb y y) (orb lf1 (mem z y))) true)
+Valid Lemmas

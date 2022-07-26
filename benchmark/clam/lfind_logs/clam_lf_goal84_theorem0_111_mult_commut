@@ -1,0 +1,5 @@
+Provable and Useful in Completing Stuck Goal
+
+Useful in Completing Stuck Goal
+Lemma conj11: forall  (y:natural) (x:natural)(lf1:natural) , (@eq natural (mult lf1 (mult x y)) (mult lf1 (mult y x)))
+Valid Lemmas

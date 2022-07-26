@@ -1,0 +1,28 @@
+COQDEP VFILES
+COQC goal5.v
+Lemma lfind_state  (n:natural) (x:lst) (IHx:@eq natural (len (rev x)) (len x)):@eq natural (Succ (len (append (rev x) Nil))) (Succ (len (rev x))).
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal5_theorem0_47_lem2/goal5_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal5_theorem0_47_lem2 goal5_lfind_orig goal5
+lemmafinder_ml_generation_success
+Example file not found, generating
+10
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

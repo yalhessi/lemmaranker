@@ -1,0 +1,22 @@
+COQDEP VFILES
+COQC goal16.v
+Lemma lfind_state  (x:natural) (IHx:@eq bool (even (plus x x)) true):@eq bool (negb (even (plus x (Succ x)))) true.
+Admitted.
+Generating ML version of the .v file
+/home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal16_theorem0_33_lem/goal16_lfind_orig.ml
+1
+/home/yousef/astrewriter/_build/default/bin/main.exe /home/yousef/lemmafinder/benchmark/_lfind_clam_lf_goal16_theorem0_33_lem goal16_lfind_orig goal16
+lemmafinder_ml_generation_success
+Example file not found, generating
+13
+lemmafinder_example_generation_success
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

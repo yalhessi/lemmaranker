@@ -1,0 +1,36 @@
+Provable and Useful in Completing Stuck Goal
+
+Useful in Completing Stuck Goal
+Lemma conj6eqsynthconj1 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv0 (Succ lv1)) ((plus (mult lv0 lv1) lv0)))
+
+Lemma conj8eqsynthconj5 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 lv1) lv0) ((mult lv0 (Succ lv1))))
+Valid Lemmas
+Lemma conj6synthconj6 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv1 lv0) (plus lv0 lv1))
+
+Lemma conj6eqsynthconj3 : forall  (lv0 : natural), (@eq natural (Succ lv0) ((plus lv0 (Succ Zero))))
+
+Lemma conj6eqsynthconj2 : forall  (lv0 : natural), (@eq natural (Succ lv0) ((plus (Succ lv0) Zero)))
+
+Lemma conj8synthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv1 (plus lv0 Zero)) (mult lv0 lv1))
+
+Lemma conj8eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv0 lv1) ((mult lv1 (plus lv0 Zero))))
+
+Lemma conj6synthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv1 lv0) (plus lv0 (plus Zero lv1)))
+
+Lemma conj6synthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv1 lv0) (plus lv0 (plus lv1 Zero)))
+
+Lemma conj6synthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv1 lv0) (plus Zero (plus lv0 lv1)))
+
+Lemma conj6eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv0 (Succ lv1)) ((plus lv0 (mult lv1 lv0))))
+
+Lemma conj6eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (mult lv0 (Succ lv1)) ((plus lv0 (mult lv0 lv1))))
+
+Lemma conj6synthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 (mult lv1 lv0)) (mult lv0 (Succ lv1)))
+
+Lemma conj6synthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus lv0 (mult lv0 lv1)) (mult lv0 (Succ lv1)))
+
+Lemma conj6synthconj2 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv1 lv0) lv0) (mult lv0 (Succ lv1)))
+
+Lemma conj8eqsynthconj4 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 lv1) lv0) ((plus lv0 (mult lv1 lv0))))
+
+Lemma conj8eqsynthconj3 : forall  (lv0 : natural) (lv1 : natural), (@eq natural (plus (mult lv0 lv1) lv0) ((plus lv0 (mult lv0 lv1))))
