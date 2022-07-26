@@ -26,7 +26,11 @@ def read_synthesized_lemmas(dirname, filename):
         cat = 3
         continue
       lemma = line.strip() + '.'
-      lemma_name = re.match('Lemma (?P<name>\w+) :', lemma).groups()[0]
+      try:
+        lemma_name = re.match('Lemma (?P<name>\w+)[ ]?:', lemma).groups()[0]
+      except:
+        import pdb
+        pdb.set_trace()
       lemmas.append({"cat": cat, "lemma": lemma, "lemma_name": lemma_name})
   return lemmas
 
@@ -117,7 +121,7 @@ def read_data(benchmark_root, benchmark_name):
 def main():
   args = parse()
   data = read_data(args.benchmark_root, args.benchmark_name)
-  print(data[0]["lemmas"][0])
+  print(data[0]["lemmas"])
 
 if __name__=="__main__":
   main()
