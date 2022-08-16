@@ -53,6 +53,9 @@ Proof.
   { intro. simpl. rewrite IHl1. simpl. reflexivity. }
 Qed.
 
+Lemma conj243eqsynthconj1 : forall  (lv0 : lst), (@eq lst (lv0) ((append lv0 (rev Nil)))).
+simpl.
+
 Theorem rev_append: forall (l1 l2: lst), rev (append l1 l2) = append (rev l2) (rev l1).
 Proof.
   induction l1.

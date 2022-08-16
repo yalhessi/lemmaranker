@@ -78,6 +78,8 @@ def read_original_file(dirname, subdirname, filename, theorem_name, helper_lemma
           break
       elif theorem:
         theorem += l.strip()
+      else:
+        prefix += l
   return prefix, helper_lemma, helper_lemma_proof, theorem, theorem_proof
 
 

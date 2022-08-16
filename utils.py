@@ -151,6 +151,16 @@ def can_use_synth(frame, index):
   proof_cmds_before, _ = split_theorem_proof(frame, index)
   return can_use_helper(prelude, prefix + [helper_lemma] + helper_lemma_proof + [synth_lemma, 'Admitted.'], theorem, proof_cmds_before, synth_lemma_name)
 
+def can_simpl_synth(frame, index):
+  prelude = frame.at[index, 'prelude']
+  prefix = coq_serapy.read_commands(frame.at[index, 'prefix'])  
+  synth_lemma = frame.at[index, 'lemma']
+  return can_use_tactic(prelude, 
+                        prefix, 
+                        synth_lemma, 
+                        [], 
+                        'simpl || fail.')
+
 def can_simpl_before(frame, index):
   prelude = frame.at[index, 'prelude']
   prefix = coq_serapy.read_commands(frame.at[index, 'prefix'])

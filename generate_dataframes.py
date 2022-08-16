@@ -48,6 +48,9 @@ def add_synth_use(frame, index):
   frame.at[index, "can_use_synth"] = utils.can_use_synth(frame, index)
   frame.at[index, "simpl_after"] = utils.can_simpl_after(frame, index)
 
+def can_simpl_synth(frame, index):
+  frame.at[index, "can_simpl_synth"] = utils.can_simpl_synth(frame, index)
+
 def add_column(frame, col_fun):
   for r, row in frame.iterrows():
     try: 
@@ -63,6 +66,8 @@ def file_to_dataframe(filedata):
     frame[key] = filedata[key]
   for r, row in frame.iterrows():
     try:
+      import time
+      start = time.time()
       add_alpha(frame, r)
       remove_notations(frame, r)
       add_lemma_len(frame, r)
@@ -70,10 +75,16 @@ def file_to_dataframe(filedata):
       add_is_stronger(frame, r)
       add_is_equiv(frame, r)
       add_edit_distance(frame, r)
+      mid = time.time()
+      add_IH_use(frame, r)
+      add_synth_use(frame, r)
+      end = time.time()
+      print(f"finished row: {r}/{len(frame)} {mid - start}, {end - start}")
       # pass
     except Exception as e:
       print(e)
       print(r)
+  print("done")
   return frame
 
 
