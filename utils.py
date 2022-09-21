@@ -2,6 +2,9 @@ import coq_serapy
 import re
 import sexpdata
 import zss
+import shutil
+import tempfile
+import subprocess
 
 # def is_trivial(prelude, prefix, lemma):
 #     if isinstance(prefix, str):
@@ -190,9 +193,7 @@ def can_simpl_after(frame, index):
 
 def uses_IHs_before(frame, index):
   IHs = get_IHs(frame, index)
-  print(IHs)
   cmds_before, _ = split_theorem_proof(frame, index)
-  print(cmds_before)
   for cmd in cmds_before:
     for ih in IHs:
       if ih in cmd:
@@ -320,3 +321,61 @@ def get_goal(s):
     return match.groupdict()["goal"].strip()
   else:
     return s
+
+def is_generalizable(frame, index):
+  from collections import Counter
+  apps = Counter()
+  def is_simple_app(sexp):
+    for element in sexp:
+      if isinstance(element, list):
+        return False
+    return True
+  def get_simple_app(sexp):
+    simple_apps = []
+    if isinstance(sexp, list):
+      if is_simple_app(sexp):
+        return [sexp]
+
+      for element in sexp:
+        if isinstance(element, list):
+          if is_simple_app(element):
+            simple_apps.append(element)
+          else:
+            simple_apps += get_simple_app(element)
+        else:
+          pass
+    return simple_apps
+
+  synth_lemma = frame.at[index, 'lemma'].split(",")[-1].strip('.')
+  [[_, _, left, right]] = sexpdata.loads(f'({synth_lemma})')
+  cnt = Counter()
+  for el in get_simple_app(left): cnt[str(el)] += 1
+  for el in get_simple_app(right): cnt[str(el)] += 1
+  return cnt and cnt.most_common(1)[0][1] > 1
+
+SEARCH_FILE = '/home/yousef/lemmafinder/proverbot9001/src/search_file.py'
+WEIGHTS_FILE = '/home/yousef/lemmafinder/proverbot9001/data/polyarg-weights.dat'
+def create_proverbot_file(library, module, lemma):
+  content = f"""
+  From {library} Require Import {module}.
+  {lemma}
+  Admitted.
+  """
+  dir = tempfile.mkdtemp()
+  tmp = tempfile.NamedTemporaryFile(delete=False)
+  tmp.write(content.encode())
+  return dir, tmp.name
+
+def check_proof_solved(dir, tmpfile):
+  content = open(f'{dir}/{tmpfile}-proofs.txt').read()
+  return 'SUCCESS' in content
+
+def is_provable(prelude, library, module, lemma):
+  tmp_dir, proverbot_file_path = create_proverbot_file(library, module, lemma)
+  proverbot_file_name = proverbot_file_path.split('/')[-1]
+  proverbot_cmd = f'timeout 30 python3  {SEARCH_FILE}  --prelude={prelude} --weightsfile={WEIGHTS_FILE}   {proverbot_file_path}   --no-generate-report --max-proof-time=15 -o {tmp_dir}'
+  subprocess.call(proverbot_cmd, shell=True)
+  result = check_proof_solved(tmp_dir, proverbot_file_name)
+  shutil.rmtree(tmp_dir)
+  return result
+  

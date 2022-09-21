@@ -4,6 +4,7 @@ import pandas as pd
 import random 
 import sexpdata
 from multiprocessing import Pool, set_start_method
+from collections import Counter
 set_start_method('spawn', True)
 
 def add_is_weaker(frame, index):
@@ -51,6 +52,16 @@ def add_synth_use(frame, index):
 def can_simpl_synth(frame, index):
   frame.at[index, "can_simpl_synth"] = utils.can_simpl_synth(frame, index)
 
+def add_is_generalizable(frame, index):  
+  frame.at[index, 'is_generalizable'] = utils.is_generalizable(frame, index)
+
+def add_is_provable(frame, index):
+  prelude = frame.at[index, 'prelude']
+  library = frame.at[index, 'library']
+  module = frame.at[index, 'module']
+  lemma = frame.at[index, 'lemma']
+  return utils.is_provable(prelude, library, module, lemma)
+
 def add_column(frame, col_fun):
   for r, row in frame.iterrows():
     try: 
@@ -78,6 +89,8 @@ def file_to_dataframe(filedata):
       mid = time.time()
       add_IH_use(frame, r)
       add_synth_use(frame, r)
+      add_is_generalizable(frame, r)
+      add_is_provable(frame, r)
       end = time.time()
       print(f"finished row: {r}/{len(frame)} {mid - start}, {end - start}")
       # pass
@@ -93,14 +106,15 @@ def main():
   benchmark_name = 'smallclam'
   data = log_parser.read_data(benchmark_root, benchmark_name)
 
-  with Pool(5) as p:
-    frames = p.map(file_to_dataframe, data)
+  # with Pool(60) as p:
+  #   frames = p.map(file_to_dataframe, data)
 
-  # frames = []
+  frames = []
   # for i in range(len(data)):
   #   print(i, len(data))
   #   frames.append(file_to_dataframe(data[i]))
-
+  frames.append(file_to_dataframe(data[0]))
+  
   df = pd.concat(frames)
   df.to_pickle(f'./{benchmark_name}.pickle')
 

@@ -91,6 +91,10 @@ def parse_file_name(benchmark_name, filename):
   return re.match(f'{benchmark_name}_lf_(?P<file>[a-zA-Z0-9]+)_(?P<theorem>\w+)_(?P<lineno>\d+)_(?P<helper>\w+)', filename).groups()
 
 
+def read_library(dirname, subdirname):
+  with open(os.path.join(dirname, '_lfind_' + subdirname, '_CoqProject')) as f:
+    return re.match(f'-R . (?P<libraryname>\w+)', f.readline()).groupdict()['libraryname']
+
 def read_data(benchmark_root, benchmark_name):
   '''
   Structure of dir should be
@@ -113,7 +117,7 @@ def read_data(benchmark_root, benchmark_name):
       print("Could not find data for file: " + filename)
       continue
     original_filename, theorem_name, lineno, helper_lemma_name = parse_file_name(benchmark_name, filename)
-    filedata = {"file": filename, "theorem_name": theorem_name, "helper_lemma_name": helper_lemma_name, "prelude": os.path.join(benchmark_dir, benchmark_name)}
+    filedata = {"file": filename, "theorem_name": theorem_name, "helper_lemma_name": helper_lemma_name, "prelude": os.path.join(benchmark_dir, benchmark_name), "library": read_library(benchmark_dir, filename), "module": original_filename}
     filedata["lemmas"] = read_synthesized_lemmas(logs_dir, filename)
     filedata["stuck_state"] = read_stuck_state(benchmark_dir, filename)
     filedata["prefix"], filedata["helper_lemma"], filedata["helper_lemma_proof"], filedata["theorem"], filedata["theorem_proof"] = read_original_file(benchmark_dir, filename, original_filename, theorem_name, helper_lemma_name)
